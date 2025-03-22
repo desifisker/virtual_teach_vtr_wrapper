@@ -35,10 +35,6 @@ services:
       context: .  # Change build context to the repository root
       dockerfile: docker/Dockerfile.ros2
       args:
-        USERID: $(id -u)
-        GROUPID: $(id -g)
-        USERNAME: $(whoami)
-        HOMEDIR: ${HOME} .
         CUDA_ARCH: ${CUDA_ARCH:-86}
     container_name: ros_humble
     runtime: nvidia
