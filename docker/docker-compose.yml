@@ -3,17 +3,14 @@ version: "3.8"
 services:
   ros_noetic:
     build:
-      context: ./ros_noetic
+      dockerfile: docker/Dockerfile.ros1
       args:
-        USERNAME: virtr
-        HOMEDIR: /home/virtr
         CUDA_ARCH: ${CUDA_ARCH:-86}
     container_name: ros_noetic
+    runtime: nvidia
     volumes:
       - .:/VirTR                     # Mount the entire VirTR directory (where this compose file resides)
       - /tmp/.X11-unix:/tmp/.X11-unix # X11 Unix socket for display forwarding
-      - /dev:/dev                    # Mount /dev for device access
-    working_dir: /VirTR/src
     network_mode: host
     ipc: host
     ports:
@@ -22,6 +19,10 @@ services:
       - NVIDIA_VISIBLE_DEVICES=all
       - NVIDIA_DRIVER_CAPABILITIES=compute,utility,graphics
       - DISPLAY=${DISPLAY}
+      - USERID=${UID}
+      - GROUPID=${GID}
+      - USERNAME=${USERNAME}
+      - HOMEDIR=${HOMEDIR}
     stdin_open: true
     privileged: true
     tty: true
@@ -32,17 +33,18 @@ services:
   ros_humble:
     build:
       context: .  # Change build context to the repository root
-      dockerfile: ros_humble/Dockerfile
+      dockerfile: docker/Dockerfile.ros2
       args:
-        USERNAME: virtr
-        HOMEDIR: /home/virtr
+        USERID: $(id -u)
+        GROUPID: $(id -g)
+        USERNAME: $(whoami)
+        HOMEDIR: ${HOME} .
         CUDA_ARCH: ${CUDA_ARCH:-86}
     container_name: ros_humble
+    runtime: nvidia
     volumes:
-      - .:/VirTR                     # Mount the entire VirTR directory
+      - ../:/home/root/virtual_teach_vtr_wrapper:rw
       - /tmp/.X11-unix:/tmp/.X11-unix # X11 Unix socket for display forwarding
-      - /dev:/dev                    # Mount /dev for device access
-    working_dir: /VirTR/src
     network_mode: host
     ipc: host
     ports:
@@ -51,6 +53,7 @@ services:
       - NVIDIA_VISIBLE_DEVICES=all
       - NVIDIA_DRIVER_CAPABILITIES=compute,utility,graphics
       - DISPLAY=${DISPLAY}
+      - USE_SYSTEM_VTR3=0  # Switch to 1 if you want to skip building from submodule
     stdin_open: true
     privileged: true
     tty: true
