@@ -1,0 +1,425 @@
+FROM nvidia/cuda:11.7.1-cudnn8-devel-ubuntu22.04
+
+CMD ["/bin/bash"]
+
+ARG GROUPID=0
+ARG USERID=0
+ARG USERNAME=root
+ARG HOMEDIR=/root
+ARG CUDA_ARCH="8.9"
+
+# CUDA architectures, required by Colmap and tiny-cuda-nn. Use >= 8.0 for faster TCNN.
+ARG CUDA_ARCHITECTURES= 86;80;75
+ARG NERFSTUDIO_VERSION=""
+
+RUN if [ ${GROUPID} -ne 0 ]; then addgroup --gid ${GROUPID} ${USERNAME}; fi \
+  && if [ ${USERID} -ne 0 ]; then adduser --disabled-password --gecos '' --uid ${USERID} --gid ${GROUPID} ${USERNAME}; fi
+    
+# Default number of threads for make build
+ARG NUMPROC=1 #12
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+## CUDA Home, required to find CUDA in some packages.
+ENV CUDA_HOME="/usr/local/cuda"
+
+## Switch to specified user to create directories
+USER ${USERID}:${GROUPID}
+
+ENV VTRROOT=${HOMEDIR}/ASRL/vtr3
+ENV VTRSRC=${VTRROOT}/src \
+  VTRDATA=${VTRROOT}/data \
+  VTRTEMP=${VTRROOT}/temp \
+  VTRMODELS=${VTRROOT}/models \
+  GRIZZLY=${VTRROOT}/grizzly \
+  WARTHOG=${VTRROOT}/warthog \
+  VTRUI=${VTRSRC}/main/src/vtr_gui/vtr_gui/vtr-gui
+  
+RUN echo "alias build_ui='npm --prefix ${VTRUI} install ${VTRUI}; npm --prefix ${VTRUI} run build'" >> ~/.bashrc
+RUN echo "alias build_vtr='source /opt/ros/humble/setup.bash; cd ${VTRSRC}/main; colcon build --symlink-install'" >> ~/.bashrc
+
+# metainformation
+LABEL org.opencontainers.image.version = "0.1.18"
+LABEL org.opencontainers.image.source = "https://github.com/nerfstudio-project/nerfstudio"
+LABEL org.opencontainers.image.licenses = "Apache License 2.0"
+LABEL org.opencontainers.image.base.name="docker.io/library/nvidia/cuda:${CUDA_VERSION}-devel-ubuntu${OS_VERSION}"
+
+ARG CUDA_ARCHITECTURES= 86;80;75
+
+## Switch to root to install dependencies
+USER 0:0
+
+# Install required apt packages and clear cache afterwards.
+RUN mkdir -p /var/lib/apt/lists/partial && \
+    apt-get update && \
+    apt-get install -y --no-install-recommends \
+      build-essential \
+      cmake \
+      curl \
+      ffmpeg \
+      swig \
+      liblapack-dev \
+      libmetis-dev \
+      gfortran \
+      git \
+      libatlas-base-dev \
+      libboost-filesystem-dev \
+      libboost-graph-dev \
+      libboost-program-options-dev \
+      libboost-system-dev \
+      libboost-test-dev \
+      libhdf5-dev \
+      libcgal-dev \
+      libeigen3-dev \
+      libflann-dev \
+      libfreeimage-dev \
+      libgflags-dev \
+      libglew-dev \
+      libgoogle-glog-dev \
+      libmetis-dev \
+      libprotobuf-dev \
+      libqt5opengl5-dev \
+      libsqlite3-dev \
+      libsuitesparse-dev \
+      nano \
+      protobuf-compiler \
+      python-is-python3 \
+      python3.10-dev \
+      python3-pip \
+      qtbase5-dev \
+      sudo \
+      vim-tiny \
+      wget && \
+    rm -rf /var/lib/apt/lists/*
+    
+RUN apt-get update && apt-get install -y \
+      x11-apps \
+      libx11-dev \
+      libxext-dev \
+      libxrender-dev \
+      libxi-dev \
+      xauth && \
+    rm -rf /var/lib/apt/lists/*
+
+# Install GLOG (required by ceres).
+RUN git clone --branch v0.6.0 https://github.com/google/glog.git --single-branch && \
+    cd glog && \
+    mkdir build && \
+    cd build && \
+    cmake .. && \
+    make -j `nproc` && \
+    make install && \
+    cd ../.. && \
+    rm -rf glog
+# Add glog path to LD_LIBRARY_PATH.
+ENV LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:/usr/local/lib"
+
+# Install Ceres-solver (required by colmap).
+RUN git clone --branch 2.1.0 https://ceres-solver.googlesource.com/ceres-solver.git --single-branch && \
+    cd ceres-solver && \
+    git checkout $(git describe --tags) && \
+    mkdir build && \
+    cd build && \
+    cmake .. -DBUILD_TESTING=OFF -DBUILD_EXAMPLES=OFF && \
+    make -j `nproc` && \
+    make install && \
+    cd ../.. && \
+    rm -rf ceres-solver
+    
+#RUN apt-get update && apt-get install -y ca-certificates
+RUN apt-get update && apt-get install -y ca-certificates libssl-dev && rm -rf /var/lib/apt/lists/*
+
+# Install colmap.
+RUN git clone --branch 3.8 https://github.com/colmap/colmap.git --single-branch && \
+    cd colmap && \
+    mkdir build && \
+    cd build && \
+    cmake .. -DCUDA_ENABLED=ON \
+             -DCMAKE_CUDA_ARCHITECTURES=${CUDA_ARCHITECTURES} && \
+    make -j `nproc` && \
+    make install && \
+    cd ../.. && \
+    rm -rf colmap
+
+#RUN echo "${USERNAME}:password" | chpasswd \
+#    && usermod -aG sudo ${USERNAME} \
+#    && echo "%sudo ALL=NOPASSWD:/usr/bin/apt-get update, /usr/bin/apt-get upgrade, /usr/bin/apt-get install, /usr/bin/apt-get remove" >> /etc/sudoers
+
+# Create workspace folder and change ownership to new user
+RUN mkdir /workspace && chown ${USERID}:${GROUPID} /workspace
+
+# Switch to new user and workdir.
+USER ${USERID}
+WORKDIR /home/${USERNAME}
+
+# Add local user binary folder to PATH variable.
+ENV PATH="${PATH}:/home/${USERNAME}/.local/bin"
+
+# Upgrade pip and install packages.
+RUN python3.10 -m pip install --no-cache-dir --upgrade pip setuptools==69.5.1 pathtools promise pybind11 omegaconf
+
+# Install pytorch and submodules
+# echo "${CUDA_VERSION}" | sed 's/.$//' | tr -d '.' -- CUDA_VERSION -> delete last digit -> delete all '.'
+RUN CUDA_VER=$(echo "${CUDA_VERSION}" | sed 's/.$//' | tr -d '.') && python3.10 -m pip install --no-cache-dir \
+    torch==2.1.2 \
+    torchvision==0.16.2 \
+    --extra-index-url https://download.pytorch.org/whl/cu${CUDA_VER}
+
+# Install tiny-cuda-nn (we need to set the target architectures as environment variable first).
+ENV TCNN_CUDA_ARCHITECTURES=86
+RUN python3.10 -m pip install --no-cache-dir --extra-index-url https://download.pytorch.org/whl/cu117 \
+    torch==2.1.2 torchvision==0.16.2
+
+# Install pycolmap, required by hloc.
+RUN git clone --branch v0.4.0 --recursive https://github.com/colmap/pycolmap.git && \
+    cd pycolmap && \
+    python3.10 -m pip install --no-cache-dir . && \
+    cd ..
+
+# Install hloc 1.4 as alternative feature detector and matcher option for nerfstudio.
+RUN git clone --branch master --recursive https://github.com/cvg/Hierarchical-Localization.git && \
+    cd Hierarchical-Localization && \
+    git checkout v1.4 && \
+    python3.10 -m pip install --no-cache-dir -e . && \
+    cd ..
+
+# Install pyceres from source
+RUN git clone --branch v1.0 --recursive https://github.com/cvg/pyceres.git && \
+    cd pyceres && \
+    python3.10 -m pip install --no-cache-dir -e . && \
+    cd ..
+
+# Install pixel perfect sfm.
+RUN git clone --recursive https://github.com/cvg/pixel-perfect-sfm.git && \
+    cd pixel-perfect-sfm && \
+    git reset --hard 40f7c1339328b2a0c7cf71f76623fb848e0c0357 && \
+    git clean -df && \
+    python3.10 -m pip install --no-cache-dir -e . && \
+    cd ..
+
+# Install nerfstudio dependencies.
+#RUN cd ros_humble/vtr3/nerfstudio && python3.10 -m pip install --no-cache-dir -e . && cd -
+#RUN cd /home/dfi/vtr3 && python3.10 -m pip install --no-cache-dir -e . && cd -
+# Install nerfstudio dependencies.
+# Set working directory to /src so we have access to the src folder from the build context.
+WORKDIR /src
+
+# Copy the nerfstudio folder from the build context (which now includes it) to the desired location.
+COPY --chown=0:0 src/nerfstudio /home/virtr/nerfstudio
+
+# Install nerfstudio dependencies from the copied folder.
+RUN cd /home/${USERNAME}/nerfstudio && python3.10 -m pip install --no-cache-dir -e . && cd -
+ENV PYTHONPATH="/home/${USERNAME}/nerfstudio:$PYTHONPATH"
+
+# Switch to workspace folder and install nerfstudio cli auto completion
+WORKDIR /workspace
+RUN ns-install-cli --mode install
+
+
+## Switch to root to install dependencies
+USER 0:0
+
+
+
+
+#VTR3
+
+## Dependencies
+RUN apt update && apt upgrade -q -y
+RUN apt update && apt install -q -y cmake git build-essential lsb-release curl gnupg2
+RUN apt update && apt install -q -y libboost-all-dev libomp-dev
+RUN apt update && apt install -q -y libx11-dev libxrandr-dev libxinerama-dev libxcursor-dev libxi-dev
+RUN apt update && apt install -q -y x11-apps
+RUN apt update && apt install -q -y freeglut3-dev
+RUN apt update && apt install -q -y python3 python3-distutils python3-pip
+RUN apt update && apt install -q -y libeigen3-dev
+RUN apt update && apt install -q -y libsqlite3-dev sqlite3
+RUN apt install -q -y libc6-dbg gdb valgrind
+
+## Dependency for navtech radar
+RUN apt update && apt install -q -y apt libbotan-2-dev
+
+## Install PROJ (8.2.0) (this is for graph_map_server in vtr_navigation)
+RUN apt update && apt install -q -y cmake libsqlite3-dev sqlite3 libtiff-dev libcurl4-openssl-dev
+#RUN mkdir -p ${HOMEDIR}/proj && cd ${HOMEDIR}/proj \
+#  && git clone https://github.com/OSGeo/PROJ.git . && git checkout 8.2.0 \
+#  && mkdir -p ${HOMEDIR}/proj/build && cd ${HOMEDIR}/proj/build \
+#  && cmake .. && cmake --build . -j${NUMPROC} --target install
+#ENV LD_LIBRARY_PATH=/usr/local/lib${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+RUN mkdir -p ${HOMEDIR}/proj && cd ${HOMEDIR}/proj \
+  && git clone https://github.com/OSGeo/PROJ.git . && git checkout 8.2.0 \
+  && mkdir -p ${HOMEDIR}/proj/build && cd ${HOMEDIR}/proj/build \
+  && cmake .. -DBUILD_TESTING=OFF \
+             -DTIFF_LIBRARY=/usr/lib/x86_64-linux-gnu/libtiff.so \
+             -DTIFF_INCLUDE_DIR=/usr/include \
+  && cmake --build . -j${NUMPROC} --target install
+
+## Install ROS2
+# UTF-8
+RUN apt install -q -y locales \
+  && locale-gen en_US en_US.UTF-8 \
+  && update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+ENV LANG=en_US.UTF-8
+# Add ROS2 key and install from Debian packages
+RUN curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key  -o /usr/share/keyrings/ros-archive-keyring.gpg \
+  && echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" | tee /etc/apt/sources.list.d/ros2.list > /dev/null \
+  && apt update && apt install -q -y ros-humble-desktop
+
+## Install VTR specific ROS2 dependencies
+RUN apt update && apt install -q -y \
+  ros-humble-xacro \
+  ros-humble-vision-opencv \
+  ros-humble-perception-pcl ros-humble-pcl-ros \
+  ros-humble-rmw-cyclonedds-cpp
+
+RUN apt install ros-humble-tf2-tools
+
+## Install misc dependencies
+RUN apt update && apt install -q -y \
+  tmux \
+  nodejs npm protobuf-compiler \
+  libboost-all-dev libomp-dev \
+  libpcl-dev \
+  libcanberra-gtk-module libcanberra-gtk3-module \
+  libbluetooth-dev libcwiid-dev \
+  python3-colcon-common-extensions \
+  virtualenv \
+  texlive-latex-extra \
+  clang-format
+
+## Install python dependencies
+RUN pip3 install \
+  tmuxp \
+  pyyaml \
+  pyproj \
+  scipy \
+  zmq \
+  flask \
+  flask_socketio \
+  eventlet \
+  python-socketio \
+  python-socketio[client] \
+  websocket-client
+
+#added by sherry
+
+RUN apt install wget
+RUN apt install nano
+
+## sam install opencv 4.10.0
+RUN apt install -q -y libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev python3-dev python3-numpy libopencv-dev libopencv-contrib-dev
+
+RUN mkdir -p ${HOMEDIR}/opencv && cd ${HOMEDIR}/opencv \
+&& git clone https://github.com/opencv/opencv.git . 
+
+RUN cd ${HOMEDIR}/opencv && git checkout 4.10.0
+RUN mkdir -p ${HOMEDIR}/opencv_contrib && cd ${HOMEDIR}/opencv_contrib \
+&& git clone https://github.com/opencv/opencv_contrib.git . 
+RUN cd ${HOMEDIR}/opencv_contrib && git checkout 4.10.0 
+
+RUN apt install -q -y build-essential cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev python3-dev python3-numpy libopencv-dev libopencv-contrib-dev
+# # generate Makefiles (note that install prefix is customized to: /usr/local/opencv_cuda)
+
+RUN mkdir -p ${HOMEDIR}/opencv/build && cd ${HOMEDIR}/opencv/build \
+&& cmake -D CMAKE_BUILD_TYPE=RELEASE \
+-D CMAKE_INSTALL_PREFIX=/usr/local/opencv_cuda \
+-D OPENCV_EXTRA_MODULES_PATH=${HOMEDIR}/opencv_contrib/modules \
+-D PYTHON_DEFAULT_EXECUTABLE=/usr/bin/python3.10 \
+-DBUILD_opencv_python2=OFF \
+-DBUILD_opencv_python3=ON \
+-DWITH_OPENMP=ON \
+-DWITH_CUDA=ON \
+-D CUDA_TOOLKIT_ROOT_DIR=/usr/local/cuda-11.8 \
+-DOPENCV_ENABLE_NONFREE=ON \
+-D OPENCV_GENERATE_PKGCONFIG=ON \
+-DWITH_TBB=ON \
+-DWITH_GTK=ON \
+-DWITH_OPENMP=ON \
+-DWITH_FFMPEG=ON \
+-DBUILD_opencv_cudacodec=OFF \
+-D BUILD_EXAMPLES=OFF \
+-D CUDA_ARCH_BIN=$CUDA_ARCH ..  && make -j16 && make install
+
+ENV LD_LIBRARY_PATH=/usr/local/opencv_cuda/lib${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+
+RUN mkdir -p ${HOMEDIR}/.matplotcpp && cd ${HOMEDIR}/.matplotcpp \
+  && git clone https://github.com/lava/matplotlib-cpp.git . \
+  && mkdir -p ${HOMEDIR}/.matplotcpp/build && cd ${HOMEDIR}/.matplotcpp/build \
+  && cmake .. && cmake --build . -j${NUMPROC} --target install
+  
+##Install LibTorch
+RUN curl https://download.pytorch.org/libtorch/cu118/libtorch-cxx11-abi-shared-with-deps-2.0.0%2Bcu118.zip --output libtorch.zip
+RUN unzip libtorch.zip -d /opt/torch
+RUN rm libtorch.zip
+ENV TORCH_LIB=/opt/torch/libtorch
+ENV LD_LIBRARY_PATH=$TORCH_LIB/lib:${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+ENV CMAKE_PREFIX_PATH=$TORCH_LIB:$CMAKE_PREFIX_PATH
+  
+RUN apt install swig liblapack-dev libmetis-dev -y -q --install-recommends
+RUN mkdir -p ${HOMEDIR}/.casadi && cd ${HOMEDIR}/.casadi \
+  && git clone https://github.com/utiasASRL/casadi.git .
+RUN cd ${HOMEDIR}/.casadi \
+  && mkdir -p build && cd build \
+  && cmake build -DWITH_PYTHON=ON -DWITH_PYTHON3=ON -DWITH_IPOPT=ON -DWITH_BUILD_IPOPT=ON -DWITH_BUILD_REQUIRED=ON -DWITH_SELFCONTAINED=ON .. \
+  && make -j${NUMPROC} install
+ENV PYTHONPATH=${PYTHONPATH}:/usr/local
+ENV LD_LIBRARY_PATH=/usr/local/casadi:${LD_LIBRARY_PATH}
+
+ENV NVIDIA_DRIVER_CAPABILITIES compute,utility,graphics
+
+RUN apt install -q -y vim htop
+
+# --- Install Blender 4.3.2 ---    
+ARG VIRTUALGL_VERSION=3.1
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    xorg \
+    x11-xserver-utils \
+    libegl1-mesa \
+    mesa-utils \
+    libgl1-mesa-glx \
+    xterm \
+    nvidia-docker2 \
+    libgl1-mesa-glx \
+    libglib2.0-0 \
+    python3-pip \
+    novnc \
+    libxv1 \
+    && rm -rf /var/lib/apt/lists/*
+
+#RUN wget -qO /tmp/virtualgl_${VIRTUALGL_VERSION}_amd64.deb https://sourceforge.net/projects/virtualgl/files/${VIRTUALGL_VERSION}/#virtualgl_${VIRTUALGL_VERSION}_amd64.deb/download \
+#    #&& dpkg -i /tmp/virtualgl_${VIRTUALGL_VERSION}_amd64.deb \
+#    && dpkg -i --force-overwrite /tmp/virtualgl_${VIRTUALGL_VERSION}_amd64.deb || apt-get -f install -y \
+#    && rm -rf /tmp/*.deb
+    
+# Install TurboVNC (using the appropriate version; update URL if necessary)
+#RUN wget -qO /tmp/turbovnc.deb "https://sourceforge.net/projects/turbovnc/files/2.2.6/turbovnc_2.2.6_amd64.deb/download" && \
+    #dpkg -i /tmp/turbovnc.deb || apt-get -f install -y && \
+    #rm /tmp/turbovnc.deb
+#RUN apt-get update && apt-get install -y tigervnc-standalone-server
+#RUN apt-get update && apt-get install -y xvfb
+
+#RUN openssl req -x509 -nodes -newkey rsa:2048 -keyout /etc/novnc.pem -out /etc/novnc.pem -days 365 -subj "/C=US/ST=Denial/L=Springfield/O=Dis/CN=localhost"
+
+#ENV PATH ${PATH}:/opt/VirtualGL/bin
+#ENV LIBGL_ALWAYS_INDIRECT=1
+#ENV DISPLAY=${DISPLAY}
+#ENV VGL_DISPLAY=:99
+#EXPOSE 5999 
+
+RUN apt update && apt install -q -y wget tar ca-certificates && \
+    wget https://download.blender.org/release/Blender4.3/blender-4.3.2-linux-x64.tar.xz -O /tmp/blender.tar.xz && \
+    mkdir -p /opt/blender && \
+    tar -xJf /tmp/blender.tar.xz -C /opt/blender --strip-components=1 && \
+    ln -s /opt/blender/blender /usr/local/bin/blender && \
+    rm /tmp/blender.tar.xz
+
+ENV BLENDER_PATH=/opt/blender/blender
+ENV PATH=$PATH:/opt/blender/blender
+
+# --- Install Specific NumPy Version 1.22.4 ---
+RUN pip3 install numpy==1.22.4
+
+## Switch to specified user
+#USER ${USERID}:${GROUPID}
+
+CMD ["tail", "-f", "/dev/null"]
