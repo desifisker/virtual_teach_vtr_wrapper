@@ -120,25 +120,19 @@ Within the running container, create a virtual environment at `${VTRROOT}`.
 
 ```Bash
 cd ${VTRROOT}
-virtualenv venv
-source venv/bin/activate  # activate this environment
+virtualenv posegraph_tools
+source posegraph_tools/bin/activate  # activate this environment
 cd vtr3_posegraph_tools
 pip3 install -e .
 ```
 
-## Run Docker Compose to set up the rest of the programs required for VirT&R, and mount a shared volume FOR NOW DOING AS TWO SEPARATE CONTAINERS!!!!!!!!!!
+## Run Docker Compose to set up the rest of the programs required for VirT&R, and mount a shared volume for the project.
 
 Now that vtr3 has been set up with the VirT&R extension package, the rest of the VirT&R pipeline must be installed. A separate docker container for the other
 programs was created to simplify the VirT&R pipeline set up for users with pre-exsiting vtr3 installations they may not want to edit, rebuild, or abandon. Thus Docker Compose
 will be used to mount the ${VTRROOT} directory as a shared directory to create more of a solidified project and enable simpler file storage and transfer.
 
 ```Bash
-exit                           # exit the vtr3 docker container
-cd ${VTRROOT}/virtual_teach_vtr_wrapper/docker
-docker compose up --build -d 
-docker start virtr_programs
-ignore^^^^^^^^ for now^^^^^^^^66
-
 cd ${VTRROOT}/virtual_teach_vtr_wrapper/docker
 docker build -t virtr_programs \
   --build-arg USERID=$(id -u) \
@@ -146,8 +140,6 @@ docker build -t virtr_programs \
   --build-arg USERNAME=$(whoami) \
   --build-arg HOMEDIR=${HOME} \
   --build-arg CUDA_ARCH="86" .
-
-
 
 docker run -it --name virtr_programs \
   --privileged \
@@ -163,17 +155,7 @@ docker run -it --name virtr_programs \
 ```
 Now you should be inside the virtr_programs docker container where blender, gazebo, and nerfstudio are installed.
 
-
-
-
-
-
-
-
-
 DATASET DOWNLOAD:
 https://drive.google.com/drive/folders/1TpRJCtvYFxTDJrL1TxS9-hO1WO6BE5z0?usp=sharing
-
-
 
 ## [License](./LICENSE)
