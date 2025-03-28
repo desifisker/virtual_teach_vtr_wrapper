@@ -1,0 +1,55 @@
+version: "3.8"
+
+services:
+  ros_noetic:
+    build:
+      context: .
+      dockerfile: Dockerfile.ros1
+      args:
+        CUDA_ARCH: ${CUDA_ARCH:-86}
+    container_name: ros_noetic
+    runtime: nvidia
+    volumes:
+      - ${VTRROOT}:/workspace:rw
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    network_mode: host
+    ipc: host
+    ports:
+      - "7007:7007"
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility,graphics
+      - DISPLAY=${DISPLAY}
+    stdin_open: true
+    privileged: true
+    tty: true
+    devices:
+      - /dev/input/js0:/dev/input/js0
+
+  ros_humble:
+    build:
+      context: .
+      dockerfile: Dockerfile.ros2
+      args:
+        CUDA_ARCH: ${CUDA_ARCH:-86}
+    container_name: ros_humble
+    runtime: nvidia
+    volumes:
+      - ${VTRROOT}:/workspace:rw
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    network_mode: host
+    ipc: host
+    ports:
+      - "7007:7007"
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility,graphics
+      - DISPLAY=${DISPLAY}
+    stdin_open: true
+    privileged: true
+    tty: true
+
+networks:
+  default:
+    driver: bridge
+
