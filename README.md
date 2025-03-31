@@ -82,7 +82,7 @@ Start a new terminal and enter the container. (Again, if you have already built 
 ```Bash
 docker exec -it vtr3 bash
 
-source /opt/ros/galactic/setup.bash 
+source /opt/ros/humble/setup.bash 
 cd ${VTRSRC}/main
 VTR_PIPELINE=LIDAR colcon build --symlink-install 
 
@@ -100,7 +100,7 @@ NOTE: IF YOU ALREADY HAVE VTR3 INSTALLED AND WORKING, THIS IS WHERE YOU NEED TO 
 
 ```Bash
 
-source /opt/ros/galactic/setup.bash
+source /opt/ros/humble/setup.bash
 echo $ROS_DISTRO                             
 source ${VTRSRC}/main/install/setup.bash     
 cd ~/ASRL/virtual_teach_vtr_wrapper         
