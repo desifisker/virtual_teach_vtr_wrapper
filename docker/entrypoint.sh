@@ -55,7 +55,8 @@ if [ "$readme_count2" -gt 0 ] && [ -d "${TARGET}/warthog_gazebo_path_publisher" 
   
   echo "Initializing persistent catkin directory..."
   cp -r "${DEFAULT}/"* "${TARGET}/"
-
+  mv "${TARGET}/warthog_gazebo_path_publisher" "${TARGET}/src/"
+  
 else
   echo "Catkin workspace already initialized at ${TARGET}."
 fi
