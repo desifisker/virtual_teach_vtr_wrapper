@@ -1,0 +1,4391 @@
+[36m13:32:28.369 140211873538048 INFO [configure.cpp:47] [default] Logging to: example_log.txt
+[0m[36m13:32:28.369 140211873538048 INFO [configure.cpp:49] [default] Enabled loggers: [test]
+[0mPoint cloud loaded successfully.
+Vertex ID: <0,0>, Timestamp (nanoseconds): 1740691070850764032
+Creating new submap at vertex <0,0>
+Transformation Matrix:
+1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 323186
+Point cloud associated with vertex <0,0>.
+Submap pointer saved for vertex <0,0>.
+Using previous submap for vertex <0,0>
+Submap pointer saved for vertex <0,0>.
+Vertex ID: <0,1>, Timestamp (nanoseconds): 1740691071060379136
+Distance from last submap: 3.45126e-05 m
+Rotation from last submap: 311.764 degrees
+Creating new submap at vertex <0,1>
+Transformation Matrix:
+           1 -8.38466e-05 -5.51257e-05 -3.33892e-05
+ 8.38465e-05            1 -3.39133e-06 -8.73306e-06
+  5.5126e-05  3.38671e-06            1 -1.30592e-07
+           0            0            0            1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 323186
+Point cloud associated with vertex <0,1>.
+Submap pointer saved for vertex <0,1>.
+Using previous submap for vertex <0,1>
+Submap pointer saved for vertex <0,1>.
+Vertex ID: <0,2>, Timestamp (nanoseconds): 1740691071263860224
+Distance from last submap: 0.000137172 m
+Rotation from last submap: 0.00916124 degrees
+Using previous submap for vertex <0,2>
+Submap pointer saved for vertex <0,2>.
+Vertex ID: <0,3>, Timestamp (nanoseconds): 1740691071473174784
+Distance from last submap: 0.000170304 m
+Rotation from last submap: 0.0120586 degrees
+Using previous submap for vertex <0,3>
+Submap pointer saved for vertex <0,3>.
+Vertex ID: <0,4>, Timestamp (nanoseconds): 1740691071673594368
+Distance from last submap: 0.000201408 m
+Rotation from last submap: 0.0153439 degrees
+Using previous submap for vertex <0,4>
+Submap pointer saved for vertex <0,4>.
+Vertex ID: <0,5>, Timestamp (nanoseconds): 1740691071883085312
+Distance from last submap: 0.0103096 m
+Rotation from last submap: 0.083085 degrees
+Using previous submap for vertex <0,5>
+Submap pointer saved for vertex <0,5>.
+Vertex ID: <0,6>, Timestamp (nanoseconds): 1740691072091528960
+Distance from last submap: 0.140285 m
+Rotation from last submap: 0.500563 degrees
+Using previous submap for vertex <0,6>
+Submap pointer saved for vertex <0,6>.
+Vertex ID: <0,7>, Timestamp (nanoseconds): 1740691072301338112
+Distance from last submap: 0.45415 m
+Rotation from last submap: 0.471751 degrees
+Using previous submap for vertex <0,7>
+Submap pointer saved for vertex <0,7>.
+Vertex ID: <0,8>, Timestamp (nanoseconds): 1740691072510909952
+Distance from last submap: 0.865283 m
+Rotation from last submap: 0.580385 degrees
+Using previous submap for vertex <0,8>
+Submap pointer saved for vertex <0,8>.
+Vertex ID: <0,9>, Timestamp (nanoseconds): 1740691072720980224
+Distance from last submap: 1.28567 m
+Rotation from last submap: 0.751777 degrees
+Using previous submap for vertex <0,9>
+Submap pointer saved for vertex <0,9>.
+Vertex ID: <0,10>, Timestamp (nanoseconds): 1740691072921012992
+Distance from last submap: 1.65836 m
+Rotation from last submap: 2.74488 degrees
+Creating new submap at vertex <0,10>
+Transformation Matrix:
+   0.998916  -0.0461386  0.00623403      -1.656
+  0.0460626    0.998869    0.011824  -0.0888256
+-0.00677251   -0.011524    0.999911  0.00421567
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 342552
+Point cloud associated with vertex <0,10>.
+Submap pointer saved for vertex <0,10>.
+Using previous submap for vertex <0,10>
+Submap pointer saved for vertex <0,10>.
+Vertex ID: <0,11>, Timestamp (nanoseconds): 1740691073130921728
+Distance from last submap: 0.397298 m
+Rotation from last submap: 3.77185 degrees
+Using previous submap for vertex <0,11>
+Submap pointer saved for vertex <0,11>.
+Vertex ID: <0,12>, Timestamp (nanoseconds): 1740691073340883200
+Distance from last submap: 0.815386 m
+Rotation from last submap: 3.81475 degrees
+Using previous submap for vertex <0,12>
+Submap pointer saved for vertex <0,12>.
+Vertex ID: <0,13>, Timestamp (nanoseconds): 1740691073551539456
+Distance from last submap: 1.23517 m
+Rotation from last submap: 3.81045 degrees
+Using previous submap for vertex <0,13>
+Submap pointer saved for vertex <0,13>.
+Vertex ID: <0,14>, Timestamp (nanoseconds): 1740691073760143104
+Distance from last submap: 1.65652 m
+Rotation from last submap: 3.88454 degrees
+Creating new submap at vertex <0,14>
+Transformation Matrix:
+   0.993506   -0.113682  0.00470897    -3.30219
+   0.113611    0.993437   0.0132432   -0.242321
+-0.00618358  -0.0126222    0.999901  0.00244068
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 359777
+Point cloud associated with vertex <0,14>.
+Submap pointer saved for vertex <0,14>.
+Using previous submap for vertex <0,14>
+Submap pointer saved for vertex <0,14>.
+Vertex ID: <0,15>, Timestamp (nanoseconds): 1740691073961182720
+Distance from last submap: 0.39881 m
+Rotation from last submap: 0.0536671 degrees
+Using previous submap for vertex <0,15>
+Submap pointer saved for vertex <0,15>.
+Vertex ID: <0,16>, Timestamp (nanoseconds): 1740691074170768384
+Distance from last submap: 0.822332 m
+Rotation from last submap: 0.0706971 degrees
+Using previous submap for vertex <0,16>
+Submap pointer saved for vertex <0,16>.
+Vertex ID: <0,17>, Timestamp (nanoseconds): 1740691074379991296
+Distance from last submap: 1.24064 m
+Rotation from last submap: 0.117816 degrees
+Using previous submap for vertex <0,17>
+Submap pointer saved for vertex <0,17>.
+Vertex ID: <0,18>, Timestamp (nanoseconds): 1740691074580157696
+Distance from last submap: 1.64205 m
+Rotation from last submap: 0.148902 degrees
+Creating new submap at vertex <0,18>
+Transformation Matrix:
+   0.993421   -0.114488  0.00266681    -4.94404
+   0.114437    0.993323   0.0146333   -0.245634
+-0.00432433  -0.0142318    0.999889 -0.00510435
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 375497
+Point cloud associated with vertex <0,18>.
+Submap pointer saved for vertex <0,18>.
+Using previous submap for vertex <0,18>
+Submap pointer saved for vertex <0,18>.
+Vertex ID: <0,19>, Timestamp (nanoseconds): 1740691074780638208
+Distance from last submap: 0.399165 m
+Rotation from last submap: 0.179508 degrees
+Using previous submap for vertex <0,19>
+Submap pointer saved for vertex <0,19>.
+Vertex ID: <0,20>, Timestamp (nanoseconds): 1740691074990398208
+Distance from last submap: 0.816777 m
+Rotation from last submap: 310.071 degrees
+Creating new submap at vertex <0,20>
+Transformation Matrix:
+    0.997924   -0.0642496   0.00435603     -5.76605
+   0.0641816     0.997836    0.0142683    0.0415472
+ -0.00526334   -0.0139592     0.999889 -0.000976917
+           0            0            0            1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 383714
+Point cloud associated with vertex <0,20>.
+Submap pointer saved for vertex <0,20>.
+Using previous submap for vertex <0,20>
+Submap pointer saved for vertex <0,20>.
+Vertex ID: <0,21>, Timestamp (nanoseconds): 1740691075190402304
+Distance from last submap: 0.401051 m
+Rotation from last submap: 2.97809 degrees
+Using previous submap for vertex <0,21>
+Submap pointer saved for vertex <0,21>.
+Vertex ID: <0,22>, Timestamp (nanoseconds): 1740691075390582784
+Distance from last submap: 0.797606 m
+Rotation from last submap: 309.677 degrees
+Creating new submap at vertex <0,22>
+Transformation Matrix:
+   0.999883 -0.00863164   0.0126486    -6.55214
+ 0.00846281    0.999875   0.0133409    0.374525
+ -0.0127622  -0.0132323    0.999831   0.0443373
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 392798
+Point cloud associated with vertex <0,22>.
+Submap pointer saved for vertex <0,22>.
+Using previous submap for vertex <0,22>
+Submap pointer saved for vertex <0,22>.
+Vertex ID: <0,23>, Timestamp (nanoseconds): 1740691075600544256
+Distance from last submap: 0.420692 m
+Rotation from last submap: 311.571 degrees
+Creating new submap at vertex <0,23>
+Transformation Matrix:
+  0.999827 -0.0106696  0.0152439   -6.97343
+ 0.0104868   0.999873  0.0120157   0.360309
+-0.0153701 -0.0118537   0.999812  0.0625494
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 397831
+Point cloud associated with vertex <0,23>.
+Submap pointer saved for vertex <0,23>.
+Using previous submap for vertex <0,23>
+Submap pointer saved for vertex <0,23>.
+Vertex ID: <0,24>, Timestamp (nanoseconds): 1740691075801688576
+Distance from last submap: 0.397693 m
+Rotation from last submap: 311.658 degrees
+Creating new submap at vertex <0,24>
+Transformation Matrix:
+   0.999819 -0.00938192   0.0165701    -7.37056
+ 0.00919615    0.999894   0.0112522    0.368909
+  -0.016674  -0.0110977    0.999799   0.0721858
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 402567
+Point cloud associated with vertex <0,24>.
+Submap pointer saved for vertex <0,24>.
+Using previous submap for vertex <0,24>
+Submap pointer saved for vertex <0,24>.
+Vertex ID: <0,25>, Timestamp (nanoseconds): 1740691076010884608
+Distance from last submap: 0.416851 m
+Rotation from last submap: 311.1 degrees
+Creating new submap at vertex <0,25>
+Transformation Matrix:
+   0.999802  0.00739178   0.0184843    -7.78004
+-0.00756347    0.999929  0.00923535    0.493037
+ -0.0184147 -0.00937332    0.999786   0.0867059
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 407587
+Point cloud associated with vertex <0,25>.
+Submap pointer saved for vertex <0,25>.
+Using previous submap for vertex <0,25>
+Submap pointer saved for vertex <0,25>.
+Vertex ID: <0,26>, Timestamp (nanoseconds): 1740691076220586752
+Distance from last submap: 0.417694 m
+Rotation from last submap: 311.665 degrees
+Creating new submap at vertex <0,26>
+Transformation Matrix:
+   0.999771   0.0102372   0.0188064    -8.19627
+ -0.0104111    0.999904  0.00916918     0.51412
+ -0.0187107 -0.00936287    0.999781   0.0884093
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 412710
+Point cloud associated with vertex <0,26>.
+Submap pointer saved for vertex <0,26>.
+Using previous submap for vertex <0,26>
+Submap pointer saved for vertex <0,26>.
+Vertex ID: <0,27>, Timestamp (nanoseconds): 1740691076430867712
+Distance from last submap: 0.416587 m
+Rotation from last submap: 311.285 degrees
+Creating new submap at vertex <0,27>
+Transformation Matrix:
+   0.999523   0.0192253   0.0241586    -8.60728
+ -0.0194387    0.999774  0.00862793    0.590113
+ -0.0239872 -0.00909343    0.999671    0.133343
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 417984
+Point cloud associated with vertex <0,27>.
+Submap pointer saved for vertex <0,27>.
+Using previous submap for vertex <0,27>
+Submap pointer saved for vertex <0,27>.
+Vertex ID: <0,28>, Timestamp (nanoseconds): 1740691076641117440
+Distance from last submap: 0.403342 m
+Rotation from last submap: 1.56651 degrees
+Using previous submap for vertex <0,28>
+Submap pointer saved for vertex <0,28>.
+Vertex ID: <0,29>, Timestamp (nanoseconds): 1740691076842387200
+Distance from last submap: 0.802349 m
+Rotation from last submap: 1.65259 degrees
+Using previous submap for vertex <0,29>
+Submap pointer saved for vertex <0,29>.
+Vertex ID: <0,30>, Timestamp (nanoseconds): 1740691077051763200
+Distance from last submap: 1.22395 m
+Rotation from last submap: 1.83621 degrees
+Using previous submap for vertex <0,30>
+Submap pointer saved for vertex <0,30>.
+Vertex ID: <0,31>, Timestamp (nanoseconds): 1740691077261506560
+Distance from last submap: 1.68298 m
+Rotation from last submap: 5.60922 degrees
+Creating new submap at vertex <0,31>
+Transformation Matrix:
+  0.992654   0.116454  0.0327981    -10.188
+ -0.116727   0.993143 0.00652582    1.51808
+-0.0318133 -0.0103063   0.999441   0.209321
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 440241
+Point cloud associated with vertex <0,31>.
+Submap pointer saved for vertex <0,31>.
+Using previous submap for vertex <0,31>
+Submap pointer saved for vertex <0,31>.
+Vertex ID: <0,32>, Timestamp (nanoseconds): 1740691077471100416
+Distance from last submap: 0.427805 m
+Rotation from last submap: 311.126 degrees
+Creating new submap at vertex <0,32>
+Transformation Matrix:
+   0.991005    0.128389   0.0377435    -10.5955
+  -0.128614    0.991688  0.00358438      1.6413
+ -0.0369696 -0.00840647    0.999281    0.264644
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 446476
+Point cloud associated with vertex <0,32>.
+Submap pointer saved for vertex <0,32>.
+Using previous submap for vertex <0,32>
+Submap pointer saved for vertex <0,32>.
+Vertex ID: <0,33>, Timestamp (nanoseconds): 1740691077671496192
+Distance from last submap: 0.400801 m
+Rotation from last submap: 311.622 degrees
+Creating new submap at vertex <0,33>
+Transformation Matrix:
+   0.991083    0.127323    0.039299    -10.9977
+  -0.127492    0.991838  0.00181732     1.62814
+ -0.0387469 -0.00681141    0.999226     0.28446
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 452008
+Point cloud associated with vertex <0,33>.
+Submap pointer saved for vertex <0,33>.
+Using previous submap for vertex <0,33>
+Submap pointer saved for vertex <0,33>.
+Vertex ID: <0,34>, Timestamp (nanoseconds): 1740691077872040192
+Distance from last submap: 0.398454 m
+Rotation from last submap: 311.609 degrees
+Creating new submap at vertex <0,34>
+Transformation Matrix:
+   0.990973     0.12772   0.0407434     -11.395
+  -0.127779    0.991802 -0.00117362     1.63058
+ -0.0405593 -0.00404312    0.999169    0.305768
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 457593
+Point cloud associated with vertex <0,34>.
+Submap pointer saved for vertex <0,34>.
+Using previous submap for vertex <0,34>
+Submap pointer saved for vertex <0,34>.
+Vertex ID: <0,35>, Timestamp (nanoseconds): 1740691078081763328
+Distance from last submap: 0.41942 m
+Rotation from last submap: 311.614 degrees
+Creating new submap at vertex <0,35>
+Transformation Matrix:
+    0.990936     0.127606    0.0419736     -11.8142
+   -0.127529     0.991825  -0.00452531      1.62718
+  -0.0422079 -0.000868539     0.999108     0.325052
+           0            0            0            1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 463239
+Point cloud associated with vertex <0,35>.
+Submap pointer saved for vertex <0,35>.
+Using previous submap for vertex <0,35>
+Submap pointer saved for vertex <0,35>.
+Vertex ID: <0,36>, Timestamp (nanoseconds): 1740691078282985472
+Distance from last submap: 0.398249 m
+Rotation from last submap: 311.485 degrees
+Creating new submap at vertex <0,36>
+Transformation Matrix:
+  0.990473   0.130342   0.044427   -12.2071
+ -0.130113   0.991467 -0.0080162    1.65736
+-0.0450927 0.00215929    0.99898   0.360656
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 468533
+Point cloud associated with vertex <0,36>.
+Submap pointer saved for vertex <0,36>.
+Using previous submap for vertex <0,36>
+Submap pointer saved for vertex <0,36>.
+Vertex ID: <0,37>, Timestamp (nanoseconds): 1740691078492327168
+Distance from last submap: 0.419001 m
+Rotation from last submap: 311.582 degrees
+Creating new submap at vertex <0,37>
+Transformation Matrix:
+  0.990589   0.129351   0.044745   -12.6276
+ -0.128923   0.991578 -0.0123214    1.64233
+ -0.045962  0.0064368   0.998922   0.371003
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 474091
+Point cloud associated with vertex <0,37>.
+Submap pointer saved for vertex <0,37>.
+Using previous submap for vertex <0,37>
+Submap pointer saved for vertex <0,37>.
+Vertex ID: <0,38>, Timestamp (nanoseconds): 1740691078692464640
+Distance from last submap: 0.398542 m
+Rotation from last submap: 311.574 degrees
+Creating new submap at vertex <0,38>
+Transformation Matrix:
+  0.990175   0.132338  0.0451673    -13.021
+ -0.131791   0.991166 -0.0148851    1.67847
+-0.0467382 0.00878624   0.998869    0.38129
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 479160
+Point cloud associated with vertex <0,38>.
+Submap pointer saved for vertex <0,38>.
+Using previous submap for vertex <0,38>
+Submap pointer saved for vertex <0,38>.
+Vertex ID: <0,39>, Timestamp (nanoseconds): 1740691078903047424
+Distance from last submap: 0.418114 m
+Rotation from last submap: 311.607 degrees
+Creating new submap at vertex <0,39>
+Transformation Matrix:
+  0.990315   0.130954  0.0461222   -13.4411
+ -0.130278   0.991325 -0.0173661    1.65814
+-0.0479962  0.0111892   0.998785   0.397432
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 484366
+Point cloud associated with vertex <0,39>.
+Submap pointer saved for vertex <0,39>.
+Using previous submap for vertex <0,39>
+Submap pointer saved for vertex <0,39>.
+Vertex ID: <0,40>, Timestamp (nanoseconds): 1740691079113262848
+Distance from last submap: 0.420271 m
+Rotation from last submap: 311.529 degrees
+Creating new submap at vertex <0,40>
+Transformation Matrix:
+  0.989942   0.133828  0.0458849   -13.8566
+ -0.132951   0.990886 -0.0216744    1.69454
+-0.0483674   0.015356   0.998712   0.402724
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 489674
+Point cloud associated with vertex <0,40>.
+Submap pointer saved for vertex <0,40>.
+Using previous submap for vertex <0,40>
+Submap pointer saved for vertex <0,40>.
+Vertex ID: <0,41>, Timestamp (nanoseconds): 1740691079323646208
+Distance from last submap: 0.418777 m
+Rotation from last submap: 311.554 degrees
+Creating new submap at vertex <0,41>
+Transformation Matrix:
+  0.990173   0.132666  0.0442417   -14.2779
+ -0.131643   0.990974 -0.0253039    1.67492
+-0.0471994  0.0192311     0.9987   0.384842
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 494989
+Point cloud associated with vertex <0,41>.
+Submap pointer saved for vertex <0,41>.
+Using previous submap for vertex <0,41>
+Submap pointer saved for vertex <0,41>.
+Vertex ID: <0,42>, Timestamp (nanoseconds): 1740691079533510656
+Distance from last submap: 0.419851 m
+Rotation from last submap: 311.622 degrees
+Creating new submap at vertex <0,42>
+Transformation Matrix:
+  0.990295   0.131817  0.0440423   -14.6993
+  -0.13064   0.991016 -0.0286301    1.65912
+-0.0474206  0.0225986   0.998619    0.38746
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 500214
+Point cloud associated with vertex <0,42>.
+Submap pointer saved for vertex <0,42>.
+Using previous submap for vertex <0,42>
+Submap pointer saved for vertex <0,42>.
+Vertex ID: <0,43>, Timestamp (nanoseconds): 1740691079742967296
+Distance from last submap: 0.417261 m
+Rotation from last submap: 311.517 degrees
+Creating new submap at vertex <0,43>
+Transformation Matrix:
+  0.990485   0.131671  0.0400157   -15.1181
+ -0.130432   0.990936  -0.032161    1.65489
+-0.0438877  0.0266357   0.998681   0.333671
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 505607
+Point cloud associated with vertex <0,43>.
+Submap pointer saved for vertex <0,43>.
+Using previous submap for vertex <0,43>
+Submap pointer saved for vertex <0,43>.
+Vertex ID: <0,44>, Timestamp (nanoseconds): 1740691079943842560
+Distance from last submap: 0.402922 m
+Rotation from last submap: 0.521813 degrees
+Using previous submap for vertex <0,44>
+Submap pointer saved for vertex <0,44>.
+Vertex ID: <0,45>, Timestamp (nanoseconds): 1740691080144020736
+Distance from last submap: 0.804862 m
+Rotation from last submap: 1.07824 degrees
+Using previous submap for vertex <0,45>
+Submap pointer saved for vertex <0,45>.
+Vertex ID: <0,46>, Timestamp (nanoseconds): 1740691080344396800
+Distance from last submap: 1.2036 m
+Rotation from last submap: 1.10213 degrees
+Using previous submap for vertex <0,46>
+Submap pointer saved for vertex <0,46>.
+Vertex ID: <0,47>, Timestamp (nanoseconds): 1740691080553197056
+Distance from last submap: 1.62455 m
+Rotation from last submap: 1.15457 degrees
+Creating new submap at vertex <0,47>
+Transformation Matrix:
+  0.991202   0.130539  0.0218653   -16.7472
+ -0.130024   0.991232 -0.0235042    1.64528
+-0.0247418  0.0204544   0.999485  0.0357655
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 526309
+Point cloud associated with vertex <0,47>.
+Submap pointer saved for vertex <0,47>.
+Using previous submap for vertex <0,47>
+Submap pointer saved for vertex <0,47>.
+Vertex ID: <0,48>, Timestamp (nanoseconds): 1740691080753262848
+Distance from last submap: 0.399188 m
+Rotation from last submap: 0.273316 degrees
+Using previous submap for vertex <0,48>
+Submap pointer saved for vertex <0,48>.
+Vertex ID: <0,49>, Timestamp (nanoseconds): 1740691080954567168
+Distance from last submap: 0.799557 m
+Rotation from last submap: 0.372148 degrees
+Using previous submap for vertex <0,49>
+Submap pointer saved for vertex <0,49>.
+Vertex ID: <0,50>, Timestamp (nanoseconds): 1740691081155149056
+Distance from last submap: 1.199 m
+Rotation from last submap: 0.523866 degrees
+Using previous submap for vertex <0,50>
+Submap pointer saved for vertex <0,50>.
+Vertex ID: <0,51>, Timestamp (nanoseconds): 1740691081364692992
+Distance from last submap: 1.61503 m
+Rotation from last submap: 3.49786 degrees
+Creating new submap at vertex <0,51>
+Transformation Matrix:
+  0.997097  0.0710073  0.0274967   -18.4273
+-0.0707241   0.997434 -0.0111397   0.539881
+-0.0282172 0.00916265    0.99956   0.107709
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 543961
+Point cloud associated with vertex <0,51>.
+Submap pointer saved for vertex <0,51>.
+Using previous submap for vertex <0,51>
+Submap pointer saved for vertex <0,51>.
+Vertex ID: <0,52>, Timestamp (nanoseconds): 1740691081565314560
+Distance from last submap: 0.397474 m
+Rotation from last submap: 310.552 degrees
+Creating new submap at vertex <0,52>
+Transformation Matrix:
+  0.998985  0.0350165  0.0283224   -18.8316
+-0.0347292   0.999341 -0.0105741  -0.145583
+ -0.028674  0.0095798   0.999543   0.116414
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 547495
+Point cloud associated with vertex <0,52>.
+Submap pointer saved for vertex <0,52>.
+Using previous submap for vertex <0,52>
+Submap pointer saved for vertex <0,52>.
+Vertex ID: <0,53>, Timestamp (nanoseconds): 1740691081775028736
+Distance from last submap: 0.420152 m
+Rotation from last submap: 0.203814 degrees
+Using previous submap for vertex <0,53>
+Submap pointer saved for vertex <0,53>.
+Vertex ID: <0,54>, Timestamp (nanoseconds): 1740691081984793600
+Distance from last submap: 0.839694 m
+Rotation from last submap: 0.288476 degrees
+Using previous submap for vertex <0,54>
+Submap pointer saved for vertex <0,54>.
+Vertex ID: <0,55>, Timestamp (nanoseconds): 1740691082185354240
+Distance from last submap: 1.24021 m
+Rotation from last submap: 0.551833 degrees
+Using previous submap for vertex <0,55>
+Submap pointer saved for vertex <0,55>.
+Vertex ID: <0,56>, Timestamp (nanoseconds): 1740691082394958336
+Distance from last submap: 1.65852 m
+Rotation from last submap: 0.601167 degrees
+Creating new submap at vertex <0,56>
+Transformation Matrix:
+   0.999297   0.0326813   0.0183517      -20.49
+  -0.032534    0.999436 -0.00827035   -0.189585
+ -0.0186116  0.00766749    0.999797  -0.0802662
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 558683
+Point cloud associated with vertex <0,56>.
+Submap pointer saved for vertex <0,56>.
+Using previous submap for vertex <0,56>
+Submap pointer saved for vertex <0,56>.
+Vertex ID: <0,57>, Timestamp (nanoseconds): 1740691082605731840
+Distance from last submap: 0.420392 m
+Rotation from last submap: 0.120562 degrees
+Using previous submap for vertex <0,57>
+Submap pointer saved for vertex <0,57>.
+Vertex ID: <0,58>, Timestamp (nanoseconds): 1740691082814883840
+Distance from last submap: 0.841013 m
+Rotation from last submap: 0.346859 degrees
+Using previous submap for vertex <0,58>
+Submap pointer saved for vertex <0,58>.
+Vertex ID: <0,59>, Timestamp (nanoseconds): 1740691083015745536
+Distance from last submap: 1.24251 m
+Rotation from last submap: 0.425313 degrees
+Using previous submap for vertex <0,59>
+Submap pointer saved for vertex <0,59>.
+Vertex ID: <0,60>, Timestamp (nanoseconds): 1740691083225724160
+Distance from last submap: 1.6607 m
+Rotation from last submap: 0.416338 degrees
+Creating new submap at vertex <0,60>
+Transformation Matrix:
+   0.999431   0.0306843   0.0139816    -22.1497
+ -0.0306482    0.999526 -0.00279397   -0.235498
+ -0.0140607  0.00236386    0.999898   -0.170103
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 567886
+Point cloud associated with vertex <0,60>.
+Submap pointer saved for vertex <0,60>.
+Using previous submap for vertex <0,60>
+Submap pointer saved for vertex <0,60>.
+Vertex ID: <0,61>, Timestamp (nanoseconds): 1740691083435503360
+Distance from last submap: 0.418871 m
+Rotation from last submap: 0.2122 degrees
+Using previous submap for vertex <0,61>
+Submap pointer saved for vertex <0,61>.
+Vertex ID: <0,62>, Timestamp (nanoseconds): 1740691083635573760
+Distance from last submap: 0.818274 m
+Rotation from last submap: 0.213994 degrees
+Using previous submap for vertex <0,62>
+Submap pointer saved for vertex <0,62>.
+Vertex ID: <0,63>, Timestamp (nanoseconds): 1740691083836482560
+Distance from last submap: 1.21699 m
+Rotation from last submap: 0.239135 degrees
+Using previous submap for vertex <0,63>
+Submap pointer saved for vertex <0,63>.
+Vertex ID: <0,64>, Timestamp (nanoseconds): 1740691084046888960
+Distance from last submap: 1.63641 m
+Rotation from last submap: 0.183461 degrees
+Creating new submap at vertex <0,64>
+Transformation Matrix:
+   0.999364   0.0314658   0.0167966    -23.7867
+  -0.031445    0.999504 -0.00149803   -0.221428
+ -0.0168354 0.000968911    0.999858   -0.106187
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 574692
+Point cloud associated with vertex <0,64>.
+Submap pointer saved for vertex <0,64>.
+Using previous submap for vertex <0,64>
+Submap pointer saved for vertex <0,64>.
+Vertex ID: <0,65>, Timestamp (nanoseconds): 1740691084255982336
+Distance from last submap: 0.420073 m
+Rotation from last submap: 0.04042 degrees
+Using previous submap for vertex <0,65>
+Submap pointer saved for vertex <0,65>.
+Vertex ID: <0,66>, Timestamp (nanoseconds): 1740691084456080384
+Distance from last submap: 0.819671 m
+Rotation from last submap: 0.0770281 degrees
+Using previous submap for vertex <0,66>
+Submap pointer saved for vertex <0,66>.
+Vertex ID: <0,67>, Timestamp (nanoseconds): 1740691084656311296
+Distance from last submap: 1.21921 m
+Rotation from last submap: 0.267192 degrees
+Using previous submap for vertex <0,67>
+Submap pointer saved for vertex <0,67>.
+Vertex ID: <0,68>, Timestamp (nanoseconds): 1740691084856347136
+Distance from last submap: 1.6183 m
+Rotation from last submap: 0.44131 degrees
+Creating new submap at vertex <0,68>
+Transformation Matrix:
+  0.999577  0.0243505  0.0158938   -25.4027
+-0.0243761   0.999702 0.00141457  -0.402491
+-0.0158547 -0.0018014   0.999873  -0.127032
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 580568
+Point cloud associated with vertex <0,68>.
+Submap pointer saved for vertex <0,68>.
+Using previous submap for vertex <0,68>
+Submap pointer saved for vertex <0,68>.
+Vertex ID: <0,69>, Timestamp (nanoseconds): 1740691085056422656
+Distance from last submap: 0.40306 m
+Rotation from last submap: 0.342703 degrees
+Using previous submap for vertex <0,69>
+Submap pointer saved for vertex <0,69>.
+Vertex ID: <0,70>, Timestamp (nanoseconds): 1740691085257327872
+Distance from last submap: 0.801482 m
+Rotation from last submap: 0.435864 degrees
+Using previous submap for vertex <0,70>
+Submap pointer saved for vertex <0,70>.
+Vertex ID: <0,71>, Timestamp (nanoseconds): 1740691085467564032
+Distance from last submap: 1.22885 m
+Rotation from last submap: 310.778 degrees
+Creating new submap at vertex <0,71>
+Transformation Matrix:
+    0.99973   0.0227047 -0.00485778    -26.6226
+ -0.0227352    0.999722  -0.0063134   -0.445296
+ 0.00471308  0.00642214    0.999968   -0.669362
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 583132
+Point cloud associated with vertex <0,71>.
+Submap pointer saved for vertex <0,71>.
+Using previous submap for vertex <0,71>
+Submap pointer saved for vertex <0,71>.
+Vertex ID: <0,72>, Timestamp (nanoseconds): 1740691085676548608
+Distance from last submap: 0.418122 m
+Rotation from last submap: 0.863017 degrees
+Using previous submap for vertex <0,72>
+Submap pointer saved for vertex <0,72>.
+Vertex ID: <0,73>, Timestamp (nanoseconds): 1740691085876854784
+Distance from last submap: 0.798568 m
+Rotation from last submap: 2.5284 degrees
+Using previous submap for vertex <0,73>
+Submap pointer saved for vertex <0,73>.
+Vertex ID: <0,74>, Timestamp (nanoseconds): 1740691086077110272
+Distance from last submap: 1.17816 m
+Rotation from last submap: 5.27732 degrees
+Using previous submap for vertex <0,74>
+Submap pointer saved for vertex <0,74>.
+Vertex ID: <0,75>, Timestamp (nanoseconds): 1740691086277213696
+Distance from last submap: 1.58775 m
+Rotation from last submap: 2.48093 degrees
+Creating new submap at vertex <0,75>
+Transformation Matrix:
+  0.998838  0.0320201   0.036006   -28.2182
+-0.0321908   0.999473 0.00416928  -0.181088
+-0.0358536 -0.0053235   0.999343    0.44108
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 586835
+Point cloud associated with vertex <0,75>.
+Submap pointer saved for vertex <0,75>.
+Using previous submap for vertex <0,75>
+Submap pointer saved for vertex <0,75>.
+Vertex ID: <0,76>, Timestamp (nanoseconds): 1740691086477815808
+Distance from last submap: 0.411986 m
+Rotation from last submap: 2.37733 degrees
+Using previous submap for vertex <0,76>
+Submap pointer saved for vertex <0,76>.
+Vertex ID: <0,77>, Timestamp (nanoseconds): 1740691086687400192
+Distance from last submap: 0.82452 m
+Rotation from last submap: 0.696543 degrees
+Using previous submap for vertex <0,77>
+Submap pointer saved for vertex <0,77>.
+Vertex ID: <0,78>, Timestamp (nanoseconds): 1740691086888450560
+Distance from last submap: 1.21515 m
+Rotation from last submap: 1.14953 degrees
+Using previous submap for vertex <0,78>
+Submap pointer saved for vertex <0,78>.
+Vertex ID: <0,79>, Timestamp (nanoseconds): 1740691087098445056
+Distance from last submap: 1.63236 m
+Rotation from last submap: 0.959629 degrees
+Creating new submap at vertex <0,79>
+Transformation Matrix:
+  0.998302  0.0319338  0.0487265   -29.8427
+-0.0327014   0.999352  0.0150374  -0.169259
+-0.0482147 -0.0166052   0.998699   0.807233
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 586832
+Point cloud associated with vertex <0,79>.
+Submap pointer saved for vertex <0,79>.
+Using previous submap for vertex <0,79>
+Submap pointer saved for vertex <0,79>.
+Vertex ID: <0,80>, Timestamp (nanoseconds): 1740691087307612928
+Distance from last submap: 0.421341 m
+Rotation from last submap: 0.39664 degrees
+Using previous submap for vertex <0,80>
+Submap pointer saved for vertex <0,80>.
+Vertex ID: <0,81>, Timestamp (nanoseconds): 1740691087508005120
+Distance from last submap: 0.820531 m
+Rotation from last submap: 311.428 degrees
+Creating new submap at vertex <0,81>
+Transformation Matrix:
+  0.998717  0.0307476  0.0402316   -30.6687
+-0.0313556   0.999402  0.0145708  -0.210275
+-0.0397596 -0.0158136   0.999084   0.550691
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 585848
+Point cloud associated with vertex <0,81>.
+Submap pointer saved for vertex <0,81>.
+Using previous submap for vertex <0,81>
+Submap pointer saved for vertex <0,81>.
+Vertex ID: <0,82>, Timestamp (nanoseconds): 1740691087708145920
+Distance from last submap: 0.396361 m
+Rotation from last submap: 0.492347 degrees
+Using previous submap for vertex <0,82>
+Submap pointer saved for vertex <0,82>.
+Vertex ID: <0,83>, Timestamp (nanoseconds): 1740691087918553856
+Distance from last submap: 0.811431 m
+Rotation from last submap: 1.2184 degrees
+Using previous submap for vertex <0,83>
+Submap pointer saved for vertex <0,83>.
+Vertex ID: <0,84>, Timestamp (nanoseconds): 1740691088128217088
+Distance from last submap: 1.22902 m
+Rotation from last submap: 1.30891 degrees
+Using previous submap for vertex <0,84>
+Submap pointer saved for vertex <0,84>.
+Vertex ID: <0,85>, Timestamp (nanoseconds): 1740691088329456384
+Distance from last submap: 1.6053 m
+Rotation from last submap: 2.00094 degrees
+Creating new submap at vertex <0,85>
+Transformation Matrix:
+  0.996403  0.0581001  0.0616835   -32.2491
+-0.0591447   0.998133  0.0152454   0.680645
+-0.0606826 -0.0188388   0.997979    1.20669
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 581090
+Point cloud associated with vertex <0,85>.
+Submap pointer saved for vertex <0,85>.
+Using previous submap for vertex <0,85>
+Submap pointer saved for vertex <0,85>.
+Vertex ID: <0,86>, Timestamp (nanoseconds): 1740691088538878720
+Distance from last submap: 0.413765 m
+Rotation from last submap: 4.82779 degrees
+Using previous submap for vertex <0,86>
+Submap pointer saved for vertex <0,86>.
+Vertex ID: <0,87>, Timestamp (nanoseconds): 1740691088748295936
+Distance from last submap: 0.812345 m
+Rotation from last submap: 12.5698 degrees
+Using previous submap for vertex <0,87>
+Submap pointer saved for vertex <0,87>.
+Vertex ID: <0,88>, Timestamp (nanoseconds): 1740691088948401664
+Distance from last submap: 1.20839 m
+Rotation from last submap: 16.7008 degrees
+Using previous submap for vertex <0,88>
+Submap pointer saved for vertex <0,88>.
+Vertex ID: <0,89>, Timestamp (nanoseconds): 1740691089158403840
+Distance from last submap: 1.62019 m
+Rotation from last submap: 16.7296 degrees
+Creating new submap at vertex <0,89>
+Transformation Matrix:
+  0.937227   0.342912  0.0633726   -32.2926
+ -0.343755   0.939056 0.00256682    10.1702
+-0.0586302 -0.0241903   0.997987    1.14888
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 583259
+Point cloud associated with vertex <0,89>.
+Submap pointer saved for vertex <0,89>.
+Using previous submap for vertex <0,89>
+Submap pointer saved for vertex <0,89>.
+Vertex ID: <0,90>, Timestamp (nanoseconds): 1740691089360345088
+Distance from last submap: 0.39961 m
+Rotation from last submap: 0.123098 degrees
+Using previous submap for vertex <0,90>
+Submap pointer saved for vertex <0,90>.
+Vertex ID: <0,91>, Timestamp (nanoseconds): 1740691089569817088
+Distance from last submap: 0.815182 m
+Rotation from last submap: 0.81751 degrees
+Using previous submap for vertex <0,91>
+Submap pointer saved for vertex <0,91>.
+Vertex ID: <0,92>, Timestamp (nanoseconds): 1740691089769896192
+Distance from last submap: 1.19763 m
+Rotation from last submap: 308.326 degrees
+Creating new submap at vertex <0,92>
+Transformation Matrix:
+   0.904481    0.423768   0.0483197    -32.4903
+  -0.424074    0.905618 -0.00424228     13.0468
+ -0.0455569  -0.0166541    0.998823    0.684073
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 586589
+Point cloud associated with vertex <0,92>.
+Submap pointer saved for vertex <0,92>.
+Using previous submap for vertex <0,92>
+Submap pointer saved for vertex <0,92>.
+Vertex ID: <0,93>, Timestamp (nanoseconds): 1740691089979282688
+Distance from last submap: 0.392421 m
+Rotation from last submap: 308.446 degrees
+Creating new submap at vertex <0,93>
+Transformation Matrix:
+  0.859804   0.508701  0.0442863   -31.4807
+ -0.508763    0.86084 -0.0106903    16.1532
+-0.0435616 -0.0133397   0.998962   0.603325
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 587603
+Point cloud associated with vertex <0,93>.
+Submap pointer saved for vertex <0,93>.
+Using previous submap for vertex <0,93>
+Submap pointer saved for vertex <0,93>.
+Vertex ID: <0,94>, Timestamp (nanoseconds): 1740691090179592448
+Distance from last submap: 0.397354 m
+Rotation from last submap: 311.237 degrees
+Creating new submap at vertex <0,94>
+Transformation Matrix:
+  0.857084   0.512739  0.0500467   -31.7962
+ -0.512608   0.858466 -0.0164027    16.2998
+-0.0513737 -0.0115958   0.998612   0.876596
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 589160
+Point cloud associated with vertex <0,94>.
+Submap pointer saved for vertex <0,94>.
+Using previous submap for vertex <0,94>
+Submap pointer saved for vertex <0,94>.
+Vertex ID: <0,95>, Timestamp (nanoseconds): 1740691090379702016
+Distance from last submap: 0.39788 m
+Rotation from last submap: 311.56 degrees
+Creating new submap at vertex <0,95>
+Transformation Matrix:
+   0.856576    0.513395   0.0519982    -32.1793
+  -0.513093      0.8581  -0.0200171       16.32
+ -0.0548963 -0.00953373    0.998447    0.998182
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 590432
+Point cloud associated with vertex <0,95>.
+Submap pointer saved for vertex <0,95>.
+Using previous submap for vertex <0,95>
+Submap pointer saved for vertex <0,95>.
+Vertex ID: <0,96>, Timestamp (nanoseconds): 1740691090579976192
+Distance from last submap: 0.399882 m
+Rotation from last submap: 311.668 degrees
+Creating new submap at vertex <0,96>
+Transformation Matrix:
+   0.856144    0.514028   0.0528466    -32.5661
+  -0.513651    0.857729  -0.0215124     16.3419
+  -0.056386 -0.00872705    0.998371     1.05054
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 591685
+Point cloud associated with vertex <0,96>.
+Submap pointer saved for vertex <0,96>.
+Using previous submap for vertex <0,96>
+Submap pointer saved for vertex <0,96>.
+Vertex ID: <0,97>, Timestamp (nanoseconds): 1740691090782062848
+Distance from last submap: 0.399483 m
+Rotation from last submap: 311.681 degrees
+Creating new submap at vertex <0,97>
+Transformation Matrix:
+   0.855704    0.514814   0.0523203    -32.9512
+  -0.514362     0.85727  -0.0227944     16.3699
+ -0.0565875 -0.00740636     0.99837      1.0546
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 592818
+Point cloud associated with vertex <0,97>.
+Submap pointer saved for vertex <0,97>.
+Using previous submap for vertex <0,97>
+Submap pointer saved for vertex <0,97>.
+Vertex ID: <0,98>, Timestamp (nanoseconds): 1740691090990343168
+Distance from last submap: 0.419247 m
+Rotation from last submap: 311.685 degrees
+Creating new submap at vertex <0,98>
+Transformation Matrix:
+   0.856315    0.513915   0.0511415     -33.389
+   -0.51344    0.857816  -0.0230338     16.3346
+ -0.0557074 -0.00653394    0.998426     1.01888
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 593969
+Point cloud associated with vertex <0,98>.
+Submap pointer saved for vertex <0,98>.
+Using previous submap for vertex <0,98>
+Submap pointer saved for vertex <0,98>.
+Vertex ID: <0,99>, Timestamp (nanoseconds): 1740691091201888000
+Distance from last submap: 0.420309 m
+Rotation from last submap: 0.080584 degrees
+Using previous submap for vertex <0,99>
+Submap pointer saved for vertex <0,99>.
+Vertex ID: <0,100>, Timestamp (nanoseconds): 1740691091410608384
+Distance from last submap: 0.838946 m
+Rotation from last submap: 0.150001 degrees
+Using previous submap for vertex <0,100>
+Submap pointer saved for vertex <0,100>.
+Vertex ID: <0,101>, Timestamp (nanoseconds): 1740691091620105728
+Distance from last submap: 1.25798 m
+Rotation from last submap: 0.221189 degrees
+Using previous submap for vertex <0,101>
+Submap pointer saved for vertex <0,101>.
+Vertex ID: <0,102>, Timestamp (nanoseconds): 1740691091821104896
+Distance from last submap: 1.65666 m
+Rotation from last submap: 0.285663 degrees
+Creating new submap at vertex <0,102>
+Transformation Matrix:
+   0.856764    0.513299   0.0497981    -35.0589
+   -0.51307    0.858153   -0.018264      16.313
+ -0.0521093 -0.00990199    0.998592    0.894564
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 597718
+Point cloud associated with vertex <0,102>.
+Submap pointer saved for vertex <0,102>.
+Using previous submap for vertex <0,102>
+Submap pointer saved for vertex <0,102>.
+Vertex ID: <0,103>, Timestamp (nanoseconds): 1740691092030621184
+Distance from last submap: 0.419616 m
+Rotation from last submap: 0.08803 degrees
+Using previous submap for vertex <0,103>
+Submap pointer saved for vertex <0,103>.
+Vertex ID: <0,104>, Timestamp (nanoseconds): 1740691092230681088
+Distance from last submap: 0.818086 m
+Rotation from last submap: 0.155018 degrees
+Using previous submap for vertex <0,104>
+Submap pointer saved for vertex <0,104>.
+Vertex ID: <0,105>, Timestamp (nanoseconds): 1740691092441471744
+Distance from last submap: 1.23919 m
+Rotation from last submap: 0.234839 degrees
+Using previous submap for vertex <0,105>
+Submap pointer saved for vertex <0,105>.
+Vertex ID: <0,106>, Timestamp (nanoseconds): 1740691092650698496
+Distance from last submap: 1.65849 m
+Rotation from last submap: 311.342 degrees
+Creating new submap at vertex <0,106>
+Transformation Matrix:
+   0.854953    0.517035   0.0415928    -36.6533
+  -0.516715    0.855948  -0.0189436     16.4644
+ -0.0453958 -0.00529573    0.998955     0.60782
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 599786
+Point cloud associated with vertex <0,106>.
+Submap pointer saved for vertex <0,106>.
+Using previous submap for vertex <0,106>
+Submap pointer saved for vertex <0,106>.
+Vertex ID: <0,107>, Timestamp (nanoseconds): 1740691092850830080
+Distance from last submap: 0.398822 m
+Rotation from last submap: 311.638 degrees
+Creating new submap at vertex <0,107>
+Transformation Matrix:
+   0.856253    0.514828   0.0422312     -37.094
+  -0.514476     0.85728  -0.0196449     16.3683
+ -0.0463177 -0.00490593    0.998915    0.642542
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 600003
+Point cloud associated with vertex <0,107>.
+Submap pointer saved for vertex <0,107>.
+Using previous submap for vertex <0,107>
+Submap pointer saved for vertex <0,107>.
+Vertex ID: <0,108>, Timestamp (nanoseconds): 1740691093050840576
+Distance from last submap: 0.400044 m
+Rotation from last submap: 311.618 degrees
+Creating new submap at vertex <0,108>
+Transformation Matrix:
+   0.855806     0.51532   0.0451857    -37.4822
+  -0.514935     0.85698  -0.0206756      16.389
+ -0.0493778 -0.00557346    0.998765    0.769405
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 600279
+Point cloud associated with vertex <0,108>.
+Submap pointer saved for vertex <0,108>.
+Using previous submap for vertex <0,108>
+Submap pointer saved for vertex <0,108>.
+Vertex ID: <0,109>, Timestamp (nanoseconds): 1740691093251078400
+Distance from last submap: 0.398827 m
+Rotation from last submap: 311.707 degrees
+Creating new submap at vertex <0,109>
+Transformation Matrix:
+   0.856551    0.514055   0.0454738     -37.905
+  -0.513666    0.857739  -0.0207591     16.3331
+  -0.049676 -0.00557712     0.99875    0.781622
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 600417
+Point cloud associated with vertex <0,109>.
+Submap pointer saved for vertex <0,109>.
+Using previous submap for vertex <0,109>
+Submap pointer saved for vertex <0,109>.
+Vertex ID: <0,110>, Timestamp (nanoseconds): 1740691093451294720
+Distance from last submap: 0.399263 m
+Rotation from last submap: 311.696 degrees
+Creating new submap at vertex <0,110>
+Transformation Matrix:
+   0.856145    0.514643   0.0464651    -38.2921
+  -0.514232    0.857386  -0.0213145     16.3583
+ -0.0508079 -0.00564555    0.998692    0.828614
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 600536
+Point cloud associated with vertex <0,110>.
+Submap pointer saved for vertex <0,110>.
+Using previous submap for vertex <0,110>
+Submap pointer saved for vertex <0,110>.
+Vertex ID: <0,111>, Timestamp (nanoseconds): 1740691093661277184
+Distance from last submap: 0.418608 m
+Rotation from last submap: 311.637 degrees
+Creating new submap at vertex <0,111>
+Transformation Matrix:
+   0.855963    0.514638   0.0497536    -38.7075
+  -0.514211    0.857381  -0.0220034     16.3582
+ -0.0539816 -0.00674982    0.998519    0.965772
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 600759
+Point cloud associated with vertex <0,111>.
+Submap pointer saved for vertex <0,111>.
+Using previous submap for vertex <0,111>
+Submap pointer saved for vertex <0,111>.
+Vertex ID: <0,112>, Timestamp (nanoseconds): 1740691093871136768
+Distance from last submap: 0.418756 m
+Rotation from last submap: 311.558 degrees
+Creating new submap at vertex <0,112>
+Transformation Matrix:
+   0.855726    0.514565   0.0543721     -39.122
+  -0.514076    0.857417  -0.0237025     16.3538
+ -0.0588161 -0.00766856    0.998239     1.17352
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 601090
+Point cloud associated with vertex <0,112>.
+Submap pointer saved for vertex <0,112>.
+Using previous submap for vertex <0,112>
+Submap pointer saved for vertex <0,112>.
+Vertex ID: <0,113>, Timestamp (nanoseconds): 1740691094071593984
+Distance from last submap: 0.397711 m
+Rotation from last submap: 311.528 degrees
+Creating new submap at vertex <0,113>
+Transformation Matrix:
+   0.854598    0.516043   0.0579823    -39.4863
+  -0.515465    0.856526  -0.0256804     16.4191
+ -0.0629155 -0.00794146    0.997987      1.3485
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 601478
+Point cloud associated with vertex <0,113>.
+Submap pointer saved for vertex <0,113>.
+Using previous submap for vertex <0,113>
+Submap pointer saved for vertex <0,113>.
+Vertex ID: <0,114>, Timestamp (nanoseconds): 1740691094281339136
+Distance from last submap: 0.418101 m
+Rotation from last submap: 311.585 degrees
+Creating new submap at vertex <0,114>
+Transformation Matrix:
+   0.854958    0.515039   0.0614889    -39.9181
+  -0.514431     0.85712  -0.0265654     16.3724
+ -0.0663856 -0.00891943    0.997754     1.50223
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 601643
+Point cloud associated with vertex <0,114>.
+Submap pointer saved for vertex <0,114>.
+Using previous submap for vertex <0,114>
+Submap pointer saved for vertex <0,114>.
+Vertex ID: <0,115>, Timestamp (nanoseconds): 1740691094481580800
+Distance from last submap: 0.397817 m
+Rotation from last submap: 311.48 degrees
+Creating new submap at vertex <0,115>
+Transformation Matrix:
+   0.852781    0.518287   0.0643726    -40.2483
+  -0.517564    0.855162  -0.0287415     16.5214
+ -0.0699453 -0.00880673    0.997512      1.6545
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 601736
+Point cloud associated with vertex <0,115>.
+Submap pointer saved for vertex <0,115>.
+Using previous submap for vertex <0,115>
+Submap pointer saved for vertex <0,115>.
+Vertex ID: <0,116>, Timestamp (nanoseconds): 1740691094681657088
+Distance from last submap: 0.397756 m
+Rotation from last submap: 311.562 degrees
+Creating new submap at vertex <0,116>
+Transformation Matrix:
+   0.854533    0.515239    0.065583    -40.7025
+  -0.514421    0.857009  -0.0301065     16.3744
+ -0.0717173 -0.00801033    0.997393     1.72536
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 601473
+Point cloud associated with vertex <0,116>.
+Submap pointer saved for vertex <0,116>.
+Using previous submap for vertex <0,116>
+Submap pointer saved for vertex <0,116>.
+Vertex ID: <0,117>, Timestamp (nanoseconds): 1740691094893152512
+Distance from last submap: 0.417826 m
+Rotation from last submap: 311.537 degrees
+Creating new submap at vertex <0,117>
+Transformation Matrix:
+   0.852987     0.51739   0.0687101    -41.0728
+  -0.516499    0.855707  -0.0315368     16.4749
+ -0.0751125 -0.00858827    0.997138     1.87739
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 601072
+Point cloud associated with vertex <0,117>.
+Submap pointer saved for vertex <0,117>.
+Using previous submap for vertex <0,117>
+Submap pointer saved for vertex <0,117>.
+Vertex ID: <0,118>, Timestamp (nanoseconds): 1740691095102260224
+Distance from last submap: 0.416963 m
+Rotation from last submap: 311.638 degrees
+Creating new submap at vertex <0,118>
+Transformation Matrix:
+   0.853266    0.516881   0.0690711    -41.4989
+  -0.515764    0.856035  -0.0345207      16.443
+ -0.0769704 -0.00616903    0.997014     1.94119
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 600812
+Point cloud associated with vertex <0,118>.
+Submap pointer saved for vertex <0,118>.
+Using previous submap for vertex <0,118>
+Submap pointer saved for vertex <0,118>.
+Vertex ID: <0,119>, Timestamp (nanoseconds): 1740691095312200192
+Distance from last submap: 0.419264 m
+Rotation from last submap: 311.563 degrees
+Creating new submap at vertex <0,119>
+Transformation Matrix:
+   0.852766    0.517265   0.0723051    -41.9038
+  -0.515969    0.855806  -0.0370366     16.4565
+ -0.0810369 -0.00572365    0.996695     2.11862
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 600429
+Point cloud associated with vertex <0,119>.
+Submap pointer saved for vertex <0,119>.
+Using previous submap for vertex <0,119>
+Submap pointer saved for vertex <0,119>.
+Vertex ID: <0,120>, Timestamp (nanoseconds): 1740691095513362944
+Distance from last submap: 0.396933 m
+Rotation from last submap: 311.589 degrees
+Creating new submap at vertex <0,120>
+Transformation Matrix:
+   0.851437    0.519213   0.0739765    -42.2591
+  -0.517806    0.854627  -0.0385814     16.5484
+ -0.0832543 -0.00545585    0.996513     2.21474
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 599757
+Point cloud associated with vertex <0,120>.
+Submap pointer saved for vertex <0,120>.
+Using previous submap for vertex <0,120>
+Submap pointer saved for vertex <0,120>.
+Vertex ID: <0,121>, Timestamp (nanoseconds): 1740691095722949888
+Distance from last submap: 0.417222 m
+Rotation from last submap: 311.456 degrees
+Creating new submap at vertex <0,121>
+Transformation Matrix:
+   0.851978    0.517658    0.078507    -42.6954
+  -0.516007    0.855573  -0.0416178     16.4642
+ -0.0887123 -0.00505271    0.996044     2.45679
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 599042
+Point cloud associated with vertex <0,121>.
+Submap pointer saved for vertex <0,121>.
+Using previous submap for vertex <0,121>
+Submap pointer saved for vertex <0,121>.
+Vertex ID: <0,122>, Timestamp (nanoseconds): 1740691095932356608
+Distance from last submap: 0.420123 m
+Rotation from last submap: 310.596 degrees
+Creating new submap at vertex <0,122>
+Transformation Matrix:
+   0.836511     0.54195   0.0808719    -42.6169
+  -0.539915      0.8404  -0.0471175     17.6765
+ -0.0935001 -0.00424964     0.99561     2.66768
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 598529
+Point cloud associated with vertex <0,122>.
+Submap pointer saved for vertex <0,122>.
+Using previous submap for vertex <0,122>
+Submap pointer saved for vertex <0,122>.
+Vertex ID: <0,123>, Timestamp (nanoseconds): 1740691096132444160
+Distance from last submap: 0.36713 m
+Rotation from last submap: 309.815 degrees
+Creating new submap at vertex <0,123>
+Transformation Matrix:
+    0.808002     0.583633    0.0806546     -42.0321
+   -0.580793     0.812017   -0.0575105      19.7871
+   -0.099058 -0.000374988     0.995082      2.88918
+           0            0            0            1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 598513
+Point cloud associated with vertex <0,123>.
+Submap pointer saved for vertex <0,123>.
+Using previous submap for vertex <0,123>
+Submap pointer saved for vertex <0,123>.
+Vertex ID: <0,124>, Timestamp (nanoseconds): 1740691096333186816
+Distance from last submap: 0.406187 m
+Rotation from last submap: 308.625 degrees
+Creating new submap at vertex <0,124>
+Transformation Matrix:
+  0.754083   0.652801  0.0721751   -40.5434
+ -0.649151   0.757511 -0.0691332    23.3841
+-0.0998036 0.00527962   0.994993    2.87506
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 599073
+Point cloud associated with vertex <0,124>.
+Submap pointer saved for vertex <0,124>.
+Using previous submap for vertex <0,124>
+Submap pointer saved for vertex <0,124>.
+Vertex ID: <0,125>, Timestamp (nanoseconds): 1740691096543527936
+Distance from last submap: 0.422365 m
+Rotation from last submap: 307.67 degrees
+Creating new submap at vertex <0,125>
+Transformation Matrix:
+  0.675159   0.735638  0.0547344   -38.0264
+ -0.731722   0.677273  -0.076714    27.9106
+-0.0935039  0.0117438    0.99555    2.52585
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 599792
+Point cloud associated with vertex <0,125>.
+Submap pointer saved for vertex <0,125>.
+Using previous submap for vertex <0,125>
+Submap pointer saved for vertex <0,125>.
+Vertex ID: <0,126>, Timestamp (nanoseconds): 1740691096752611072
+Distance from last submap: 0.426052 m
+Rotation from last submap: 307.938 degrees
+Creating new submap at vertex <0,126>
+Transformation Matrix:
+  0.597442   0.801148  0.0350125   -35.4098
+ -0.797113    0.59807 -0.0832035    31.6855
+-0.0875982  0.0218004   0.995917    2.15907
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 601087
+Point cloud associated with vertex <0,126>.
+Submap pointer saved for vertex <0,126>.
+Using previous submap for vertex <0,126>
+Submap pointer saved for vertex <0,126>.
+Vertex ID: <0,127>, Timestamp (nanoseconds): 1740691096953187840
+Distance from last submap: 0.404949 m
+Rotation from last submap: 0.628192 degrees
+Using previous submap for vertex <0,127>
+Submap pointer saved for vertex <0,127>.
+Vertex ID: <0,128>, Timestamp (nanoseconds): 1740691097153360896
+Distance from last submap: 0.806721 m
+Rotation from last submap: 1.03187 degrees
+Using previous submap for vertex <0,128>
+Submap pointer saved for vertex <0,128>.
+Vertex ID: <0,129>, Timestamp (nanoseconds): 1740691097363431168
+Distance from last submap: 1.2322 m
+Rotation from last submap: 1.09926 degrees
+Using previous submap for vertex <0,129>
+Submap pointer saved for vertex <0,129>.
+Vertex ID: <0,130>, Timestamp (nanoseconds): 1740691097565014528
+Distance from last submap: 1.65757 m
+Rotation from last submap: 3.45555 degrees
+Creating new submap at vertex <0,130>
+Transformation Matrix:
+  0.552126   0.833666  0.0125417   -35.2198
+ -0.830535   0.551249 -0.0795986    33.7519
+-0.0732722  0.0335321   0.996748    1.37062
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 605395
+Point cloud associated with vertex <0,130>.
+Submap pointer saved for vertex <0,130>.
+Using previous submap for vertex <0,130>
+Submap pointer saved for vertex <0,130>.
+Vertex ID: <0,131>, Timestamp (nanoseconds): 1740691097773892864
+Distance from last submap: 0.425759 m
+Rotation from last submap: 306.818 degrees
+Creating new submap at vertex <0,131>
+Transformation Matrix:
+   0.431875    0.901904 -0.00726967    -30.6186
+  -0.899059    0.429842  -0.0832417      38.354
+ -0.0719512   0.0424859    0.996503     1.21056
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 607412
+Point cloud associated with vertex <0,131>.
+Submap pointer saved for vertex <0,131>.
+Using previous submap for vertex <0,131>
+Submap pointer saved for vertex <0,131>.
+Vertex ID: <0,132>, Timestamp (nanoseconds): 1740691097974180096
+Distance from last submap: 0.417147 m
+Rotation from last submap: 306.693 degrees
+Creating new submap at vertex <0,132>
+Transformation Matrix:
+  0.292597   0.955935 -0.0239852   -24.9459
+  -0.95358   0.289825 -0.0817678    42.5527
+-0.0712132  0.0467968   0.996363    1.12677
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 609855
+Point cloud associated with vertex <0,132>.
+Submap pointer saved for vertex <0,132>.
+Using previous submap for vertex <0,132>
+Submap pointer saved for vertex <0,132>.
+Vertex ID: <0,133>, Timestamp (nanoseconds): 1740691098183893504
+Distance from last submap: 0.428386 m
+Rotation from last submap: 5.22519 degrees
+Using previous submap for vertex <0,133>
+Submap pointer saved for vertex <0,133>.
+Vertex ID: <0,134>, Timestamp (nanoseconds): 1740691098384396800
+Distance from last submap: 0.829692 m
+Rotation from last submap: 5.26493 degrees
+Using previous submap for vertex <0,134>
+Submap pointer saved for vertex <0,134>.
+Vertex ID: <0,135>, Timestamp (nanoseconds): 1740691098594072576
+Distance from last submap: 1.25488 m
+Rotation from last submap: 5.42576 degrees
+Using previous submap for vertex <0,135>
+Submap pointer saved for vertex <0,135>.
+Vertex ID: <0,136>, Timestamp (nanoseconds): 1740691098794428672
+Distance from last submap: 1.65503 m
+Rotation from last submap: 9.19434 degrees
+Creating new submap at vertex <0,136>
+Transformation Matrix:
+  0.136304    0.99008 -0.0341052   -19.4718
+ -0.988054   0.133365 -0.0772149     46.147
+-0.0719005  0.0442225   0.996431    1.18801
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 622768
+Point cloud associated with vertex <0,136>.
+Submap pointer saved for vertex <0,136>.
+Using previous submap for vertex <0,136>
+Submap pointer saved for vertex <0,136>.
+Vertex ID: <0,137>, Timestamp (nanoseconds): 1740691099004488704
+Distance from last submap: 0.424096 m
+Rotation from last submap: 308.69 degrees
+Creating new submap at vertex <0,137>
+Transformation Matrix:
+ 0.0464212   0.998172 -0.0386882    -15.648
+ -0.996221   0.043415 -0.0752202    47.7484
+-0.0734031  0.0420338   0.996416    1.28922
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 626371
+Point cloud associated with vertex <0,137>.
+Submap pointer saved for vertex <0,137>.
+Using previous submap for vertex <0,137>
+Submap pointer saved for vertex <0,137>.
+Vertex ID: <0,138>, Timestamp (nanoseconds): 1740691099214535936
+Distance from last submap: 0.425357 m
+Rotation from last submap: 1.32442 degrees
+Using previous submap for vertex <0,138>
+Submap pointer saved for vertex <0,138>.
+Vertex ID: <0,139>, Timestamp (nanoseconds): 1740691099414743040
+Distance from last submap: 0.832117 m
+Rotation from last submap: 2.06226 degrees
+Using previous submap for vertex <0,139>
+Submap pointer saved for vertex <0,139>.
+Vertex ID: <0,140>, Timestamp (nanoseconds): 1740691099625390592
+Distance from last submap: 1.25675 m
+Rotation from last submap: 3.57813 degrees
+Using previous submap for vertex <0,140>
+Submap pointer saved for vertex <0,140>.
+Vertex ID: <0,141>, Timestamp (nanoseconds): 1740691099835441152
+Distance from last submap: 1.66614 m
+Rotation from last submap: 8.95441 degrees
+Creating new submap at vertex <0,141>
+Transformation Matrix:
+ -0.102833    0.99309 -0.0565515   -9.98026
+ -0.994217  -0.104385 -0.0252126    49.7651
+-0.0309415  0.0536318   0.998081  -0.918384
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 641950
+Point cloud associated with vertex <0,141>.
+Submap pointer saved for vertex <0,141>.
+Using previous submap for vertex <0,141>
+Submap pointer saved for vertex <0,141>.
+Vertex ID: <0,142>, Timestamp (nanoseconds): 1740691100035605760
+Distance from last submap: 0.393049 m
+Rotation from last submap: 310.436 degrees
+Creating new submap at vertex <0,142>
+Transformation Matrix:
+ -0.132283    0.98935 -0.0607324   -8.88353
+ -0.990462  -0.134318 -0.0307276    50.0566
+-0.0385578  0.0560884   0.997681  -0.596798
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 646153
+Point cloud associated with vertex <0,142>.
+Submap pointer saved for vertex <0,142>.
+Using previous submap for vertex <0,142>
+Submap pointer saved for vertex <0,142>.
+Vertex ID: <0,143>, Timestamp (nanoseconds): 1740691100244844544
+Distance from last submap: 0.41636 m
+Rotation from last submap: 2.15302 degrees
+Using previous submap for vertex <0,143>
+Submap pointer saved for vertex <0,143>.
+Vertex ID: <0,144>, Timestamp (nanoseconds): 1740691100446226688
+Distance from last submap: 0.815137 m
+Rotation from last submap: 309.389 degrees
+Creating new submap at vertex <0,144>
+Transformation Matrix:
+  -0.120455    0.992671 -0.00977944    -10.4034
+  -0.991942   -0.120745  -0.0383701     49.9172
+ -0.0392697  0.00507876    0.999216    0.249612
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 652908
+Point cloud associated with vertex <0,144>.
+Submap pointer saved for vertex <0,144>.
+Using previous submap for vertex <0,144>
+Submap pointer saved for vertex <0,144>.
+Vertex ID: <0,145>, Timestamp (nanoseconds): 1740691100655321344
+Distance from last submap: 0.421815 m
+Rotation from last submap: 311.271 degrees
+Creating new submap at vertex <0,145>
+Transformation Matrix:
+   -0.12339    0.992326 -0.00806307    -10.6805
+  -0.991133   -0.123637  -0.0486751     49.9392
+ -0.0492984  0.00198555    0.998782    0.791652
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 656860
+Point cloud associated with vertex <0,145>.
+Submap pointer saved for vertex <0,145>.
+Using previous submap for vertex <0,145>
+Submap pointer saved for vertex <0,145>.
+Vertex ID: <0,146>, Timestamp (nanoseconds): 1740691100855482880
+Distance from last submap: 0.401443 m
+Rotation from last submap: 310.836 degrees
+Creating new submap at vertex <0,146>
+Transformation Matrix:
+ -0.124221   0.991873 -0.0275199   -11.0041
+ -0.990528  -0.125592 -0.0554998    49.9517
+ -0.058505  0.0203651   0.998079   0.927772
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 660728
+Point cloud associated with vertex <0,146>.
+Submap pointer saved for vertex <0,146>.
+Using previous submap for vertex <0,146>
+Submap pointer saved for vertex <0,146>.
+Vertex ID: <0,147>, Timestamp (nanoseconds): 1740691101058775552
+Distance from last submap: 0.409617 m
+Rotation from last submap: 311.246 degrees
+Creating new submap at vertex <0,147>
+Transformation Matrix:
+ -0.125383   0.991451  -0.036113   -11.3372
+ -0.989971  -0.127418 -0.0610132    49.9628
+-0.0650931  0.0281008   0.997483    1.10932
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 664361
+Point cloud associated with vertex <0,147>.
+Submap pointer saved for vertex <0,147>.
+Using previous submap for vertex <0,147>
+Submap pointer saved for vertex <0,147>.
+Vertex ID: <0,148>, Timestamp (nanoseconds): 1740691101261188352
+Distance from last submap: 0.40034 m
+Rotation from last submap: 0.158244 degrees
+Using previous submap for vertex <0,148>
+Submap pointer saved for vertex <0,148>.
+Vertex ID: <0,149>, Timestamp (nanoseconds): 1740691101471138560
+Distance from last submap: 0.8233 m
+Rotation from last submap: 0.467325 degrees
+Using previous submap for vertex <0,149>
+Submap pointer saved for vertex <0,149>.
+Vertex ID: <0,150>, Timestamp (nanoseconds): 1740691101679437312
+Distance from last submap: 1.24317 m
+Rotation from last submap: 0.751878 degrees
+Using previous submap for vertex <0,150>
+Submap pointer saved for vertex <0,150>.
+Vertex ID: <0,151>, Timestamp (nanoseconds): 1740691101879499008
+Distance from last submap: 1.64256 m
+Rotation from last submap: 1.15725 degrees
+Creating new submap at vertex <0,151>
+Transformation Matrix:
+ -0.123804   0.992107 -0.0199272   -13.0919
+ -0.990984  -0.124651  -0.049128    49.9449
+-0.0512241  0.0136653   0.998594   0.711554
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 676883
+Point cloud associated with vertex <0,151>.
+Submap pointer saved for vertex <0,151>.
+Using previous submap for vertex <0,151>
+Submap pointer saved for vertex <0,151>.
+Vertex ID: <0,152>, Timestamp (nanoseconds): 1740691102083600128
+Distance from last submap: 0.403758 m
+Rotation from last submap: 0.200757 degrees
+Using previous submap for vertex <0,152>
+Submap pointer saved for vertex <0,152>.
+Vertex ID: <0,153>, Timestamp (nanoseconds): 1740691102292030208
+Distance from last submap: 0.823437 m
+Rotation from last submap: 0.502222 degrees
+Using previous submap for vertex <0,153>
+Submap pointer saved for vertex <0,153>.
+Vertex ID: <0,154>, Timestamp (nanoseconds): 1740691102501325312
+Distance from last submap: 1.26005 m
+Rotation from last submap: 0.964588 degrees
+Using previous submap for vertex <0,154>
+Submap pointer saved for vertex <0,154>.
+Vertex ID: <0,155>, Timestamp (nanoseconds): 1740691102710461184
+Distance from last submap: 1.67725 m
+Rotation from last submap: 3.56796 degrees
+Creating new submap at vertex <0,155>
+Transformation Matrix:
+ -0.184384   0.982771 -0.0127806   -11.6951
+ -0.981964  -0.184755 -0.0401604    50.7532
+-0.0418297 0.00514513   0.999112   0.434784
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 687150
+Point cloud associated with vertex <0,155>.
+Submap pointer saved for vertex <0,155>.
+Using previous submap for vertex <0,155>
+Submap pointer saved for vertex <0,155>.
+Vertex ID: <0,156>, Timestamp (nanoseconds): 1740691102910915584
+Distance from last submap: 0.426516 m
+Rotation from last submap: 4.15662 degrees
+Using previous submap for vertex <0,156>
+Submap pointer saved for vertex <0,156>.
+Vertex ID: <0,157>, Timestamp (nanoseconds): 1740691103120142080
+Distance from last submap: 0.852964 m
+Rotation from last submap: 4.84181 degrees
+Using previous submap for vertex <0,157>
+Submap pointer saved for vertex <0,157>.
+Vertex ID: <0,158>, Timestamp (nanoseconds): 1740691103329588992
+Distance from last submap: 1.27572 m
+Rotation from last submap: 4.92457 degrees
+Using previous submap for vertex <0,158>
+Submap pointer saved for vertex <0,158>.
+Vertex ID: <0,159>, Timestamp (nanoseconds): 1740691103530505216
+Distance from last submap: 1.67824 m
+Rotation from last submap: 4.84763 degrees
+Creating new submap at vertex <0,159>
+Transformation Matrix:
+  -0.266558    0.963796 -0.00667046    -9.06594
+  -0.963063   -0.266616  -0.0377455     51.6044
+ -0.0381574 -0.00363726    0.999265    0.448452
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 697584
+Point cloud associated with vertex <0,159>.
+Submap pointer saved for vertex <0,159>.
+Using previous submap for vertex <0,159>
+Submap pointer saved for vertex <0,159>.
+Vertex ID: <0,160>, Timestamp (nanoseconds): 1740691103739671296
+Distance from last submap: 0.424001 m
+Rotation from last submap: 0.910957 degrees
+Using previous submap for vertex <0,160>
+Submap pointer saved for vertex <0,160>.
+Vertex ID: <0,161>, Timestamp (nanoseconds): 1740691103949607168
+Distance from last submap: 0.864447 m
+Rotation from last submap: 3.06819 degrees
+Using previous submap for vertex <0,161>
+Submap pointer saved for vertex <0,161>.
+Vertex ID: <0,162>, Timestamp (nanoseconds): 1740691104159382528
+Distance from last submap: 1.28362 m
+Rotation from last submap: 3.12269 degrees
+Using previous submap for vertex <0,162>
+Submap pointer saved for vertex <0,162>.
+Vertex ID: <0,163>, Timestamp (nanoseconds): 1740691104359491328
+Distance from last submap: 1.68683 m
+Rotation from last submap: 3.00993 degrees
+Creating new submap at vertex <0,163>
+Transformation Matrix:
+  -0.316574    0.948548 -0.00616112    -8.04469
+  -0.948002   -0.316602  -0.0324972     52.0233
+ -0.0327757 -0.00444699    0.999453       0.214
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 708056
+Point cloud associated with vertex <0,163>.
+Submap pointer saved for vertex <0,163>.
+Using previous submap for vertex <0,163>
+Submap pointer saved for vertex <0,163>.
+Vertex ID: <0,164>, Timestamp (nanoseconds): 1740691104569173248
+Distance from last submap: 0.418449 m
+Rotation from last submap: 0.228271 degrees
+Using previous submap for vertex <0,164>
+Submap pointer saved for vertex <0,164>.
+Vertex ID: <0,165>, Timestamp (nanoseconds): 1740691104779212288
+Distance from last submap: 0.83923 m
+Rotation from last submap: 0.440844 degrees
+Using previous submap for vertex <0,165>
+Submap pointer saved for vertex <0,165>.
+Vertex ID: <0,166>, Timestamp (nanoseconds): 1740691104979627776
+Distance from last submap: 1.23991 m
+Rotation from last submap: 0.562363 degrees
+Using previous submap for vertex <0,166>
+Submap pointer saved for vertex <0,166>.
+Vertex ID: <0,167>, Timestamp (nanoseconds): 1740691105188530176
+Distance from last submap: 1.65991 m
+Rotation from last submap: 0.757353 degrees
+Creating new submap at vertex <0,167>
+Transformation Matrix:
+ -0.317076   0.948389 0.00461348   -9.69261
+ -0.948142  -0.316873 -0.0248628    52.0273
+-0.0221177 -0.0122576    0.99968 -0.0887219
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 717501
+Point cloud associated with vertex <0,167>.
+Submap pointer saved for vertex <0,167>.
+Using previous submap for vertex <0,167>
+Submap pointer saved for vertex <0,167>.
+Vertex ID: <0,168>, Timestamp (nanoseconds): 1740691105389127168
+Distance from last submap: 0.401884 m
+Rotation from last submap: 0.258505 degrees
+Using previous submap for vertex <0,168>
+Submap pointer saved for vertex <0,168>.
+Vertex ID: <0,169>, Timestamp (nanoseconds): 1740691105598705152
+Distance from last submap: 0.822103 m
+Rotation from last submap: 0.313984 degrees
+Using previous submap for vertex <0,169>
+Submap pointer saved for vertex <0,169>.
+Vertex ID: <0,170>, Timestamp (nanoseconds): 1740691105798785280
+Distance from last submap: 1.22588 m
+Rotation from last submap: 0.352713 degrees
+Using previous submap for vertex <0,170>
+Submap pointer saved for vertex <0,170>.
+Vertex ID: <0,171>, Timestamp (nanoseconds): 1740691106009722112
+Distance from last submap: 1.64425 m
+Rotation from last submap: 0.267431 degrees
+Creating new submap at vertex <0,171>
+Transformation Matrix:
+ -0.314995   0.949074 0.00612853   -11.4529
+ -0.948922  -0.314809 -0.0210174    52.0065
+-0.0180178 -0.0124359    0.99976  -0.273275
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 723555
+Point cloud associated with vertex <0,171>.
+Submap pointer saved for vertex <0,171>.
+Using previous submap for vertex <0,171>
+Submap pointer saved for vertex <0,171>.
+Vertex ID: <0,172>, Timestamp (nanoseconds): 1740691106219555328
+Distance from last submap: 0.421099 m
+Rotation from last submap: 311.421 degrees
+Creating new submap at vertex <0,172>
+Transformation Matrix:
+ -0.314018   0.949342  0.0119207   -11.9343
+ -0.949214  -0.313666 -0.0246211    51.9926
+-0.0196347 -0.0190467   0.999626 -0.0174813
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 724679
+Point cloud associated with vertex <0,172>.
+Submap pointer saved for vertex <0,172>.
+Using previous submap for vertex <0,172>
+Submap pointer saved for vertex <0,172>.
+Vertex ID: <0,173>, Timestamp (nanoseconds): 1740691106419557376
+Distance from last submap: 0.400414 m
+Rotation from last submap: 311.689 degrees
+Creating new submap at vertex <0,173>
+Transformation Matrix:
+ -0.313719    0.94944  0.0120453   -12.3512
+ -0.949273  -0.313326 -0.0266051    51.9882
+-0.0214858 -0.0197808   0.999573  0.0883768
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 725780
+Point cloud associated with vertex <0,173>.
+Submap pointer saved for vertex <0,173>.
+Using previous submap for vertex <0,173>
+Submap pointer saved for vertex <0,173>.
+Vertex ID: <0,174>, Timestamp (nanoseconds): 1740691106619861504
+Distance from last submap: 0.401929 m
+Rotation from last submap: 311.571 degrees
+Creating new submap at vertex <0,174>
+Transformation Matrix:
+ -0.314789    0.94911 0.00990038   -12.6921
+  -0.94884  -0.314394 -0.0293045    52.0021
+-0.0247006 -0.0186186   0.999521   0.201599
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 726579
+Point cloud associated with vertex <0,174>.
+Submap pointer saved for vertex <0,174>.
+Using previous submap for vertex <0,174>
+Submap pointer saved for vertex <0,174>.
+Vertex ID: <0,175>, Timestamp (nanoseconds): 1740691106821398016
+Distance from last submap: 0.402022 m
+Rotation from last submap: 311.666 degrees
+Creating new submap at vertex <0,175>
+Transformation Matrix:
+ -0.313638   0.949495 0.00953186   -13.1567
+ -0.949179  -0.313225 -0.0308114    51.9859
+-0.0262697 -0.0187111    0.99948   0.274889
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 727685
+Point cloud associated with vertex <0,175>.
+Submap pointer saved for vertex <0,175>.
+Using previous submap for vertex <0,175>
+Submap pointer saved for vertex <0,175>.
+Vertex ID: <0,176>, Timestamp (nanoseconds): 1740691107030188544
+Distance from last submap: 0.419491 m
+Rotation from last submap: 311.64 degrees
+Creating new submap at vertex <0,176>
+Transformation Matrix:
+ -0.315935   0.948725  0.0103143   -13.4513
+ -0.948407  -0.315487 -0.0315004    52.0172
+-0.0266312 -0.0197342   0.999451   0.321355
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 728848
+Point cloud associated with vertex <0,176>.
+Submap pointer saved for vertex <0,176>.
+Using previous submap for vertex <0,176>
+Submap pointer saved for vertex <0,176>.
+Vertex ID: <0,177>, Timestamp (nanoseconds): 1740691107231770624
+Distance from last submap: 0.399974 m
+Rotation from last submap: 311.358 degrees
+Creating new submap at vertex <0,177>
+Transformation Matrix:
+ -0.317797   0.948005  0.0170666   -13.7562
+ -0.947742  -0.317072  -0.035378    52.0389
+-0.0281272 -0.0274177   0.999228    0.61356
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 730104
+Point cloud associated with vertex <0,177>.
+Submap pointer saved for vertex <0,177>.
+Using previous submap for vertex <0,177>
+Submap pointer saved for vertex <0,177>.
+Vertex ID: <0,178>, Timestamp (nanoseconds): 1740691107440363264
+Distance from last submap: 0.419207 m
+Rotation from last submap: 310.438 degrees
+Creating new submap at vertex <0,178>
+Transformation Matrix:
+ -0.350112   0.936472  0.0210292   -12.3868
+ -0.936307  -0.349217 -0.0371022    52.4957
+-0.0274014 -0.0326797    0.99909   0.738908
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 731260
+Point cloud associated with vertex <0,178>.
+Submap pointer saved for vertex <0,178>.
+Using previous submap for vertex <0,178>
+Submap pointer saved for vertex <0,178>.
+Vertex ID: <0,179>, Timestamp (nanoseconds): 1740691107640931072
+Distance from last submap: 0.39611 m
+Rotation from last submap: 309.584 degrees
+Creating new submap at vertex <0,179>
+Transformation Matrix:
+ -0.405404   0.914002  0.0157622     -9.622
+ -0.913581  -0.404496 -0.0418636    53.1679
+-0.0318876 -0.0313717   0.998999   0.900592
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 731913
+Point cloud associated with vertex <0,179>.
+Submap pointer saved for vertex <0,179>.
+Using previous submap for vertex <0,179>
+Submap pointer saved for vertex <0,179>.
+Vertex ID: <0,180>, Timestamp (nanoseconds): 1740691107841115648
+Distance from last submap: 0.399101 m
+Rotation from last submap: 310.897 degrees
+Creating new submap at vertex <0,180>
+Transformation Matrix:
+ -0.426155   0.904559  0.0128082   -8.80264
+ -0.904007  -0.425276 -0.0437157    53.3838
+-0.0340964 -0.0302084   0.998962     0.9628
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 732686
+Point cloud associated with vertex <0,180>.
+Submap pointer saved for vertex <0,180>.
+Using previous submap for vertex <0,180>
+Submap pointer saved for vertex <0,180>.
+Vertex ID: <0,181>, Timestamp (nanoseconds): 1740691108041126656
+Distance from last submap: 0.399475 m
+Rotation from last submap: 0.0538788 degrees
+Using previous submap for vertex <0,181>
+Submap pointer saved for vertex <0,181>.
+Vertex ID: <0,182>, Timestamp (nanoseconds): 1740691108250375168
+Distance from last submap: 0.820414 m
+Rotation from last submap: 0.153884 degrees
+Using previous submap for vertex <0,182>
+Submap pointer saved for vertex <0,182>.
+Vertex ID: <0,183>, Timestamp (nanoseconds): 1740691108451299328
+Distance from last submap: 1.22203 m
+Rotation from last submap: 0.313078 degrees
+Using previous submap for vertex <0,183>
+Submap pointer saved for vertex <0,183>.
+Vertex ID: <0,184>, Timestamp (nanoseconds): 1740691108660618752
+Distance from last submap: 1.64417 m
+Rotation from last submap: 0.367882 degrees
+Creating new submap at vertex <0,184>
+Transformation Matrix:
+ -0.430069   0.902752 0.00886187   -10.2111
+ -0.902182  -0.429394 -0.0411003    53.4324
+-0.0332982  -0.025671   0.999116   0.784476
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 735183
+Point cloud associated with vertex <0,184>.
+Submap pointer saved for vertex <0,184>.
+Using previous submap for vertex <0,184>
+Submap pointer saved for vertex <0,184>.
+Vertex ID: <0,185>, Timestamp (nanoseconds): 1740691108870630912
+Distance from last submap: 0.434109 m
+Rotation from last submap: 1.51789 degrees
+Using previous submap for vertex <0,185>
+Submap pointer saved for vertex <0,185>.
+Vertex ID: <0,186>, Timestamp (nanoseconds): 1740691109071255808
+Distance from last submap: 0.828713 m
+Rotation from last submap: 309.445 degrees
+Creating new submap at vertex <0,186>
+Transformation Matrix:
+ -0.488434   0.872599 0.00193152   -7.49846
+ -0.871873  -0.487935 -0.0419069    54.0436
+-0.0356254 -0.0221528    0.99912   0.771524
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 736210
+Point cloud associated with vertex <0,186>.
+Submap pointer saved for vertex <0,186>.
+Using previous submap for vertex <0,186>
+Submap pointer saved for vertex <0,186>.
+Vertex ID: <0,187>, Timestamp (nanoseconds): 1740691109271443456
+Distance from last submap: 0.415508 m
+Rotation from last submap: 1.55752 degrees
+Using previous submap for vertex <0,187>
+Submap pointer saved for vertex <0,187>.
+Vertex ID: <0,188>, Timestamp (nanoseconds): 1740691109471636992
+Distance from last submap: 0.814519 m
+Rotation from last submap: 3.7441 degrees
+Using previous submap for vertex <0,188>
+Submap pointer saved for vertex <0,188>.
+Vertex ID: <0,189>, Timestamp (nanoseconds): 1740691109680596224
+Distance from last submap: 1.23758 m
+Rotation from last submap: 4.63036 degrees
+Using previous submap for vertex <0,189>
+Submap pointer saved for vertex <0,189>.
+Vertex ID: <0,190>, Timestamp (nanoseconds): 1740691109880800000
+Distance from last submap: 1.63978 m
+Rotation from last submap: 4.85471 degrees
+Creating new submap at vertex <0,190>
+Transformation Matrix:
+ -0.560448    0.82817 0.00565458   -4.54772
+ -0.827603  -0.559781 -0.0414633    54.5572
+-0.0311733 -0.0279178   0.999124   0.774733
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 740869
+Point cloud associated with vertex <0,190>.
+Submap pointer saved for vertex <0,190>.
+Using previous submap for vertex <0,190>
+Submap pointer saved for vertex <0,190>.
+Vertex ID: <0,191>, Timestamp (nanoseconds): 1740691110085600256
+Distance from last submap: 0.398258 m
+Rotation from last submap: 0.308858 degrees
+Using previous submap for vertex <0,191>
+Submap pointer saved for vertex <0,191>.
+Vertex ID: <0,192>, Timestamp (nanoseconds): 1740691110293736448
+Distance from last submap: 0.818856 m
+Rotation from last submap: 0.67003 degrees
+Using previous submap for vertex <0,192>
+Submap pointer saved for vertex <0,192>.
+Vertex ID: <0,193>, Timestamp (nanoseconds): 1740691110494182912
+Distance from last submap: 1.21733 m
+Rotation from last submap: 0.832846 degrees
+Using previous submap for vertex <0,193>
+Submap pointer saved for vertex <0,193>.
+Vertex ID: <0,194>, Timestamp (nanoseconds): 1740691110704560896
+Distance from last submap: 1.6444 m
+Rotation from last submap: 1.26353 degrees
+Creating new submap at vertex <0,194>
+Transformation Matrix:
+ -0.573759   0.818767  0.0205081   -5.32427
+ -0.818721  -0.572686 -0.0415509    54.6398
+-0.0222758 -0.0406306   0.998926   0.842318
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 745309
+Point cloud associated with vertex <0,194>.
+Submap pointer saved for vertex <0,194>.
+Using previous submap for vertex <0,194>
+Submap pointer saved for vertex <0,194>.
+Vertex ID: <0,195>, Timestamp (nanoseconds): 1740691110912965376
+Distance from last submap: 0.414152 m
+Rotation from last submap: 0.87457 degrees
+Using previous submap for vertex <0,195>
+Submap pointer saved for vertex <0,195>.
+Vertex ID: <0,196>, Timestamp (nanoseconds): 1740691111122707712
+Distance from last submap: 0.84005 m
+Rotation from last submap: 310.472 degrees
+Creating new submap at vertex <0,196>
+Transformation Matrix:
+ -0.602725   0.797655  0.0216364   -4.20466
+  -0.79766  -0.601555 -0.0432486    54.8112
+ -0.021482 -0.0433255    0.99883   0.907146
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 747684
+Point cloud associated with vertex <0,196>.
+Submap pointer saved for vertex <0,196>.
+Using previous submap for vertex <0,196>
+Submap pointer saved for vertex <0,196>.
+Vertex ID: <0,197>, Timestamp (nanoseconds): 1740691111323226368
+Distance from last submap: 0.401141 m
+Rotation from last submap: 2.12538 degrees
+Using previous submap for vertex <0,197>
+Submap pointer saved for vertex <0,197>.
+Vertex ID: <0,198>, Timestamp (nanoseconds): 1740691111532632064
+Distance from last submap: 0.820791 m
+Rotation from last submap: 308.683 degrees
+Creating new submap at vertex <0,198>
+Transformation Matrix:
+  -0.67172   0.740475  0.0221216    -0.1014
+ -0.740564  -0.670441 -0.0455319    55.0303
+ -0.018884 -0.0469671   0.998718   0.934204
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 749882
+Point cloud associated with vertex <0,198>.
+Submap pointer saved for vertex <0,198>.
+Using previous submap for vertex <0,198>
+Submap pointer saved for vertex <0,198>.
+Vertex ID: <0,199>, Timestamp (nanoseconds): 1740691111732639744
+Distance from last submap: 0.401544 m
+Rotation from last submap: 2.29435 degrees
+Using previous submap for vertex <0,199>
+Submap pointer saved for vertex <0,199>.
+Vertex ID: <0,200>, Timestamp (nanoseconds): 1740691111943349504
+Distance from last submap: 0.819996 m
+Rotation from last submap: 2.75194 degrees
+Using previous submap for vertex <0,200>
+Submap pointer saved for vertex <0,200>.
+Vertex ID: <0,201>, Timestamp (nanoseconds): 1740691112143574784
+Distance from last submap: 1.21971 m
+Rotation from last submap: 309.992 degrees
+Creating new submap at vertex <0,201>
+Transformation Matrix:
+ -0.705943   0.707774   0.026482    1.27555
+ -0.708117  -0.704522 -0.0471104    54.9932
+-0.0146863 -0.0520096   0.998539   0.952223
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 751738
+Point cloud associated with vertex <0,201>.
+Submap pointer saved for vertex <0,201>.
+Using previous submap for vertex <0,201>
+Submap pointer saved for vertex <0,201>.
+Vertex ID: <0,202>, Timestamp (nanoseconds): 1740691112352674560
+Distance from last submap: 0.418132 m
+Rotation from last submap: 311.648 degrees
+Creating new submap at vertex <0,202>
+Transformation Matrix:
+ -0.706907   0.706786  0.0271088    0.93226
+  -0.70714   -0.70539 -0.0487667    54.9897
+-0.0153454 -0.0536432   0.998442    1.04066
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 752151
+Point cloud associated with vertex <0,202>.
+Submap pointer saved for vertex <0,202>.
+Using previous submap for vertex <0,202>
+Submap pointer saved for vertex <0,202>.
+Vertex ID: <0,203>, Timestamp (nanoseconds): 1740691112553413888
+Distance from last submap: 0.400629 m
+Rotation from last submap: 311.745 degrees
+Creating new submap at vertex <0,203>
+Transformation Matrix:
+ -0.706715   0.706985  0.0269485     0.5167
+ -0.707325  -0.705184 -0.0490619    54.9896
+-0.0156823 -0.0537341   0.998432    1.05822
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 752429
+Point cloud associated with vertex <0,203>.
+Submap pointer saved for vertex <0,203>.
+Using previous submap for vertex <0,203>
+Submap pointer saved for vertex <0,203>.
+Vertex ID: <0,204>, Timestamp (nanoseconds): 1740691112753631744
+Distance from last submap: 0.399686 m
+Rotation from last submap: 311.567 degrees
+Creating new submap at vertex <0,204>
+Transformation Matrix:
+ -0.705927   0.707911  0.0230067  0.0568303
+ -0.708022  -0.704408  -0.050143    54.9886
+-0.0192907 -0.0516866   0.998477    1.12005
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 752895
+Point cloud associated with vertex <0,204>.
+Submap pointer saved for vertex <0,204>.
+Using previous submap for vertex <0,204>
+Submap pointer saved for vertex <0,204>.
+Vertex ID: <0,205>, Timestamp (nanoseconds): 1740691112962720000
+Distance from last submap: 0.421073 m
+Rotation from last submap: 0.171091 degrees
+Using previous submap for vertex <0,205>
+Submap pointer saved for vertex <0,205>.
+Vertex ID: <0,206>, Timestamp (nanoseconds): 1740691113162835712
+Distance from last submap: 0.823737 m
+Rotation from last submap: 0.404382 degrees
+Using previous submap for vertex <0,206>
+Submap pointer saved for vertex <0,206>.
+Vertex ID: <0,207>, Timestamp (nanoseconds): 1740691113363657472
+Distance from last submap: 1.22418 m
+Rotation from last submap: 3.12238 degrees
+Using previous submap for vertex <0,207>
+Submap pointer saved for vertex <0,207>.
+Vertex ID: <0,208>, Timestamp (nanoseconds): 1740691113572927488
+Distance from last submap: 1.63918 m
+Rotation from last submap: 5.72663 degrees
+Creating new submap at vertex <0,208>
+Transformation Matrix:
+ -0.772542   0.634891 0.00955114    3.87466
+ -0.634592  -0.771489 -0.0457929    54.8756
+-0.0217049  -0.041438   0.998905   0.810306
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 754627
+Point cloud associated with vertex <0,208>.
+Submap pointer saved for vertex <0,208>.
+Using previous submap for vertex <0,208>
+Submap pointer saved for vertex <0,208>.
+Vertex ID: <0,209>, Timestamp (nanoseconds): 1740691113773147136
+Distance from last submap: 0.39923 m
+Rotation from last submap: 0.16216 degrees
+Using previous submap for vertex <0,209>
+Submap pointer saved for vertex <0,209>.
+Vertex ID: <0,210>, Timestamp (nanoseconds): 1740691113973905664
+Distance from last submap: 0.799598 m
+Rotation from last submap: 0.263883 degrees
+Using previous submap for vertex <0,210>
+Submap pointer saved for vertex <0,210>.
+Vertex ID: <0,211>, Timestamp (nanoseconds): 1740691114183605760
+Distance from last submap: 1.21922 m
+Rotation from last submap: 0.315378 degrees
+Using previous submap for vertex <0,211>
+Submap pointer saved for vertex <0,211>.
+Vertex ID: <0,212>, Timestamp (nanoseconds): 1740691114383756800
+Distance from last submap: 1.61893 m
+Rotation from last submap: 0.343975 degrees
+Creating new submap at vertex <0,212>
+Transformation Matrix:
+ -0.772933   0.634334  0.0139276    2.28548
+ -0.634292  -0.771965 -0.0417512    54.8783
+-0.0157325  -0.041105   0.999031   0.573277
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 755444
+Point cloud associated with vertex <0,212>.
+Submap pointer saved for vertex <0,212>.
+Using previous submap for vertex <0,212>
+Submap pointer saved for vertex <0,212>.
+Vertex ID: <0,213>, Timestamp (nanoseconds): 1740691114584897792
+Distance from last submap: 0.400607 m
+Rotation from last submap: 311.695 degrees
+Creating new submap at vertex <0,213>
+Transformation Matrix:
+ -0.772703   0.634654  0.0120488    1.86651
+ -0.634535  -0.771764 -0.0417789    54.8789
+-0.0172163  -0.039928   0.999054   0.579401
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 755000
+Point cloud associated with vertex <0,213>.
+Submap pointer saved for vertex <0,213>.
+Using previous submap for vertex <0,213>
+Submap pointer saved for vertex <0,213>.
+Vertex ID: <0,214>, Timestamp (nanoseconds): 1740691114794796032
+Distance from last submap: 0.420678 m
+Rotation from last submap: 0.0397681 degrees
+Using previous submap for vertex <0,214>
+Submap pointer saved for vertex <0,214>.
+Vertex ID: <0,215>, Timestamp (nanoseconds): 1740691115004271616
+Distance from last submap: 0.840653 m
+Rotation from last submap: 311.572 degrees
+Creating new submap at vertex <0,215>
+Transformation Matrix:
+ -0.771552   0.636006  0.0142954   0.924641
+ -0.635945  -0.770497 -0.0436792    54.8791
+-0.0167657 -0.0427918   0.998943   0.681685
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 753532
+Point cloud associated with vertex <0,215>.
+Submap pointer saved for vertex <0,215>.
+Using previous submap for vertex <0,215>
+Submap pointer saved for vertex <0,215>.
+Vertex ID: <0,216>, Timestamp (nanoseconds): 1740691115204718592
+Distance from last submap: 0.396318 m
+Rotation from last submap: 311.475 degrees
+Creating new submap at vertex <0,216>
+Transformation Matrix:
+ -0.770838   0.636731  0.0195603   0.463667
+ -0.636871  -0.769592 -0.0460848    54.8771
+-0.0142901 -0.0479813   0.998746   0.811983
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 752692
+Point cloud associated with vertex <0,216>.
+Submap pointer saved for vertex <0,216>.
+Using previous submap for vertex <0,216>
+Submap pointer saved for vertex <0,216>.
+Vertex ID: <0,217>, Timestamp (nanoseconds): 1740691115405244160
+Distance from last submap: 0.40889 m
+Rotation from last submap: 311.381 degrees
+Creating new submap at vertex <0,217>
+Transformation Matrix:
+ -0.766584   0.641765  0.0220661  -0.311039
+ -0.641982  -0.765167 -0.0487769    54.8751
+ -0.014419 -0.0515576   0.998566   0.967433
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 751463
+Point cloud associated with vertex <0,217>.
+Submap pointer saved for vertex <0,217>.
+Using previous submap for vertex <0,217>
+Submap pointer saved for vertex <0,217>.
+Vertex ID: <0,218>, Timestamp (nanoseconds): 1740691115614432512
+Distance from last submap: 0.412353 m
+Rotation from last submap: 311.245 degrees
+Creating new submap at vertex <0,218>
+Transformation Matrix:
+ -0.760141   0.649236   0.026054   -1.27133
+ -0.649624  -0.758555 -0.0508205    54.8611
+-0.0132311  -0.055556   0.998368    1.09509
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 750168
+Point cloud associated with vertex <0,218>.
+Submap pointer saved for vertex <0,218>.
+Using previous submap for vertex <0,218>
+Submap pointer saved for vertex <0,218>.
+Vertex ID: <0,219>, Timestamp (nanoseconds): 1740691115814515456
+Distance from last submap: 0.403519 m
+Rotation from last submap: 0.974643 degrees
+Using previous submap for vertex <0,219>
+Submap pointer saved for vertex <0,219>.
+Vertex ID: <0,220>, Timestamp (nanoseconds): 1740691116014579968
+Distance from last submap: 0.806491 m
+Rotation from last submap: 2.59922 degrees
+Using previous submap for vertex <0,220>
+Submap pointer saved for vertex <0,220>.
+Vertex ID: <0,221>, Timestamp (nanoseconds): 1740691116224492032
+Distance from last submap: 1.21771 m
+Rotation from last submap: 6.38532 degrees
+Using previous submap for vertex <0,221>
+Submap pointer saved for vertex <0,221>.
+Vertex ID: <0,222>, Timestamp (nanoseconds): 1740691116425404160
+Distance from last submap: 1.63487 m
+Rotation from last submap: 10.6159 degrees
+Creating new submap at vertex <0,222>
+Transformation Matrix:
+  -0.62807   0.776889  0.0444129   -12.9284
+ -0.778147  -0.627329 -0.0307437    53.4784
+0.00397715  -0.053869    0.99854   0.433122
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 742057
+Point cloud associated with vertex <0,222>.
+Submap pointer saved for vertex <0,222>.
+Using previous submap for vertex <0,222>
+Submap pointer saved for vertex <0,222>.
+Vertex ID: <0,223>, Timestamp (nanoseconds): 1740691116635223808
+Distance from last submap: 0.421072 m
+Rotation from last submap: 4.19338 degrees
+Using previous submap for vertex <0,223>
+Submap pointer saved for vertex <0,223>.
+Vertex ID: <0,224>, Timestamp (nanoseconds): 1740691116845575168
+Distance from last submap: 0.843321 m
+Rotation from last submap: 4.29073 degrees
+Using previous submap for vertex <0,224>
+Submap pointer saved for vertex <0,224>.
+Vertex ID: <0,225>, Timestamp (nanoseconds): 1740691117055452416
+Distance from last submap: 1.26504 m
+Rotation from last submap: 4.54378 degrees
+Using previous submap for vertex <0,225>
+Submap pointer saved for vertex <0,225>.
+Vertex ID: <0,226>, Timestamp (nanoseconds): 1740691117255798016
+Distance from last submap: 1.66888 m
+Rotation from last submap: 4.78512 degrees
+Creating new submap at vertex <0,226>
+Transformation Matrix:
+ -0.569594   0.821905 0.00581496   -18.4493
+  -0.82175  -0.569312 -0.0247052    52.3539
+-0.0169948 -0.0188504   0.999678  -0.429051
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 727814
+Point cloud associated with vertex <0,226>.
+Submap pointer saved for vertex <0,226>.
+Using previous submap for vertex <0,226>
+Submap pointer saved for vertex <0,226>.
+Vertex ID: <0,227>, Timestamp (nanoseconds): 1740691117465779456
+Distance from last submap: 0.425299 m
+Rotation from last submap: 311.004 degrees
+Creating new submap at vertex <0,227>
+Transformation Matrix:
+  -0.570565    0.821199  -0.0094228    -18.7834
+  -0.820674   -0.570556  -0.0309799     52.3851
+ -0.0308169 -0.00994297    0.999476   -0.381619
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 724074
+Point cloud associated with vertex <0,227>.
+Submap pointer saved for vertex <0,227>.
+Using previous submap for vertex <0,227>
+Submap pointer saved for vertex <0,227>.
+Vertex ID: <0,228>, Timestamp (nanoseconds): 1740691117665965312
+Distance from last submap: 0.405188 m
+Rotation from last submap: 310.904 degrees
+Creating new submap at vertex <0,228>
+Transformation Matrix:
+ -0.567946   0.822673 -0.0254472   -19.3106
+ -0.821762  -0.568515 -0.0387082    52.3388
+-0.0463112 -0.0010726   0.998926  -0.287122
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 720664
+Point cloud associated with vertex <0,228>.
+Submap pointer saved for vertex <0,228>.
+Using previous submap for vertex <0,228>
+Submap pointer saved for vertex <0,228>.
+Vertex ID: <0,229>, Timestamp (nanoseconds): 1740691117866466560
+Distance from last submap: 0.405926 m
+Rotation from last submap: 311.118 degrees
+Creating new submap at vertex <0,229>
+Transformation Matrix:
+  -0.568216    0.822165   -0.034292    -19.6685
+  -0.820727   -0.569249  -0.0486056     52.3551
+ -0.0594825 0.000525954    0.998229   0.0601627
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 717343
+Point cloud associated with vertex <0,229>.
+Submap pointer saved for vertex <0,229>.
+Using previous submap for vertex <0,229>
+Submap pointer saved for vertex <0,229>.
+Vertex ID: <0,230>, Timestamp (nanoseconds): 1740691118076689920
+Distance from last submap: 0.420753 m
+Rotation from last submap: 311.163 degrees
+Creating new submap at vertex <0,230>
+Transformation Matrix:
+  -0.567837    0.822216  -0.0390285    -20.0951
+  -0.819872   -0.569167  -0.0621213     52.3449
+ -0.0732908 -0.00327637    0.997305     0.67226
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 713855
+Point cloud associated with vertex <0,230>.
+Submap pointer saved for vertex <0,230>.
+Using previous submap for vertex <0,230>
+Submap pointer saved for vertex <0,230>.
+Vertex ID: <0,231>, Timestamp (nanoseconds): 1740691118277491712
+Distance from last submap: 0.403812 m
+Rotation from last submap: 311.205 degrees
+Creating new submap at vertex <0,231>
+Transformation Matrix:
+ -0.569032   0.821459 -0.0375222   -20.4288
+ -0.818015  -0.570127 -0.0762027    52.3528
+-0.0839898  -0.012668   0.996386    1.44437
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 710602
+Point cloud associated with vertex <0,231>.
+Submap pointer saved for vertex <0,231>.
+Using previous submap for vertex <0,231>
+Submap pointer saved for vertex <0,231>.
+Vertex ID: <0,232>, Timestamp (nanoseconds): 1740691118486639616
+Distance from last submap: 0.413638 m
+Rotation from last submap: 310.709 degrees
+Creating new submap at vertex <0,232>
+Transformation Matrix:
+ -0.572409   0.819799 -0.0166731   -20.6964
+ -0.816118  -0.571571  -0.085192    52.3739
+-0.0793701 -0.0351574   0.996225    2.35056
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 707268
+Point cloud associated with vertex <0,232>.
+Submap pointer saved for vertex <0,232>.
+Using previous submap for vertex <0,232>
+Submap pointer saved for vertex <0,232>.
+Vertex ID: <0,233>, Timestamp (nanoseconds): 1740691118687782912
+Distance from last submap: 0.40006 m
+Rotation from last submap: 310.738 degrees
+Creating new submap at vertex <0,233>
+Transformation Matrix:
+ -0.574465   0.818525 0.00255954   -21.0068
+ -0.814855  -0.571588 -0.0964269    52.3516
+-0.0774648 -0.0574795   0.995337    3.34732
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 703751
+Point cloud associated with vertex <0,233>.
+Submap pointer saved for vertex <0,233>.
+Using previous submap for vertex <0,233>
+Submap pointer saved for vertex <0,233>.
+Vertex ID: <0,234>, Timestamp (nanoseconds): 1740691118897248256
+Distance from last submap: 0.405368 m
+Rotation from last submap: 1.53493 degrees
+Using previous submap for vertex <0,234>
+Submap pointer saved for vertex <0,234>.
+Vertex ID: <0,235>, Timestamp (nanoseconds): 1740691119098569728
+Distance from last submap: 0.801332 m
+Rotation from last submap: 2.57759 degrees
+Using previous submap for vertex <0,235>
+Submap pointer saved for vertex <0,235>.
+Vertex ID: <0,236>, Timestamp (nanoseconds): 1740691119307459584
+Distance from last submap: 1.2132 m
+Rotation from last submap: 3.1375 degrees
+Using previous submap for vertex <0,236>
+Submap pointer saved for vertex <0,236>.
+Vertex ID: <0,237>, Timestamp (nanoseconds): 1740691119517468928
+Distance from last submap: 1.59156 m
+Rotation from last submap: 5.32506 degrees
+Creating new submap at vertex <0,237>
+Transformation Matrix:
+ -0.630938   0.774445  0.0463983   -18.8439
+ -0.775637  -0.628303 -0.0601898    53.8773
+-0.0174615 -0.0739642   0.997108    2.29494
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 687768
+Point cloud associated with vertex <0,237>.
+Submap pointer saved for vertex <0,237>.
+Using previous submap for vertex <0,237>
+Submap pointer saved for vertex <0,237>.
+Vertex ID: <0,238>, Timestamp (nanoseconds): 1740691119717721600
+Distance from last submap: 0.390985 m
+Rotation from last submap: 6.21432 degrees
+Using previous submap for vertex <0,238>
+Submap pointer saved for vertex <0,238>.
+Vertex ID: <0,239>, Timestamp (nanoseconds): 1740691119918335488
+Distance from last submap: 0.790386 m
+Rotation from last submap: 14.4056 degrees
+Using previous submap for vertex <0,239>
+Submap pointer saved for vertex <0,239>.
+Vertex ID: <0,240>, Timestamp (nanoseconds): 1740691120127939584
+Distance from last submap: 1.21104 m
+Rotation from last submap: 24.3492 degrees
+Using previous submap for vertex <0,240>
+Submap pointer saved for vertex <0,240>.
+Vertex ID: <0,241>, Timestamp (nanoseconds): 1740691120328841984
+Distance from last submap: 1.61179 m
+Rotation from last submap: 33.2556 degrees
+Creating new submap at vertex <0,241>
+Transformation Matrix:
+  -0.952612    0.304176  0.00269702     12.2769
+   -0.30407   -0.951961  -0.0362228     56.1487
+-0.00845062  -0.0353263     0.99934    0.124649
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 674888
+Point cloud associated with vertex <0,241>.
+Submap pointer saved for vertex <0,241>.
+Using previous submap for vertex <0,241>
+Submap pointer saved for vertex <0,241>.
+Vertex ID: <0,242>, Timestamp (nanoseconds): 1740691120537927936
+Distance from last submap: 0.421309 m
+Rotation from last submap: 8.73382 degrees
+Using previous submap for vertex <0,242>
+Submap pointer saved for vertex <0,242>.
+Vertex ID: <0,243>, Timestamp (nanoseconds): 1740691120738242048
+Distance from last submap: 0.821504 m
+Rotation from last submap: 14.447 degrees
+Using previous submap for vertex <0,243>
+Submap pointer saved for vertex <0,243>.
+Vertex ID: <0,244>, Timestamp (nanoseconds): 1740691120939299072
+Distance from last submap: 1.21558 m
+Rotation from last submap: 19.4765 degrees
+Using previous submap for vertex <0,244>
+Submap pointer saved for vertex <0,244>.
+Vertex ID: <0,245>, Timestamp (nanoseconds): 1740691121149277184
+Distance from last submap: 1.6298 m
+Rotation from last submap: 24.9382 degrees
+Creating new submap at vertex <0,245>
+Transformation Matrix:
+  -0.992067    -0.12533 -0.00982005     33.2434
+    0.12548   -0.991959  -0.0164949     46.2532
+-0.00767379  -0.0175962    0.999816   -0.786898
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 669809
+Point cloud associated with vertex <0,245>.
+Submap pointer saved for vertex <0,245>.
+Using previous submap for vertex <0,245>
+Submap pointer saved for vertex <0,245>.
+Vertex ID: <0,246>, Timestamp (nanoseconds): 1740691121349796608
+Distance from last submap: 0.390567 m
+Rotation from last submap: 4.66184 degrees
+Using previous submap for vertex <0,246>
+Submap pointer saved for vertex <0,246>.
+Vertex ID: <0,247>, Timestamp (nanoseconds): 1740691121558469888
+Distance from last submap: 0.818762 m
+Rotation from last submap: 10.9958 degrees
+Using previous submap for vertex <0,247>
+Submap pointer saved for vertex <0,247>.
+Vertex ID: <0,248>, Timestamp (nanoseconds): 1740691121758860800
+Distance from last submap: 1.21461 m
+Rotation from last submap: 17.7863 degrees
+Using previous submap for vertex <0,248>
+Submap pointer saved for vertex <0,248>.
+Vertex ID: <0,249>, Timestamp (nanoseconds): 1740691121968299264
+Distance from last submap: 1.6305 m
+Rotation from last submap: 24.3953 degrees
+Creating new submap at vertex <0,249>
+Transformation Matrix:
+  -0.851622   -0.523441  -0.0273875     47.8437
+   0.523637   -0.851941 1.28161e-05     28.9462
+ -0.0233393  -0.0143302    0.999625   -0.538662
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 672086
+Point cloud associated with vertex <0,249>.
+Submap pointer saved for vertex <0,249>.
+Using previous submap for vertex <0,249>
+Submap pointer saved for vertex <0,249>.
+Vertex ID: <0,250>, Timestamp (nanoseconds): 1740691122169274880
+Distance from last submap: 0.396638 m
+Rotation from last submap: 3.81177 degrees
+Using previous submap for vertex <0,250>
+Submap pointer saved for vertex <0,250>.
+Vertex ID: <0,251>, Timestamp (nanoseconds): 1740691122378931712
+Distance from last submap: 0.814985 m
+Rotation from last submap: 4.84232 degrees
+Using previous submap for vertex <0,251>
+Submap pointer saved for vertex <0,251>.
+Vertex ID: <0,252>, Timestamp (nanoseconds): 1740691122588881664
+Distance from last submap: 1.23466 m
+Rotation from last submap: 5.01091 degrees
+Using previous submap for vertex <0,252>
+Submap pointer saved for vertex <0,252>.
+Vertex ID: <0,253>, Timestamp (nanoseconds): 1740691122789114112
+Distance from last submap: 1.63544 m
+Rotation from last submap: 5.76051 degrees
+Creating new submap at vertex <0,253>
+Transformation Matrix:
+ -0.795238  -0.604905 -0.0410586    48.8422
+    0.6049  -0.796179  0.0139702    24.1549
+-0.0411407 -0.0137267   0.999059  -0.126109
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 680230
+Point cloud associated with vertex <0,253>.
+Submap pointer saved for vertex <0,253>.
+Using previous submap for vertex <0,253>
+Submap pointer saved for vertex <0,253>.
+Vertex ID: <0,254>, Timestamp (nanoseconds): 1740691122989156608
+Distance from last submap: 0.391759 m
+Rotation from last submap: 1.61568 degrees
+Using previous submap for vertex <0,254>
+Submap pointer saved for vertex <0,254>.
+Vertex ID: <0,255>, Timestamp (nanoseconds): 1740691123189370112
+Distance from last submap: 0.795652 m
+Rotation from last submap: 5.08453 degrees
+Using previous submap for vertex <0,255>
+Submap pointer saved for vertex <0,255>.
+Vertex ID: <0,256>, Timestamp (nanoseconds): 1740691123389944832
+Distance from last submap: 1.19485 m
+Rotation from last submap: 9.55093 degrees
+Using previous submap for vertex <0,256>
+Submap pointer saved for vertex <0,256>.
+Vertex ID: <0,257>, Timestamp (nanoseconds): 1740691123600183296
+Distance from last submap: 1.61796 m
+Rotation from last submap: 13.981 degrees
+Creating new submap at vertex <0,257>
+Transformation Matrix:
+  -0.625641   -0.779097  -0.0397653      51.644
+   0.778282   -0.626851   0.0365255     11.9869
+ -0.0533838 -0.00809677    0.998541   -0.108718
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 688688
+Point cloud associated with vertex <0,257>.
+Submap pointer saved for vertex <0,257>.
+Using previous submap for vertex <0,257>
+Submap pointer saved for vertex <0,257>.
+Vertex ID: <0,258>, Timestamp (nanoseconds): 1740691123800224512
+Distance from last submap: 0.403888 m
+Rotation from last submap: 4.32499 degrees
+Using previous submap for vertex <0,258>
+Submap pointer saved for vertex <0,258>.
+Vertex ID: <0,259>, Timestamp (nanoseconds): 1740691124009508608
+Distance from last submap: 0.823621 m
+Rotation from last submap: 8.99714 degrees
+Using previous submap for vertex <0,259>
+Submap pointer saved for vertex <0,259>.
+Vertex ID: <0,260>, Timestamp (nanoseconds): 1740691124210291968
+Distance from last submap: 1.22601 m
+Rotation from last submap: 12.9638 degrees
+Using previous submap for vertex <0,260>
+Submap pointer saved for vertex <0,260>.
+Vertex ID: <0,261>, Timestamp (nanoseconds): 1740691124419690240
+Distance from last submap: 1.64388 m
+Rotation from last submap: 17.8793 degrees
+Creating new submap at vertex <0,261>
+Transformation Matrix:
+ -0.356233  -0.933833 -0.0324532    51.2342
+  0.932443  -0.357518  0.0522524   -4.04832
+-0.0603977 -0.0116468   0.998106   0.213294
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 700879
+Point cloud associated with vertex <0,261>.
+Submap pointer saved for vertex <0,261>.
+Using previous submap for vertex <0,261>
+Submap pointer saved for vertex <0,261>.
+Vertex ID: <0,262>, Timestamp (nanoseconds): 1740691124620423680
+Distance from last submap: 0.39961 m
+Rotation from last submap: 309.101 degrees
+Creating new submap at vertex <0,262>
+Transformation Matrix:
+ -0.283875  -0.958336 -0.0317437    50.3788
+  0.956981  -0.285235  0.0531857   -7.89401
+-0.0600242 -0.0152801    0.99808   0.374139
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 704308
+Point cloud associated with vertex <0,262>.
+Submap pointer saved for vertex <0,262>.
+Using previous submap for vertex <0,262>
+Submap pointer saved for vertex <0,262>.
+Vertex ID: <0,263>, Timestamp (nanoseconds): 1740691124830971136
+Distance from last submap: 0.420062 m
+Rotation from last submap: 1.46839 degrees
+Using previous submap for vertex <0,263>
+Submap pointer saved for vertex <0,263>.
+Vertex ID: <0,264>, Timestamp (nanoseconds): 1740691125040344320
+Distance from last submap: 0.841835 m
+Rotation from last submap: 310.49 degrees
+Creating new submap at vertex <0,264>
+Transformation Matrix:
+ -0.260535  -0.964387 -0.0455916    49.3278
+  0.963336  -0.262804  0.0540126   -9.05408
+-0.0640707 -0.0298479   0.997499    1.12784
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 712113
+Point cloud associated with vertex <0,264>.
+Submap pointer saved for vertex <0,264>.
+Using previous submap for vertex <0,264>
+Submap pointer saved for vertex <0,264>.
+Vertex ID: <0,265>, Timestamp (nanoseconds): 1740691125240578560
+Distance from last submap: 0.400629 m
+Rotation from last submap: 311.683 degrees
+Creating new submap at vertex <0,265>
+Transformation Matrix:
+ -0.260869  -0.964276 -0.0460339    48.9301
+  0.963353  -0.263111  0.0521873   -9.03825
+ -0.062435 -0.0307328   0.997576    1.13187
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 715781
+Point cloud associated with vertex <0,265>.
+Submap pointer saved for vertex <0,265>.
+Using previous submap for vertex <0,265>
+Submap pointer saved for vertex <0,265>.
+Vertex ID: <0,266>, Timestamp (nanoseconds): 1740691125450980864
+Distance from last submap: 0.418744 m
+Rotation from last submap: 311.599 degrees
+Creating new submap at vertex <0,266>
+Transformation Matrix:
+ -0.258991  -0.964779 -0.0460984    48.4935
+  0.964043  -0.261145  0.0492284   -9.13683
+ -0.059533 -0.0316912   0.997723    1.11299
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 719368
+Point cloud associated with vertex <0,266>.
+Submap pointer saved for vertex <0,266>.
+Using previous submap for vertex <0,266>
+Submap pointer saved for vertex <0,266>.
+Vertex ID: <0,267>, Timestamp (nanoseconds): 1740691125660938496
+Distance from last submap: 0.419912 m
+Rotation from last submap: 311.123 degrees
+Creating new submap at vertex <0,267>
+Transformation Matrix:
+  -0.24675  -0.967859 -0.0486076    47.9521
+   0.96743  -0.248945  0.0458868   -9.74236
+-0.0565126 -0.0357019   0.997763    1.22589
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 722850
+Point cloud associated with vertex <0,267>.
+Submap pointer saved for vertex <0,267>.
+Using previous submap for vertex <0,267>
+Submap pointer saved for vertex <0,267>.
+Vertex ID: <0,268>, Timestamp (nanoseconds): 1740691125870494464
+Distance from last submap: 0.424017 m
+Rotation from last submap: 310.395 degrees
+Creating new submap at vertex <0,268>
+Transformation Matrix:
+ -0.211813  -0.976217 -0.0462023    47.1478
+  0.975943   -0.21378  0.0428085   -11.4463
+-0.0516675 -0.0360234   0.998014    1.13461
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 726239
+Point cloud associated with vertex <0,268>.
+Submap pointer saved for vertex <0,268>.
+Using previous submap for vertex <0,268>
+Submap pointer saved for vertex <0,268>.
+Vertex ID: <0,269>, Timestamp (nanoseconds): 1740691126071780864
+Distance from last submap: 0.391579 m
+Rotation from last submap: 309.618 degrees
+Creating new submap at vertex <0,269>
+Transformation Matrix:
+ -0.152416   -0.98737 -0.0432376    45.9797
+  0.987182   -0.15419  0.0411927   -14.2446
+-0.0473393  -0.036405   0.998215    1.05975
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 729223
+Point cloud associated with vertex <0,269>.
+Submap pointer saved for vertex <0,269>.
+Using previous submap for vertex <0,269>
+Submap pointer saved for vertex <0,269>.
+Vertex ID: <0,270>, Timestamp (nanoseconds): 1740691126281229312
+Distance from last submap: 0.429103 m
+Rotation from last submap: 309.054 degrees
+Creating new submap at vertex <0,270>
+Transformation Matrix:
+-0.0766028   -0.99632 -0.0384476    44.3316
+  0.996143 -0.0781306  0.0399442   -17.6756
+-0.0428012 -0.0352395   0.998462   0.912781
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 732572
+Point cloud associated with vertex <0,270>.
+Submap pointer saved for vertex <0,270>.
+Using previous submap for vertex <0,270>
+Submap pointer saved for vertex <0,270>.
+Vertex ID: <0,271>, Timestamp (nanoseconds): 1740691126490683392
+Distance from last submap: 0.41841 m
+Rotation from last submap: 309.255 degrees
+Creating new submap at vertex <0,271>
+Transformation Matrix:
+  -0.002739   -0.999337  -0.0362933     42.4875
+   0.999154 -0.00422436   0.0409135    -20.8581
+ -0.0410397  -0.0361505    0.998503    0.914415
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 735719
+Point cloud associated with vertex <0,271>.
+Submap pointer saved for vertex <0,271>.
+Using previous submap for vertex <0,271>
+Submap pointer saved for vertex <0,271>.
+Vertex ID: <0,272>, Timestamp (nanoseconds): 1740691126692603648
+Distance from last submap: 0.403278 m
+Rotation from last submap: 310.151 degrees
+Creating new submap at vertex <0,272>
+Transformation Matrix:
+ 0.0451781  -0.998385 -0.0344352    41.0358
+   0.99818  0.0437366  0.0415252   -22.8479
+-0.0399521 -0.0362486   0.998544   0.895413
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 738928
+Point cloud associated with vertex <0,272>.
+Submap pointer saved for vertex <0,272>.
+Using previous submap for vertex <0,272>
+Submap pointer saved for vertex <0,272>.
+Vertex ID: <0,273>, Timestamp (nanoseconds): 1740691126901290496
+Distance from last submap: 0.417612 m
+Rotation from last submap: 310.253 degrees
+Creating new submap at vertex <0,273>
+Transformation Matrix:
+ 0.0901296  -0.995394 -0.0326763    39.5473
+  0.995162  0.0887231  0.0422057   -24.6504
+-0.0391121 -0.0363222   0.998574   0.880571
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 742176
+Point cloud associated with vertex <0,273>.
+Submap pointer saved for vertex <0,273>.
+Using previous submap for vertex <0,273>
+Submap pointer saved for vertex <0,273>.
+Vertex ID: <0,274>, Timestamp (nanoseconds): 1740691127101441792
+Distance from last submap: 0.399899 m
+Rotation from last submap: 0.379765 degrees
+Using previous submap for vertex <0,274>
+Submap pointer saved for vertex <0,274>.
+Vertex ID: <0,275>, Timestamp (nanoseconds): 1740691127302349312
+Distance from last submap: 0.801116 m
+Rotation from last submap: 0.331445 degrees
+Using previous submap for vertex <0,275>
+Submap pointer saved for vertex <0,275>.
+Vertex ID: <0,276>, Timestamp (nanoseconds): 1740691127512914944
+Distance from last submap: 1.21976 m
+Rotation from last submap: 0.353948 degrees
+Using previous submap for vertex <0,276>
+Submap pointer saved for vertex <0,276>.
+Vertex ID: <0,277>, Timestamp (nanoseconds): 1740691127722818816
+Distance from last submap: 1.64085 m
+Rotation from last submap: 0.270132 degrees
+Creating new submap at vertex <0,277>
+Transformation Matrix:
+ 0.0945357  -0.995029 -0.0313085    37.7967
+  0.994713   0.093145  0.0432453   -24.8253
+-0.0401141 -0.0352312   0.998574   0.857547
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 753947
+Point cloud associated with vertex <0,277>.
+Submap pointer saved for vertex <0,277>.
+Using previous submap for vertex <0,277>
+Submap pointer saved for vertex <0,277>.
+Vertex ID: <0,278>, Timestamp (nanoseconds): 1740691127932058880
+Distance from last submap: 0.417819 m
+Rotation from last submap: 0.133705 degrees
+Using previous submap for vertex <0,278>
+Submap pointer saved for vertex <0,278>.
+Vertex ID: <0,279>, Timestamp (nanoseconds): 1740691128132180224
+Distance from last submap: 0.8199 m
+Rotation from last submap: 0.0994559 degrees
+Using previous submap for vertex <0,279>
+Submap pointer saved for vertex <0,279>.
+Vertex ID: <0,280>, Timestamp (nanoseconds): 1740691128333163008
+Distance from last submap: 1.21803 m
+Rotation from last submap: 0.10305 degrees
+Using previous submap for vertex <0,280>
+Submap pointer saved for vertex <0,280>.
+Vertex ID: <0,281>, Timestamp (nanoseconds): 1740691128542585600
+Distance from last submap: 1.63788 m
+Rotation from last submap: 0.134668 degrees
+Creating new submap at vertex <0,281>
+Transformation Matrix:
+ 0.0965808  -0.994863  -0.030337    36.1076
+  0.994488  0.0952053  0.0439167   -24.9015
+-0.0408028 -0.0344114   0.998574    0.84263
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 764553
+Point cloud associated with vertex <0,281>.
+Submap pointer saved for vertex <0,281>.
+Using previous submap for vertex <0,281>
+Submap pointer saved for vertex <0,281>.
+Vertex ID: <0,282>, Timestamp (nanoseconds): 1740691128753279232
+Distance from last submap: 0.41906 m
+Rotation from last submap: 0.376775 degrees
+Using previous submap for vertex <0,282>
+Submap pointer saved for vertex <0,282>.
+Vertex ID: <0,283>, Timestamp (nanoseconds): 1740691128962453248
+Distance from last submap: 0.83809 m
+Rotation from last submap: 0.465548 degrees
+Using previous submap for vertex <0,283>
+Submap pointer saved for vertex <0,283>.
+Vertex ID: <0,284>, Timestamp (nanoseconds): 1740691129164480512
+Distance from last submap: 1.24279 m
+Rotation from last submap: 310.512 degrees
+Creating new submap at vertex <0,284>
+Transformation Matrix:
+  0.132431  -0.990719 -0.0306217    33.9427
+  0.990368   0.130999  0.0448292   -26.1584
+-0.0404018 -0.0362635   0.998525   0.903631
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 774624
+Point cloud associated with vertex <0,284>.
+Submap pointer saved for vertex <0,284>.
+Using previous submap for vertex <0,284>
+Submap pointer saved for vertex <0,284>.
+Vertex ID: <0,285>, Timestamp (nanoseconds): 1740691129372663552
+Distance from last submap: 0.418689 m
+Rotation from last submap: 5.90967 degrees
+Using previous submap for vertex <0,285>
+Submap pointer saved for vertex <0,285>.
+Vertex ID: <0,286>, Timestamp (nanoseconds): 1740691129574132480
+Distance from last submap: 0.821751 m
+Rotation from last submap: 7.56037 degrees
+Using previous submap for vertex <0,286>
+Submap pointer saved for vertex <0,286>.
+Vertex ID: <0,287>, Timestamp (nanoseconds): 1740691129784501248
+Distance from last submap: 1.23829 m
+Rotation from last submap: 7.61285 degrees
+Using previous submap for vertex <0,287>
+Submap pointer saved for vertex <0,287>.
+Vertex ID: <0,288>, Timestamp (nanoseconds): 1740691129993955584
+Distance from last submap: 1.6568 m
+Rotation from last submap: 7.58515 degrees
+Creating new submap at vertex <0,288>
+Transformation Matrix:
+  0.261938  -0.964807 -0.0231601     28.541
+  0.964184   0.260582  0.0494508   -30.3008
+-0.0416753 -0.0352837   0.998508   0.896112
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 788109
+Point cloud associated with vertex <0,288>.
+Submap pointer saved for vertex <0,288>.
+Using previous submap for vertex <0,288>
+Submap pointer saved for vertex <0,288>.
+Vertex ID: <0,289>, Timestamp (nanoseconds): 1740691130203842048
+Distance from last submap: 0.419453 m
+Rotation from last submap: 0.0452557 degrees
+Using previous submap for vertex <0,289>
+Submap pointer saved for vertex <0,289>.
+Vertex ID: <0,290>, Timestamp (nanoseconds): 1740691130413594112
+Distance from last submap: 0.839672 m
+Rotation from last submap: 0.055161 degrees
+Using previous submap for vertex <0,290>
+Submap pointer saved for vertex <0,290>.
+Vertex ID: <0,291>, Timestamp (nanoseconds): 1740691130614375424
+Distance from last submap: 1.2397 m
+Rotation from last submap: 0.0735204 degrees
+Using previous submap for vertex <0,291>
+Submap pointer saved for vertex <0,291>.
+Vertex ID: <0,292>, Timestamp (nanoseconds): 1740691130824437504
+Distance from last submap: 1.65819 m
+Rotation from last submap: 0.140313 degrees
+Creating new submap at vertex <0,292>
+Transformation Matrix:
+   0.26309  -0.964453  -0.024767    26.8472
+  0.963831   0.261614  0.0508771   -30.3294
+-0.0425892 -0.0372565   0.998398   0.984172
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 800330
+Point cloud associated with vertex <0,292>.
+Submap pointer saved for vertex <0,292>.
+Using previous submap for vertex <0,292>
+Submap pointer saved for vertex <0,292>.
+Vertex ID: <0,293>, Timestamp (nanoseconds): 1740691131024833792
+Distance from last submap: 0.399827 m
+Rotation from last submap: 0.0357283 degrees
+Using previous submap for vertex <0,293>
+Submap pointer saved for vertex <0,293>.
+Vertex ID: <0,294>, Timestamp (nanoseconds): 1740691131225895424
+Distance from last submap: 0.79902 m
+Rotation from last submap: 0.0246723 degrees
+Using previous submap for vertex <0,294>
+Submap pointer saved for vertex <0,294>.
+Vertex ID: <0,295>, Timestamp (nanoseconds): 1740691131435011840
+Distance from last submap: 1.21896 m
+Rotation from last submap: 0.0257346 degrees
+Using previous submap for vertex <0,295>
+Submap pointer saved for vertex <0,295>.
+Vertex ID: <0,296>, Timestamp (nanoseconds): 1740691131644438784
+Distance from last submap: 1.63765 m
+Rotation from last submap: 311.728 degrees
+Creating new submap at vertex <0,296>
+Transformation Matrix:
+  0.263745  -0.964265   -0.02515    25.1891
+  0.963664   0.262257  0.0507322   -30.3457
+-0.0423235 -0.0376165   0.998396   0.990194
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 811321
+Point cloud associated with vertex <0,296>.
+Submap pointer saved for vertex <0,296>.
+Using previous submap for vertex <0,296>
+Submap pointer saved for vertex <0,296>.
+Vertex ID: <0,297>, Timestamp (nanoseconds): 1740691131854380032
+Distance from last submap: 0.419863 m
+Rotation from last submap: 0.0733062 degrees
+Using previous submap for vertex <0,297>
+Submap pointer saved for vertex <0,297>.
+Vertex ID: <0,298>, Timestamp (nanoseconds): 1740691132054829568
+Distance from last submap: 0.819857 m
+Rotation from last submap: 0.128487 degrees
+Using previous submap for vertex <0,298>
+Submap pointer saved for vertex <0,298>.
+Vertex ID: <0,299>, Timestamp (nanoseconds): 1740691132255268608
+Distance from last submap: 1.22009 m
+Rotation from last submap: 0.214464 degrees
+Using previous submap for vertex <0,299>
+Submap pointer saved for vertex <0,299>.
+Vertex ID: <0,300>, Timestamp (nanoseconds): 1740691132455384320
+Distance from last submap: 1.6203 m
+Rotation from last submap: 0.265843 degrees
+Creating new submap at vertex <0,300>
+Transformation Matrix:
+  0.264917  -0.963821 -0.0294662     23.533
+  0.963344   0.263199  0.0519125   -30.3699
+-0.0422789 -0.0421386   0.998217    1.13139
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 820127
+Point cloud associated with vertex <0,300>.
+Submap pointer saved for vertex <0,300>.
+Using previous submap for vertex <0,300>
+Submap pointer saved for vertex <0,300>.
+Vertex ID: <0,301>, Timestamp (nanoseconds): 1740691132664712960
+Distance from last submap: 0.418791 m
+Rotation from last submap: 0.193668 degrees
+Using previous submap for vertex <0,301>
+Submap pointer saved for vertex <0,301>.
+Vertex ID: <0,302>, Timestamp (nanoseconds): 1740691132865368576
+Distance from last submap: 0.82191 m
+Rotation from last submap: 0.326657 degrees
+Using previous submap for vertex <0,302>
+Submap pointer saved for vertex <0,302>.
+Vertex ID: <0,303>, Timestamp (nanoseconds): 1740691133066564608
+Distance from last submap: 1.19992 m
+Rotation from last submap: 1.70422 degrees
+Using previous submap for vertex <0,303>
+Submap pointer saved for vertex <0,303>.
+Vertex ID: <0,304>, Timestamp (nanoseconds): 1740691133276118016
+Distance from last submap: 1.59202 m
+Rotation from last submap: 5.61008 degrees
+Creating new submap at vertex <0,304>
+Transformation Matrix:
+  0.170656  -0.984279 -0.0455087    24.7689
+  0.984369   0.168267  0.0519968   -28.0815
+-0.0435218 -0.0536709    0.99761    1.50615
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 827618
+Point cloud associated with vertex <0,304>.
+Submap pointer saved for vertex <0,304>.
+Using previous submap for vertex <0,304>
+Submap pointer saved for vertex <0,304>.
+Vertex ID: <0,305>, Timestamp (nanoseconds): 1740691133485902592
+Distance from last submap: 0.445461 m
+Rotation from last submap: 4.77021 degrees
+Using previous submap for vertex <0,305>
+Submap pointer saved for vertex <0,305>.
+Vertex ID: <0,306>, Timestamp (nanoseconds): 1740691133695986176
+Distance from last submap: 0.901855 m
+Rotation from last submap: 303.878 degrees
+Creating new submap at vertex <0,306>
+Transformation Matrix:
+-0.0642297  -0.995896 -0.0637699    29.7589
+   0.99706 -0.0667177  0.0376825   -21.6829
+-0.0417824 -0.0611621   0.997253     1.6809
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 831556
+Point cloud associated with vertex <0,306>.
+Submap pointer saved for vertex <0,306>.
+Using previous submap for vertex <0,306>
+Submap pointer saved for vertex <0,306>.
+Vertex ID: <0,307>, Timestamp (nanoseconds): 1740691133906329088
+Distance from last submap: 0.428253 m
+Rotation from last submap: 303.878 degrees
+Creating new submap at vertex <0,307>
+Transformation Matrix:
+ -0.300421  -0.950962 -0.0736072    33.6752
+  0.952912  -0.302586  0.0200159     -14.11
+-0.0413069  -0.064128   0.997086    1.75248
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 833179
+Point cloud associated with vertex <0,307>.
+Submap pointer saved for vertex <0,307>.
+Using previous submap for vertex <0,307>
+Submap pointer saved for vertex <0,307>.
+Vertex ID: <0,308>, Timestamp (nanoseconds): 1740691134106795008
+Distance from last submap: 0.414092 m
+Rotation from last submap: 303.745 degrees
+Creating new submap at vertex <0,308>
+Transformation Matrix:
+   -0.522507    -0.849007   -0.0785678       35.708
+    0.851653    -0.524105 -0.000331932     -5.68763
+   -0.040896    -0.067086     0.996909      1.82466
+           0            0            0            1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 834411
+Point cloud associated with vertex <0,308>.
+Submap pointer saved for vertex <0,308>.
+Using previous submap for vertex <0,308>
+Submap pointer saved for vertex <0,308>.
+Vertex ID: <0,309>, Timestamp (nanoseconds): 1740691134316194304
+Distance from last submap: 0.417204 m
+Rotation from last submap: 304.436 degrees
+Creating new submap at vertex <0,309>
+Transformation Matrix:
+ -0.697141  -0.712735 -0.0774839    35.6967
+  0.715873  -0.697909 -0.0211639    2.14714
+-0.0389925 -0.0702229   0.996769    1.86606
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 835399
+Point cloud associated with vertex <0,309>.
+Submap pointer saved for vertex <0,309>.
+Using previous submap for vertex <0,309>
+Submap pointer saved for vertex <0,309>.
+Vertex ID: <0,310>, Timestamp (nanoseconds): 1740691134526027776
+Distance from last submap: 0.395758 m
+Rotation from last submap: 308.47 degrees
+Creating new submap at vertex <0,310>
+Transformation Matrix:
+  -0.76316  -0.642093  -0.072818    34.9409
+  0.645191  -0.763428 -0.0301017    5.49422
+-0.0362633 -0.0699539   0.996891    1.79506
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 835997
+Point cloud associated with vertex <0,310>.
+Submap pointer saved for vertex <0,310>.
+Using previous submap for vertex <0,310>
+Submap pointer saved for vertex <0,310>.
+Vertex ID: <0,311>, Timestamp (nanoseconds): 1740691134726128640
+Distance from last submap: 0.402923 m
+Rotation from last submap: 311.564 degrees
+Creating new submap at vertex <0,311>
+Transformation Matrix:
+ -0.763354  -0.642248 -0.0693348    34.5434
+   0.64519  -0.763323 -0.0326806    5.49321
+-0.0319357  -0.069681   0.997058    1.68796
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 836220
+Point cloud associated with vertex <0,311>.
+Submap pointer saved for vertex <0,311>.
+Using previous submap for vertex <0,311>
+Submap pointer saved for vertex <0,311>.
+Vertex ID: <0,312>, Timestamp (nanoseconds): 1740691134926319104
+Distance from last submap: 0.399998 m
+Rotation from last submap: 311.646 degrees
+Creating new submap at vertex <0,312>
+Transformation Matrix:
+ -0.763589  -0.642163 -0.0675183    34.1449
+  0.645029  -0.763387 -0.0343325     5.4995
+-0.0294955 -0.0697672   0.997127    1.63449
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 836435
+Point cloud associated with vertex <0,312>.
+Submap pointer saved for vertex <0,312>.
+Using previous submap for vertex <0,312>
+Submap pointer saved for vertex <0,312>.
+Vertex ID: <0,313>, Timestamp (nanoseconds): 1740691135127621888
+Distance from last submap: 0.400951 m
+Rotation from last submap: 311.618 degrees
+Creating new submap at vertex <0,313>
+Transformation Matrix:
+ -0.763229  -0.642829 -0.0652079    33.7513
+  0.645576  -0.762853 -0.0358677    5.47447
+-0.0266873  -0.069472   0.997227    1.56415
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 836376
+Point cloud associated with vertex <0,313>.
+Submap pointer saved for vertex <0,313>.
+Using previous submap for vertex <0,313>
+Submap pointer saved for vertex <0,313>.
+Vertex ID: <0,314>, Timestamp (nanoseconds): 1740691135337544960
+Distance from last submap: 0.422953 m
+Rotation from last submap: 311.682 degrees
+Creating new submap at vertex <0,314>
+Transformation Matrix:
+ -0.763691  -0.642149 -0.0664853    33.3221
+  0.645003  -0.763309  -0.036479    5.49913
+-0.0273238  -0.070742    0.99712    1.61145
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 836235
+Point cloud associated with vertex <0,314>.
+Submap pointer saved for vertex <0,314>.
+Using previous submap for vertex <0,314>
+Submap pointer saved for vertex <0,314>.
+Vertex ID: <0,315>, Timestamp (nanoseconds): 1740691135547079680
+Distance from last submap: 0.419943 m
+Rotation from last submap: 311.703 degrees
+Creating new submap at vertex <0,315>
+Transformation Matrix:
+ -0.763345  -0.642563 -0.0664673    32.9051
+  0.645453  -0.762861 -0.0378657    5.47886
+-0.0263743 -0.0718061    0.99707    1.61778
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 835974
+Point cloud associated with vertex <0,315>.
+Submap pointer saved for vertex <0,315>.
+Using previous submap for vertex <0,315>
+Submap pointer saved for vertex <0,315>.
+Vertex ID: <0,316>, Timestamp (nanoseconds): 1740691135748022528
+Distance from last submap: 0.401764 m
+Rotation from last submap: 0.109092 degrees
+Using previous submap for vertex <0,316>
+Submap pointer saved for vertex <0,316>.
+Vertex ID: <0,317>, Timestamp (nanoseconds): 1740691135957168896
+Distance from last submap: 0.8203 m
+Rotation from last submap: 0.30771 degrees
+Using previous submap for vertex <0,317>
+Submap pointer saved for vertex <0,317>.
+Vertex ID: <0,318>, Timestamp (nanoseconds): 1740691136158475520
+Distance from last submap: 1.22113 m
+Rotation from last submap: 0.48342 degrees
+Using previous submap for vertex <0,318>
+Submap pointer saved for vertex <0,318>.
+Vertex ID: <0,319>, Timestamp (nanoseconds): 1740691136368838912
+Distance from last submap: 1.63094 m
+Rotation from last submap: 3.59187 degrees
+Creating new submap at vertex <0,319>
+Transformation Matrix:
+ -0.801981  -0.594444 -0.0588539    30.8833
+  0.596732  -0.801733 -0.0336824    7.40781
+-0.0271628 -0.0621327   0.997698    1.39076
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 838375
+Point cloud associated with vertex <0,319>.
+Submap pointer saved for vertex <0,319>.
+Using previous submap for vertex <0,319>
+Submap pointer saved for vertex <0,319>.
+Vertex ID: <0,320>, Timestamp (nanoseconds): 1740691136578259456
+Distance from last submap: 0.409777 m
+Rotation from last submap: 8.9968 degrees
+Using previous submap for vertex <0,320>
+Submap pointer saved for vertex <0,320>.
+Vertex ID: <0,321>, Timestamp (nanoseconds): 1740691136778509056
+Distance from last submap: 0.807021 m
+Rotation from last submap: 10.9643 degrees
+Using previous submap for vertex <0,321>
+Submap pointer saved for vertex <0,321>.
+Vertex ID: <0,322>, Timestamp (nanoseconds): 1740691136988017152
+Distance from last submap: 1.22212 m
+Rotation from last submap: 11.0472 degrees
+Using previous submap for vertex <0,322>
+Submap pointer saved for vertex <0,322>.
+Vertex ID: <0,323>, Timestamp (nanoseconds): 1740691137188455424
+Distance from last submap: 1.61934 m
+Rotation from last submap: 11.0322 degrees
+Creating new submap at vertex <0,323>
+Transformation Matrix:
+ -0.901239  -0.431279 -0.0420308    27.3021
+  0.432554  -0.901172 -0.0280231    13.0521
+-0.0257912 -0.0434361   0.998723   0.911323
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 837018
+Point cloud associated with vertex <0,323>.
+Submap pointer saved for vertex <0,323>.
+Using previous submap for vertex <0,323>
+Submap pointer saved for vertex <0,323>.
+Vertex ID: <0,324>, Timestamp (nanoseconds): 1740691137388692224
+Distance from last submap: 0.399305 m
+Rotation from last submap: 0.287805 degrees
+Using previous submap for vertex <0,324>
+Submap pointer saved for vertex <0,324>.
+Vertex ID: <0,325>, Timestamp (nanoseconds): 1740691137598687488
+Distance from last submap: 0.820486 m
+Rotation from last submap: 0.581607 degrees
+Using previous submap for vertex <0,325>
+Submap pointer saved for vertex <0,325>.
+Vertex ID: <0,326>, Timestamp (nanoseconds): 1740691137809251840
+Distance from last submap: 1.22872 m
+Rotation from last submap: 1.37842 degrees
+Using previous submap for vertex <0,326>
+Submap pointer saved for vertex <0,326>.
+Vertex ID: <0,327>, Timestamp (nanoseconds): 1740691138009274112
+Distance from last submap: 1.62833 m
+Rotation from last submap: 1.5499 degrees
+Creating new submap at vertex <0,327>
+Transformation Matrix:
+ -0.892879  -0.449024 -0.0338367    25.9289
+  0.449578  -0.893177 -0.0106562    12.5649
+-0.0254373  -0.024727   0.999371   0.469401
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 830353
+Point cloud associated with vertex <0,327>.
+Submap pointer saved for vertex <0,327>.
+Using previous submap for vertex <0,327>
+Submap pointer saved for vertex <0,327>.
+Vertex ID: <0,328>, Timestamp (nanoseconds): 1740691138218347008
+Distance from last submap: 0.42 m
+Rotation from last submap: 0.220991 degrees
+Using previous submap for vertex <0,328>
+Submap pointer saved for vertex <0,328>.
+Vertex ID: <0,329>, Timestamp (nanoseconds): 1740691138418433024
+Distance from last submap: 0.825081 m
+Rotation from last submap: 0.5799 degrees
+Using previous submap for vertex <0,329>
+Submap pointer saved for vertex <0,329>.
+Vertex ID: <0,330>, Timestamp (nanoseconds): 1740691138618560512
+Distance from last submap: 1.24727 m
+Rotation from last submap: 2.12614 degrees
+Using previous submap for vertex <0,330>
+Submap pointer saved for vertex <0,330>.
+Vertex ID: <0,331>, Timestamp (nanoseconds): 1740691138829094656
+Distance from last submap: 1.66545 m
+Rotation from last submap: 2.20018 degrees
+Creating new submap at vertex <0,331>
+Transformation Matrix:
+ -0.876112  -0.481111 -0.0309792    24.7025
+   0.48126  -0.876573 0.00293613    11.6533
+-0.0285681 -0.0123367   0.999516   0.245625
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 818329
+Point cloud associated with vertex <0,331>.
+Submap pointer saved for vertex <0,331>.
+Using previous submap for vertex <0,331>
+Submap pointer saved for vertex <0,331>.
+Vertex ID: <0,332>, Timestamp (nanoseconds): 1740691139039362304
+Distance from last submap: 0.423205 m
+Rotation from last submap: 0.242461 degrees
+Using previous submap for vertex <0,332>
+Submap pointer saved for vertex <0,332>.
+Vertex ID: <0,333>, Timestamp (nanoseconds): 1740691139239557376
+Distance from last submap: 0.820383 m
+Rotation from last submap: 0.360126 degrees
+Using previous submap for vertex <0,333>
+Submap pointer saved for vertex <0,333>.
+Vertex ID: <0,334>, Timestamp (nanoseconds): 1740691139449797376
+Distance from last submap: 1.24042 m
+Rotation from last submap: 0.44445 degrees
+Using previous submap for vertex <0,334>
+Submap pointer saved for vertex <0,334>.
+Vertex ID: <0,335>, Timestamp (nanoseconds): 1740691139659605248
+Distance from last submap: 1.65765 m
+Rotation from last submap: 0.602868 degrees
+Creating new submap at vertex <0,335>
+Transformation Matrix:
+ -0.876341  -0.480917 -0.0273172    23.0425
+   0.48075  -0.876764  0.0127844    11.6659
+ -0.030099 -0.0019293   0.999545  0.0460856
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 799441
+Point cloud associated with vertex <0,335>.
+Submap pointer saved for vertex <0,335>.
+Using previous submap for vertex <0,335>
+Submap pointer saved for vertex <0,335>.
+Vertex ID: <0,336>, Timestamp (nanoseconds): 1740691139859612928
+Distance from last submap: 0.399572 m
+Rotation from last submap: 0.171556 degrees
+Using previous submap for vertex <0,336>
+Submap pointer saved for vertex <0,336>.
+Vertex ID: <0,337>, Timestamp (nanoseconds): 1740691140060281344
+Distance from last submap: 0.796764 m
+Rotation from last submap: 0.263938 degrees
+Using previous submap for vertex <0,337>
+Submap pointer saved for vertex <0,337>.
+Vertex ID: <0,338>, Timestamp (nanoseconds): 1740691140269636608
+Distance from last submap: 1.21513 m
+Rotation from last submap: 0.487277 degrees
+Using previous submap for vertex <0,338>
+Submap pointer saved for vertex <0,338>.
+Vertex ID: <0,339>, Timestamp (nanoseconds): 1740691140469763584
+Distance from last submap: 1.61565 m
+Rotation from last submap: 0.775065 degrees
+Creating new submap at vertex <0,339>
+Transformation Matrix:
+ -0.876507  -0.481174 -0.0143945    21.4292
+  0.480944  -0.876591  0.0167751    11.6604
+-0.0206898 0.00778051   0.999756  -0.284787
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 774194
+Point cloud associated with vertex <0,339>.
+Submap pointer saved for vertex <0,339>.
+Using previous submap for vertex <0,339>
+Submap pointer saved for vertex <0,339>.
+Vertex ID: <0,340>, Timestamp (nanoseconds): 1740691140670446080
+Distance from last submap: 0.396414 m
+Rotation from last submap: 0.0485629 degrees
+Using previous submap for vertex <0,340>
+Submap pointer saved for vertex <0,340>.
+Vertex ID: <0,341>, Timestamp (nanoseconds): 1740691140880180224
+Distance from last submap: 0.816394 m
+Rotation from last submap: 311.62 degrees
+Creating new submap at vertex <0,341>
+Transformation Matrix:
+ -0.876473  -0.481284 -0.0126834    20.6139
+  0.481118  -0.876542  0.0141274    11.6576
+-0.0179168 0.00628009    0.99982   -0.29012
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 760470
+Point cloud associated with vertex <0,341>.
+Submap pointer saved for vertex <0,341>.
+Using previous submap for vertex <0,341>
+Submap pointer saved for vertex <0,341>.
+Vertex ID: <0,342>, Timestamp (nanoseconds): 1740691141081116672
+Distance from last submap: 0.394364 m
+Rotation from last submap: 311.582 degrees
+Creating new submap at vertex <0,342>
+Transformation Matrix:
+  -0.876139    -0.48197 -0.00921325     20.2279
+   0.481848   -0.876162   0.0127325     11.6413
+  -0.014209  0.00671601    0.999876   -0.344164
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 754279
+Point cloud associated with vertex <0,342>.
+Submap pointer saved for vertex <0,342>.
+Using previous submap for vertex <0,342>
+Submap pointer saved for vertex <0,342>.
+Vertex ID: <0,343>, Timestamp (nanoseconds): 1740691141291577856
+Distance from last submap: 0.420159 m
+Rotation from last submap: 311.553 degrees
+Creating new submap at vertex <0,343>
+Transformation Matrix:
+  -0.875983   -0.482297 -0.00658464     19.8114
+   0.482234   -0.875994  0.00920215     11.6346
+ -0.0102063  0.00488559    0.999936   -0.355319
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 747317
+Point cloud associated with vertex <0,343>.
+Submap pointer saved for vertex <0,343>.
+Using previous submap for vertex <0,343>
+Submap pointer saved for vertex <0,343>.
+Vertex ID: <0,344>, Timestamp (nanoseconds): 1740691141500769792
+Distance from last submap: 0.417649 m
+Rotation from last submap: 311.615 degrees
+Creating new submap at vertex <0,344>
+Transformation Matrix:
+  -0.875673   -0.482877 -0.00519967      19.401
+   0.482843   -0.875682   0.0065958     11.6218
+-0.00773822  0.00326513    0.999965    -0.35173
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 740769
+Point cloud associated with vertex <0,344>.
+Submap pointer saved for vertex <0,344>.
+Using previous submap for vertex <0,344>
+Submap pointer saved for vertex <0,344>.
+Vertex ID: <0,345>, Timestamp (nanoseconds): 1740691141711417088
+Distance from last submap: 0.420248 m
+Rotation from last submap: 311.637 degrees
+Creating new submap at vertex <0,345>
+Transformation Matrix:
+  -0.876113   -0.482081 -0.00486956     18.9701
+   0.482067   -0.876126  0.00383582     11.6392
+-0.00611553  0.00101316    0.999981    -0.32618
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 734335
+Point cloud associated with vertex <0,345>.
+Submap pointer saved for vertex <0,345>.
+Using previous submap for vertex <0,345>
+Submap pointer saved for vertex <0,345>.
+Vertex ID: <0,346>, Timestamp (nanoseconds): 1740691141920473856
+Distance from last submap: 0.41848 m
+Rotation from last submap: 311.567 degrees
+Creating new submap at vertex <0,346>
+Transformation Matrix:
+    -0.87566    -0.482908   -0.0043977      18.5624
+    0.482916    -0.875666 -0.000850864      11.6221
+ -0.00344003  -0.00286879      0.99999    -0.280779
+           0            0            0            1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 727689
+Point cloud associated with vertex <0,346>.
+Submap pointer saved for vertex <0,346>.
+Using previous submap for vertex <0,346>
+Submap pointer saved for vertex <0,346>.
+Vertex ID: <0,347>, Timestamp (nanoseconds): 1740691142120538112
+Distance from last submap: 0.398715 m
+Rotation from last submap: 311.616 degrees
+Creating new submap at vertex <0,347>
+Transformation Matrix:
+  -0.875359   -0.483458 -0.00386697     18.1708
+   0.483472   -0.875349 -0.00433181     11.6107
+-0.00129071 -0.00566146    0.999983   -0.249615
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 720820
+Point cloud associated with vertex <0,347>.
+Submap pointer saved for vertex <0,347>.
+Using previous submap for vertex <0,347>
+Submap pointer saved for vertex <0,347>.
+Vertex ID: <0,348>, Timestamp (nanoseconds): 1740691142320576000
+Distance from last submap: 0.404283 m
+Rotation from last submap: 311.596 degrees
+Creating new submap at vertex <0,348>
+Transformation Matrix:
+  -0.874828   -0.484403 -0.00549834     17.7796
+   0.484432   -0.874802 -0.00684298     11.5913
+ -0.0014952    -0.00865    0.999961   -0.191627
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 713352
+Point cloud associated with vertex <0,348>.
+Submap pointer saved for vertex <0,348>.
+Using previous submap for vertex <0,348>
+Submap pointer saved for vertex <0,348>.
+Vertex ID: <0,349>, Timestamp (nanoseconds): 1740691142530544640
+Distance from last submap: 0.417563 m
+Rotation from last submap: 311.583 degrees
+Creating new submap at vertex <0,349>
+Transformation Matrix:
+  -0.874361   -0.485219 -0.00738989     17.3734
+   0.485272    -0.87431 -0.00963433     11.5742
+-0.00178629    -0.01201    0.999926   -0.125519
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 705014
+Point cloud associated with vertex <0,349>.
+Submap pointer saved for vertex <0,349>.
+Using previous submap for vertex <0,349>
+Submap pointer saved for vertex <0,349>.
+Vertex ID: <0,350>, Timestamp (nanoseconds): 1740691142732405248
+Distance from last submap: 0.400726 m
+Rotation from last submap: 311.626 degrees
+Creating new submap at vertex <0,350>
+Transformation Matrix:
+  -0.874758   -0.484482 -0.00866715     16.9633
+   0.484556    -0.87468  -0.0118565     11.5882
+-0.00183672  -0.0145713    0.999892  -0.0777501
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 696872
+Point cloud associated with vertex <0,350>.
+Submap pointer saved for vertex <0,350>.
+Using previous submap for vertex <0,350>
+Submap pointer saved for vertex <0,350>.
+Vertex ID: <0,351>, Timestamp (nanoseconds): 1740691142941191680
+Distance from last submap: 0.416842 m
+Rotation from last submap: 311.588 degrees
+Creating new submap at vertex <0,351>
+Transformation Matrix:
+  -0.874395   -0.485068  -0.0119084      16.555
+   0.485199   -0.874302  -0.0133626     11.5757
+ -0.0039298  -0.0174622     0.99984 -0.00558306
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 688362
+Point cloud associated with vertex <0,351>.
+Submap pointer saved for vertex <0,351>.
+Using previous submap for vertex <0,351>
+Submap pointer saved for vertex <0,351>.
+Vertex ID: <0,352>, Timestamp (nanoseconds): 1740691143151127808
+Distance from last submap: 0.420645 m
+Rotation from last submap: 311.619 degrees
+Creating new submap at vertex <0,352>
+Transformation Matrix:
+   -0.87443   -0.484965  -0.0134652     16.1334
+   0.485136   -0.874287  -0.0162647     11.5762
+-0.00388464  -0.0207548    0.999777   0.0530323
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 679474
+Point cloud associated with vertex <0,352>.
+Submap pointer saved for vertex <0,352>.
+Using previous submap for vertex <0,352>
+Submap pointer saved for vertex <0,352>.
+Vertex ID: <0,353>, Timestamp (nanoseconds): 1740691143352123648
+Distance from last submap: 0.400876 m
+Rotation from last submap: 311.557 degrees
+Creating new submap at vertex <0,353>
+Transformation Matrix:
+  -0.874106   -0.485446  -0.0167703     15.7395
+   0.485704   -0.873923  -0.0187209     11.5661
+-0.00556791  -0.0245095    0.999684    0.134713
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 670447
+Point cloud associated with vertex <0,353>.
+Submap pointer saved for vertex <0,353>.
+Using previous submap for vertex <0,353>
+Submap pointer saved for vertex <0,353>.
+Vertex ID: <0,354>, Timestamp (nanoseconds): 1740691143562093312
+Distance from last submap: 0.419946 m
+Rotation from last submap: 311.693 degrees
+Creating new submap at vertex <0,354>
+Transformation Matrix:
+ -0.873987  -0.485594 -0.0185787    15.3219
+  0.485899  -0.873809 -0.0189876    11.5624
+ -0.007014 -0.0256223   0.999647   0.165495
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 661041
+Point cloud associated with vertex <0,354>.
+Submap pointer saved for vertex <0,354>.
+Using previous submap for vertex <0,354>
+Submap pointer saved for vertex <0,354>.
+Vertex ID: <0,355>, Timestamp (nanoseconds): 1740691143772030720
+Distance from last submap: 0.42247 m
+Rotation from last submap: 311.669 degrees
+Creating new submap at vertex <0,355>
+Transformation Matrix:
+    -0.8739   -0.485664  -0.0207095     14.9007
+   0.486031   -0.873718  -0.0197525     11.5599
+-0.00850116  -0.0273271     0.99959    0.206178
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 651778
+Point cloud associated with vertex <0,355>.
+Submap pointer saved for vertex <0,355>.
+Using previous submap for vertex <0,355>
+Submap pointer saved for vertex <0,355>.
+Vertex ID: <0,356>, Timestamp (nanoseconds): 1740691143983018496
+Distance from last submap: 0.419724 m
+Rotation from last submap: 311.69 degrees
+Creating new submap at vertex <0,356>
+Transformation Matrix:
+  -0.873667   -0.486025  -0.0220174     14.4859
+   0.486434    -0.87348  -0.0203799     11.5529
+-0.00932661  -0.0285152     0.99955     0.23286
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 642473
+Point cloud associated with vertex <0,356>.
+Submap pointer saved for vertex <0,356>.
+Using previous submap for vertex <0,356>
+Submap pointer saved for vertex <0,356>.
+Vertex ID: <0,357>, Timestamp (nanoseconds): 1740691144191609088
+Distance from last submap: 0.421071 m
+Rotation from last submap: 311.719 degrees
+Creating new submap at vertex <0,357>
+Transformation Matrix:
+  -0.873467   -0.486369  -0.0223658     14.0694
+   0.486795    -0.87326  -0.0211491     11.5467
+-0.00924489  -0.0293606    0.999526     0.24706
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 632780
+Point cloud associated with vertex <0,357>.
+Submap pointer saved for vertex <0,357>.
+Using previous submap for vertex <0,357>
+Submap pointer saved for vertex <0,357>.
+Vertex ID: <0,358>, Timestamp (nanoseconds): 1740691144392871936
+Distance from last submap: 0.397577 m
+Rotation from last submap: 311.706 degrees
+Creating new submap at vertex <0,358>
+Transformation Matrix:
+ -0.873568  -0.486123 -0.0237291    13.6688
+  0.486592  -0.873365 -0.0214602    11.5498
+-0.0102919 -0.0302934   0.999488    0.26937
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 623646
+Point cloud associated with vertex <0,358>.
+Submap pointer saved for vertex <0,358>.
+Using previous submap for vertex <0,358>
+Submap pointer saved for vertex <0,358>.
+Vertex ID: <0,359>, Timestamp (nanoseconds): 1740691144602381056
+Distance from last submap: 0.42475 m
+Rotation from last submap: 311.256 degrees
+Creating new submap at vertex <0,359>
+Transformation Matrix:
+   -0.86731   -0.497251   -0.022699     13.3905
+   0.497697   -0.867055  -0.0226313     11.3744
+-0.00842789  -0.0309256    0.999486    0.268961
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 613769
+Point cloud associated with vertex <0,359>.
+Submap pointer saved for vertex <0,359>.
+Using previous submap for vertex <0,359>
+Submap pointer saved for vertex <0,359>.
+Vertex ID: <0,360>, Timestamp (nanoseconds): 1740691144812054016
+Distance from last submap: 0.420341 m
+Rotation from last submap: 2.9471 degrees
+Using previous submap for vertex <0,360>
+Submap pointer saved for vertex <0,360>.
+Vertex ID: <0,361>, Timestamp (nanoseconds): 1740691145012341504
+Distance from last submap: 0.817681 m
+Rotation from last submap: 4.07893 degrees
+Using previous submap for vertex <0,361>
+Submap pointer saved for vertex <0,361>.
+Vertex ID: <0,362>, Timestamp (nanoseconds): 1740691145222424832
+Distance from last submap: 1.2369 m
+Rotation from last submap: 4.05373 degrees
+Using previous submap for vertex <0,362>
+Submap pointer saved for vertex <0,362>.
+Vertex ID: <0,363>, Timestamp (nanoseconds): 1740691145423870720
+Distance from last submap: 1.63591 m
+Rotation from last submap: 4.25703 degrees
+Creating new submap at vertex <0,363>
+Transformation Matrix:
+  -0.828105   -0.560246  -0.0191792     12.5619
+   0.560559   -0.827844  -0.0211485     10.3949
+-0.00402904  -0.0282642    0.999592    0.202573
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 575391
+Point cloud associated with vertex <0,363>.
+Submap pointer saved for vertex <0,363>.
+Using previous submap for vertex <0,363>
+Submap pointer saved for vertex <0,363>.
+Vertex ID: <0,364>, Timestamp (nanoseconds): 1740691145632592640
+Distance from last submap: 0.424824 m
+Rotation from last submap: 310.075 degrees
+Creating new submap at vertex <0,364>
+Transformation Matrix:
+  -0.799359   -0.600549  -0.0191412     12.6362
+   0.600848   -0.799086   -0.021077     9.75863
+-0.00263763  -0.0283491    0.999595     0.19784
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 565646
+Point cloud associated with vertex <0,364>.
+Submap pointer saved for vertex <0,364>.
+Using previous submap for vertex <0,364>
+Submap pointer saved for vertex <0,364>.
+Vertex ID: <0,365>, Timestamp (nanoseconds): 1740691145834001408
+Distance from last submap: 0.394727 m
+Rotation from last submap: 309.795 degrees
+Creating new submap at vertex <0,365>
+Transformation Matrix:
+   -0.76313    -0.64589  -0.0214216      12.787
+   0.646238   -0.762853  -0.0207849     9.03105
+-0.00291678   -0.029705    0.999554    0.220085
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 556390
+Point cloud associated with vertex <0,365>.
+Submap pointer saved for vertex <0,365>.
+Using previous submap for vertex <0,365>
+Submap pointer saved for vertex <0,365>.
+Vertex ID: <0,366>, Timestamp (nanoseconds): 1740691146042896128
+Distance from last submap: 0.419027 m
+Rotation from last submap: 311.686 degrees
+Creating new submap at vertex <0,366>
+Transformation Matrix:
+  -0.762869    -0.64623  -0.0204439     12.3719
+   0.646552   -0.762556  -0.0218856     9.02517
+-0.00144647  -0.0299139    0.999551    0.217682
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 546315
+Point cloud associated with vertex <0,366>.
+Submap pointer saved for vertex <0,366>.
+Using previous submap for vertex <0,366>
+Submap pointer saved for vertex <0,366>.
+Vertex ID: <0,367>, Timestamp (nanoseconds): 1740691146243018240
+Distance from last submap: 0.397873 m
+Rotation from last submap: 311.681 degrees
+Creating new submap at vertex <0,367>
+Transformation Matrix:
+   -0.762923     -0.64614   -0.0212699      11.9731
+    0.646489    -0.762557   -0.0236263      9.02526
+-0.000953589   -0.0317758     0.999495       0.2434
+           0            0            0            1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 536459
+Point cloud associated with vertex <0,367>.
+Submap pointer saved for vertex <0,367>.
+Using previous submap for vertex <0,367>
+Submap pointer saved for vertex <0,367>.
+Vertex ID: <0,368>, Timestamp (nanoseconds): 1740691146444316160
+Distance from last submap: 0.3998 m
+Rotation from last submap: 311.615 degrees
+Creating new submap at vertex <0,368>
+Transformation Matrix:
+ -0.762011  -0.647287 -0.0189178    11.5865
+  0.647562  -0.761619 -0.0244792    9.00808
+0.00143693 -0.0309039   0.999521   0.223089
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 526735
+Point cloud associated with vertex <0,368>.
+Submap pointer saved for vertex <0,368>.
+Using previous submap for vertex <0,368>
+Submap pointer saved for vertex <0,368>.
+Vertex ID: <0,369>, Timestamp (nanoseconds): 1740691146654388480
+Distance from last submap: 0.419482 m
+Rotation from last submap: 311.702 degrees
+Creating new submap at vertex <0,369>
+Transformation Matrix:
+ -0.762225  -0.647008 -0.0198661    11.1639
+  0.647311  -0.761808 -0.0252208    9.01135
+0.00118394 -0.0320835   0.999484   0.241139
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 516510
+Point cloud associated with vertex <0,369>.
+Submap pointer saved for vertex <0,369>.
+Using previous submap for vertex <0,369>
+Submap pointer saved for vertex <0,369>.
+Vertex ID: <0,370>, Timestamp (nanoseconds): 1740691146864323328
+Distance from last submap: 0.419907 m
+Rotation from last submap: 311.701 degrees
+Creating new submap at vertex <0,370>
+Transformation Matrix:
+ -0.761995  -0.647251 -0.0207273     10.747
+  0.647582   -0.76155 -0.0260572    9.00697
+ 0.0010807 -0.0332781   0.999446   0.258187
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 506423
+Point cloud associated with vertex <0,370>.
+Submap pointer saved for vertex <0,370>.
+Using previous submap for vertex <0,370>
+Submap pointer saved for vertex <0,370>.
+Vertex ID: <0,371>, Timestamp (nanoseconds): 1740691147064951296
+Distance from last submap: 0.399718 m
+Rotation from last submap: 311.748 degrees
+Creating new submap at vertex <0,371>
+Transformation Matrix:
+ -0.762239  -0.646969 -0.0205619    10.3439
+  0.647295  -0.761791 -0.0261584    9.01086
+ 0.0012598 -0.0332486   0.999446   0.257272
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 496696
+Point cloud associated with vertex <0,371>.
+Submap pointer saved for vertex <0,371>.
+Using previous submap for vertex <0,371>
+Submap pointer saved for vertex <0,371>.
+Vertex ID: <0,372>, Timestamp (nanoseconds): 1740691147274690560
+Distance from last submap: 0.419323 m
+Rotation from last submap: 0.0794164 degrees
+Using previous submap for vertex <0,372>
+Submap pointer saved for vertex <0,372>.
+Vertex ID: <0,373>, Timestamp (nanoseconds): 1740691147485029888
+Distance from last submap: 0.839229 m
+Rotation from last submap: 311.705 degrees
+Creating new submap at vertex <0,373>
+Transformation Matrix:
+ -0.762304  -0.646945 -0.0188483    9.50413
+  0.647214  -0.761856 -0.0262693    9.01175
+0.00263515 -0.0322241   0.999477   0.241411
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 477196
+Point cloud associated with vertex <0,373>.
+Submap pointer saved for vertex <0,373>.
+Using previous submap for vertex <0,373>
+Submap pointer saved for vertex <0,373>.
+Vertex ID: <0,374>, Timestamp (nanoseconds): 1740691147694387968
+Distance from last submap: 0.418634 m
+Rotation from last submap: 0.137518 degrees
+Using previous submap for vertex <0,374>
+Submap pointer saved for vertex <0,374>.
+Vertex ID: <0,375>, Timestamp (nanoseconds): 1740691147904148736
+Distance from last submap: 0.835654 m
+Rotation from last submap: 2.13807 degrees
+Using previous submap for vertex <0,375>
+Submap pointer saved for vertex <0,375>.
+Vertex ID: <0,376>, Timestamp (nanoseconds): 1740691148105873408
+Distance from last submap: 1.2297 m
+Rotation from last submap: 3.15201 degrees
+Using previous submap for vertex <0,376>
+Submap pointer saved for vertex <0,376>.
+Vertex ID: <0,377>, Timestamp (nanoseconds): 1740691148306033152
+Distance from last submap: 1.62843 m
+Rotation from last submap: 3.22316 degrees
+Creating new submap at vertex <0,377>
+Transformation Matrix:
+  -0.725342    -0.68832 -0.00974658     8.36115
+   0.688323   -0.725003  -0.0241216     8.50892
+ 0.00953708  -0.0242052    0.999662    0.139024
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 440950
+Point cloud associated with vertex <0,377>.
+Submap pointer saved for vertex <0,377>.
+Using previous submap for vertex <0,377>
+Submap pointer saved for vertex <0,377>.
+Vertex ID: <0,378>, Timestamp (nanoseconds): 1740691148506257408
+Distance from last submap: 0.39781 m
+Rotation from last submap: 0.240298 degrees
+Using previous submap for vertex <0,378>
+Submap pointer saved for vertex <0,378>.
+Vertex ID: <0,379>, Timestamp (nanoseconds): 1740691148715452416
+Distance from last submap: 0.815463 m
+Rotation from last submap: 0.90195 degrees
+Using previous submap for vertex <0,379>
+Submap pointer saved for vertex <0,379>.
+Vertex ID: <0,380>, Timestamp (nanoseconds): 1740691148924847360
+Distance from last submap: 1.22045 m
+Rotation from last submap: 3.86466 degrees
+Using previous submap for vertex <0,380>
+Submap pointer saved for vertex <0,380>.
+Vertex ID: <0,381>, Timestamp (nanoseconds): 1740691149125325568
+Distance from last submap: 1.61178 m
+Rotation from last submap: 7.11212 degrees
+Creating new submap at vertex <0,381>
+Transformation Matrix:
+ -0.634595  -0.772816 -0.0066449    7.74648
+  0.772746  -0.634354 -0.0214137    7.57487
+ 0.0123336 -0.0187238   0.999749   0.075914
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 406032
+Point cloud associated with vertex <0,381>.
+Submap pointer saved for vertex <0,381>.
+Using previous submap for vertex <0,381>
+Submap pointer saved for vertex <0,381>.
+Vertex ID: <0,382>, Timestamp (nanoseconds): 1740691149335967232
+Distance from last submap: 0.418223 m
+Rotation from last submap: 0.252531 degrees
+Using previous submap for vertex <0,382>
+Submap pointer saved for vertex <0,382>.
+Vertex ID: <0,383>, Timestamp (nanoseconds): 1740691149545473024
+Distance from last submap: 0.849785 m
+Rotation from last submap: 1.24056 degrees
+Using previous submap for vertex <0,383>
+Submap pointer saved for vertex <0,383>.
+Vertex ID: <0,384>, Timestamp (nanoseconds): 1740691149755304960
+Distance from last submap: 1.2801 m
+Rotation from last submap: 5.45605 degrees
+Using previous submap for vertex <0,384>
+Submap pointer saved for vertex <0,384>.
+Vertex ID: <0,385>, Timestamp (nanoseconds): 1740691149956313856
+Distance from last submap: 1.67815 m
+Rotation from last submap: 10.2579 degrees
+Creating new submap at vertex <0,385>
+Transformation Matrix:
+  -0.487412   -0.872898  -0.0218878     7.30907
+   0.873171   -0.487306  -0.0103018      6.3405
+-0.00167361   -0.024133    0.999707    0.109668
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 376693
+Point cloud associated with vertex <0,385>.
+Submap pointer saved for vertex <0,385>.
+Using previous submap for vertex <0,385>
+Submap pointer saved for vertex <0,385>.
+Vertex ID: <0,386>, Timestamp (nanoseconds): 1740691150165487872
+Distance from last submap: 0.421604 m
+Rotation from last submap: 3.53733 degrees
+Using previous submap for vertex <0,386>
+Submap pointer saved for vertex <0,386>.
+Vertex ID: <0,387>, Timestamp (nanoseconds): 1740691150365870848
+Distance from last submap: 0.819111 m
+Rotation from last submap: 7.34735 degrees
+Using previous submap for vertex <0,387>
+Submap pointer saved for vertex <0,387>.
+Vertex ID: <0,388>, Timestamp (nanoseconds): 1740691150575860992
+Distance from last submap: 1.22634 m
+Rotation from last submap: 11.1573 degrees
+Using previous submap for vertex <0,388>
+Submap pointer saved for vertex <0,388>.
+Vertex ID: <0,389>, Timestamp (nanoseconds): 1740691150775882496
+Distance from last submap: 1.61979 m
+Rotation from last submap: 14.4313 degrees
+Creating new submap at vertex <0,389>
+Transformation Matrix:
+   -0.254761    -0.966934   -0.0115997      7.06478
+    0.967004    -0.254754  -0.00214008      4.61489
+-0.000885755   -0.0117622      0.99993   0.00699296
+           0            0            0            1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 356358
+Point cloud associated with vertex <0,389>.
+Submap pointer saved for vertex <0,389>.
+Using previous submap for vertex <0,389>
+Submap pointer saved for vertex <0,389>.
+Vertex ID: <0,390>, Timestamp (nanoseconds): 1740691150975961856
+Distance from last submap: 0.402451 m
+Rotation from last submap: 3.78917 degrees
+Using previous submap for vertex <0,390>
+Submap pointer saved for vertex <0,390>.
+Vertex ID: <0,391>, Timestamp (nanoseconds): 1740691151176887808
+Distance from last submap: 0.805305 m
+Rotation from last submap: 307.121 degrees
+Creating new submap at vertex <0,391>
+Transformation Matrix:
+  -0.151394   -0.987373  -0.0466254     6.70459
+   0.988434    -0.15164  0.00177776     3.91637
+-0.00882561   -0.045817    0.998911     0.24253
+          0           0           0           1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 347496
+Point cloud associated with vertex <0,391>.
+Submap pointer saved for vertex <0,391>.
+Using previous submap for vertex <0,391>
+Submap pointer saved for vertex <0,391>.
+Vertex ID: <0,392>, Timestamp (nanoseconds): 1740691151386821120
+Distance from last submap: 0.428682 m
+Rotation from last submap: 2.04844 degrees
+Using previous submap for vertex <0,392>
+Submap pointer saved for vertex <0,392>.
+Vertex ID: <0,393>, Timestamp (nanoseconds): 1740691151596379904
+Distance from last submap: 0.841117 m
+Rotation from last submap: 4.34451 degrees
+Using previous submap for vertex <0,393>
+Submap pointer saved for vertex <0,393>.
+Vertex ID: <0,394>, Timestamp (nanoseconds): 1740691151806074368
+Distance from last submap: 1.2689 m
+Rotation from last submap: 6.7844 degrees
+Using previous submap for vertex <0,394>
+Submap pointer saved for vertex <0,394>.
+Vertex ID: <0,395>, Timestamp (nanoseconds): 1740691152006248448
+Distance from last submap: 1.66409 m
+Rotation from last submap: 9.5615 degrees
+Creating new submap at vertex <0,395>
+Transformation Matrix:
+0.00902466  -0.997403 -0.0714501    5.58439
+  0.998724 0.00544008  0.0502056    3.00488
+-0.0496865 -0.0718121    0.99618   0.281459
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 333249
+Point cloud associated with vertex <0,395>.
+Submap pointer saved for vertex <0,395>.
+Using previous submap for vertex <0,395>
+Submap pointer saved for vertex <0,395>.
+Vertex ID: <0,396>, Timestamp (nanoseconds): 1740691152206968064
+Distance from last submap: 0.414215 m
+Rotation from last submap: 2.51801 degrees
+Using previous submap for vertex <0,396>
+Submap pointer saved for vertex <0,396>.
+Vertex ID: <0,397>, Timestamp (nanoseconds): 1740691152416458496
+Distance from last submap: 0.840568 m
+Rotation from last submap: 5.21173 degrees
+Using previous submap for vertex <0,397>
+Submap pointer saved for vertex <0,397>.
+Vertex ID: <0,398>, Timestamp (nanoseconds): 1740691152626341120
+Distance from last submap: 1.26191 m
+Rotation from last submap: 8.50198 degrees
+Using previous submap for vertex <0,398>
+Submap pointer saved for vertex <0,398>.
+Vertex ID: <0,399>, Timestamp (nanoseconds): 1740691152826895104
+Distance from last submap: 1.66063 m
+Rotation from last submap: 11.9343 degrees
+Creating new submap at vertex <0,399>
+Transformation Matrix:
+  0.209389  -0.975208 -0.0715868    4.43305
+  0.972673   0.200214   0.117566    2.12553
+ -0.100319 -0.0942476   0.990481   0.236142
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 323483
+Point cloud associated with vertex <0,399>.
+Submap pointer saved for vertex <0,399>.
+Using previous submap for vertex <0,399>
+Submap pointer saved for vertex <0,399>.
+Vertex ID: <0,400>, Timestamp (nanoseconds): 1740691153036935424
+Distance from last submap: 0.413835 m
+Rotation from last submap: 3.69592 degrees
+Using previous submap for vertex <0,400>
+Submap pointer saved for vertex <0,400>.
+Vertex ID: <0,401>, Timestamp (nanoseconds): 1740691153246479872
+Distance from last submap: 0.823872 m
+Rotation from last submap: 6.73678 degrees
+Using previous submap for vertex <0,401>
+Submap pointer saved for vertex <0,401>.
+Vertex ID: <0,402>, Timestamp (nanoseconds): 1740691153446575360
+Distance from last submap: 1.20865 m
+Rotation from last submap: 10.3556 degrees
+Using previous submap for vertex <0,402>
+Submap pointer saved for vertex <0,402>.
+Vertex ID: <0,403>, Timestamp (nanoseconds): 1740691153646624768
+Distance from last submap: 1.57721 m
+Rotation from last submap: 14.0903 degrees
+Creating new submap at vertex <0,403>
+Transformation Matrix:
+ 0.376929 -0.921275 0.0957933   3.19478
+ 0.912659  0.387056  0.131303   1.45517
+-0.158043 0.0379348  0.986703  -0.31202
+        0         0         0         1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 299035
+Point cloud associated with vertex <0,403>.
+Submap pointer saved for vertex <0,403>.
+Using previous submap for vertex <0,403>
+Submap pointer saved for vertex <0,403>.
+Vertex ID: <0,404>, Timestamp (nanoseconds): 1740691153847014656
+Distance from last submap: 0.386688 m
+Rotation from last submap: 308.416 degrees
+Creating new submap at vertex <0,404>
+Transformation Matrix:
+ 0.394836 -0.908459  0.137135   2.83166
+ 0.908136  0.408527 0.0916273   1.38806
+-0.139263 0.0883598  0.986305  -0.37327
+        0         0         0         1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 301782
+Point cloud associated with vertex <0,404>.
+Submap pointer saved for vertex <0,404>.
+Using previous submap for vertex <0,404>
+Submap pointer saved for vertex <0,404>.
+Vertex ID: <0,405>, Timestamp (nanoseconds): 1740691154047130368
+Distance from last submap: 0.383668 m
+Rotation from last submap: 309.159 degrees
+Creating new submap at vertex <0,405>
+Transformation Matrix:
+ 0.421029  -0.89486  0.148194   2.48584
+ 0.900684  0.431776 0.0483535   1.31665
+-0.107256  0.113117  0.987776 -0.331309
+        0         0         0         1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 306653
+Point cloud associated with vertex <0,405>.
+Submap pointer saved for vertex <0,405>.
+Using previous submap for vertex <0,405>
+Submap pointer saved for vertex <0,405>.
+Vertex ID: <0,406>, Timestamp (nanoseconds): 1740691154247386368
+Distance from last submap: 0.38397 m
+Rotation from last submap: 309.526 degrees
+Creating new submap at vertex <0,406>
+Transformation Matrix:
+ 0.439922 -0.888158  0.132827   2.13191
+ 0.895192  0.445468 0.0137879   1.26924
+-0.071416   0.11284  0.991043  -0.24207
+        0         0         0         1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 310165
+Point cloud associated with vertex <0,406>.
+Submap pointer saved for vertex <0,406>.
+Using previous submap for vertex <0,406>
+Submap pointer saved for vertex <0,406>.
+Vertex ID: <0,407>, Timestamp (nanoseconds): 1740691154447486976
+Distance from last submap: 0.387271 m
+Rotation from last submap: 308.091 degrees
+Creating new submap at vertex <0,407>
+Transformation Matrix:
+  0.478659  -0.873884  0.0849235     1.8035
+  0.877467   0.479497 -0.0115647    1.17545
+-0.0306144  0.0800531    0.99632  -0.112032
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 312167
+Point cloud associated with vertex <0,407>.
+Submap pointer saved for vertex <0,407>.
+Using previous submap for vertex <0,407>
+Submap pointer saved for vertex <0,407>.
+Vertex ID: <0,408>, Timestamp (nanoseconds): 1740691154647728384
+Distance from last submap: 0.377827 m
+Rotation from last submap: 309.201 degrees
+Creating new submap at vertex <0,408>
+Transformation Matrix:
+  0.495882  -0.867215  0.0451573    1.45054
+  0.868377   0.494917 -0.0312841    1.13742
+ 0.0047809  0.0547268    0.99849 -0.0262469
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 311386
+Point cloud associated with vertex <0,408>.
+Submap pointer saved for vertex <0,408>.
+Using previous submap for vertex <0,408>
+Submap pointer saved for vertex <0,408>.
+Vertex ID: <0,409>, Timestamp (nanoseconds): 1740691154858765824
+Distance from last submap: 0.421261 m
+Rotation from last submap: 2.90299 degrees
+Using previous submap for vertex <0,409>
+Submap pointer saved for vertex <0,409>.
+Vertex ID: <0,410>, Timestamp (nanoseconds): 1740691155068919808
+Distance from last submap: 0.814064 m
+Rotation from last submap: 7.85278 degrees
+Using previous submap for vertex <0,410>
+Submap pointer saved for vertex <0,410>.
+Vertex ID: <0,411>, Timestamp (nanoseconds): 1740691155277881088
+Distance from last submap: 1.21494 m
+Rotation from last submap: 15.4461 degrees
+Using previous submap for vertex <0,411>
+Submap pointer saved for vertex <0,411>.
+Vertex ID: <0,412>, Timestamp (nanoseconds): 1740691155478135040
+Distance from last submap: 1.61375 m
+Rotation from last submap: 23.4562 degrees
+Creating new submap at vertex <0,412>
+Transformation Matrix:
+  0.798194  -0.602245 -0.0137208   0.230527
+  0.601981   0.798281  -0.019166     0.9152
+ 0.0224956  0.0070385   0.999722 0.00785258
+         0          0          0          1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 310160
+Point cloud associated with vertex <0,412>.
+Submap pointer saved for vertex <0,412>.
+Using previous submap for vertex <0,412>
+Submap pointer saved for vertex <0,412>.
+Vertex ID: <0,413>, Timestamp (nanoseconds): 1740691155678234368
+Distance from last submap: 0.402053 m
+Rotation from last submap: 9.24967 degrees
+Using previous submap for vertex <0,413>
+Submap pointer saved for vertex <0,413>.
+Vertex ID: <0,414>, Timestamp (nanoseconds): 1740691155878944768
+Distance from last submap: 0.804107 m
+Rotation from last submap: 18.6932 degrees
+Using previous submap for vertex <0,414>
+Submap pointer saved for vertex <0,414>.
+Vertex ID: <0,415>, Timestamp (nanoseconds): 1740691156089380608
+Distance from last submap: 1.21606 m
+Rotation from last submap: 28.5762 degrees
+Using previous submap for vertex <0,415>
+Submap pointer saved for vertex <0,415>.
+Vertex ID: <0,416>, Timestamp (nanoseconds): 1740691156299004928
+Distance from last submap: 1.60189 m
+Rotation from last submap: 39.0819 degrees
+Creating new submap at vertex <0,416>
+Transformation Matrix:
+    0.999363    0.0354415  -0.00422853    -0.621589
+  -0.0354349     0.999371   0.00164066      1.38334
+  0.00428401  -0.00148978      0.99999 -0.000171082
+           0            0            0            1
+Original cloud size: 996179
+Transformed cloud size: 996179
+Cropped cloud size: 318615
+Point cloud associated with vertex <0,416>.
+Submap pointer saved for vertex <0,416>.
+Using previous submap for vertex <0,416>
+Submap pointer saved for vertex <0,416>.
+Vertex ID: <0,417>, Timestamp (nanoseconds): 1740691156508892672
+Distance from last submap: 0.275078 m
+Rotation from last submap: 11.2133 degrees
+Using previous submap for vertex <0,417>
+Submap pointer saved for vertex <0,417>.
+Vertex ID: <0,418>, Timestamp (nanoseconds): 1740691156718529024
+Distance from last submap: 0.432777 m
+Rotation from last submap: 21.1134 degrees
+Using previous submap for vertex <0,418>
+Submap pointer saved for vertex <0,418>.
+Vertex ID: <0,419>, Timestamp (nanoseconds): 1740691156918794752
+Distance from last submap: 0.501769 m
+Rotation from last submap: 25.8898 degrees
+Using previous submap for vertex <0,419>
+Submap pointer saved for vertex <0,419>.
+Vertex ID: <0,420>, Timestamp (nanoseconds): 1740691157119692288
+Distance from last submap: 0.509662 m
+Rotation from last submap: 26.4241 degrees
+Using previous submap for vertex <0,420>
+Submap pointer saved for vertex <0,420>.
+Vertex ID: <0,421>, Timestamp (nanoseconds): 1740691157329648896
+Distance from last submap: 0.509717 m
+Rotation from last submap: 26.4108 degrees
+Using previous submap for vertex <0,421>
+Submap pointer saved for vertex <0,421>.
+Vertex ID: <0,422>, Timestamp (nanoseconds): 1740691157530570752
+Distance from last submap: 0.509736 m
+Rotation from last submap: 26.4114 degrees
+Using previous submap for vertex <0,422>
+Submap pointer saved for vertex <0,422>.
+Vertex ID: <0,423>, Timestamp (nanoseconds): 1740691157740633344
+Distance from last submap: 0.509879 m
+Rotation from last submap: 26.402 degrees
+Using previous submap for vertex <0,423>
+Submap pointer saved for vertex <0,423>.
+Vertex ID: <0,424>, Timestamp (nanoseconds): 1740691157949840128
+Distance from last submap: 0.510019 m
+Rotation from last submap: 26.3965 degrees
+Using previous submap for vertex <0,424>
+Submap pointer saved for vertex <0,424>.
+Vertex ID: <0,425>, Timestamp (nanoseconds): 1740691158149922816
+Distance from last submap: 0.510155 m
+Rotation from last submap: 26.3934 degrees
+Using previous submap for vertex <0,425>
+Submap pointer saved for vertex <0,425>.
+Vertex ID: <0,426>, Timestamp (nanoseconds): 1740691158350051584
+Distance from last submap: 0.510294 m
+Rotation from last submap: 26.3915 degrees
+Using previous submap for vertex <0,426>
+Submap pointer saved for vertex <0,426>.

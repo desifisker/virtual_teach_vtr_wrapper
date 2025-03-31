@@ -1,6 +1,0 @@
-[submodule "src/nerfstudio"]
-	path = src/nerfstudio
-	url = https://github.com/nerfstudio-project/nerfstudio.git
-[submodule "src/vtr3"]
-	path = src/vtr3
-	url = https://github.com/utiasASRL/vtr3.git

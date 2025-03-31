@@ -1,0 +1,136 @@
+[0.013s] Invoking command in '/home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/build/vtr_virtual_teach': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/desiree/ASRL/vtr3/src/main/install/vtr_gui:/opt/ros/humble /usr/bin/cmake /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/src/vtr_virtual_teach -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/install/vtr_virtual_teach
+[0.044s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system thread chrono timer 
+[0.047s] -- Found OpenMP_C: -fopenmp (found version "4.5") 
+[0.047s] -- Found OpenMP_CXX: -fopenmp (found version "4.5") 
+[0.047s] -- Found OpenMP: TRUE (found version "4.5")  
+[0.047s] [33mCMake Warning at /home/desiree/ASRL/vtr3/src/main/src/vtr_common/vtr_include.cmake:67 (message):
+[0.047s]   VTR_PIPELINE not set! Compiling all! Save time by selecting
+[0.048s]   VTR_PIPELINE=VISION, LIDAR, RADAR, or RADAR-LIDAR
+[0.048s] Call Stack (most recent call first):
+[0.048s]   CMakeLists.txt:5 (include)
+[0.048s] 
+[0.048s] [0m
+[0.048s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.105s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.170s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.188s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.195s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization 
+[0.231s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[0.463s] -- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") 
+[0.593s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.599s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.599s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[0.740s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.746s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.752s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.903s] -- Found Qhull version 8.0.2
+[1.053s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.187s] -- looking for PCL_COMMON
+[1.187s] -- looking for PCL_KDTREE
+[1.187s] -- looking for PCL_OCTREE
+[1.187s] -- looking for PCL_SEARCH
+[1.188s] -- looking for PCL_SAMPLE_CONSENSUS
+[1.188s] -- looking for PCL_FILTERS
+[1.189s] -- looking for PCL_2D
+[1.189s] -- looking for PCL_GEOMETRY
+[1.189s] -- looking for PCL_IO
+[1.189s] -- looking for PCL_FEATURES
+[1.190s] -- looking for PCL_ML
+[1.190s] -- looking for PCL_SEGMENTATION
+[1.191s] -- looking for PCL_VISUALIZATION
+[1.191s] -- looking for PCL_SURFACE
+[1.192s] -- looking for PCL_REGISTRATION
+[1.192s] -- looking for PCL_KEYPOINTS
+[1.192s] -- looking for PCL_TRACKING
+[1.193s] -- looking for PCL_RECOGNITION
+[1.193s] -- looking for PCL_STEREO
+[1.194s] -- looking for PCL_APPS
+[1.194s] -- looking for PCL_IN_HAND_SCANNER
+[1.195s] -- looking for PCL_MODELER
+[1.195s] -- looking for PCL_POINT_CLOUD_EDITOR
+[1.195s] -- looking for PCL_OUTOFCORE
+[1.196s] -- looking for PCL_PEOPLE
+[1.197s] -- Found lgmath: 1.1.0 (/home/desiree/ASRL/vtr3/src/main/install/lgmath/share/lgmath/cmake)
+[1.197s] -- Found steam: 1.1.0 (/home/desiree/ASRL/vtr3/src/main/install/steam/share/steam/cmake)
+[1.199s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[1.219s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.221s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.226s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.236s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.248s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.278s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.280s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.340s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.384s] -- Found vtr_common: 0.0.0 (/home/desiree/ASRL/vtr3/src/main/install/vtr_common/share/vtr_common/cmake)
+[1.401s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.401s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.506s] -- Found vtr_tactic: 0.0.0 (/home/desiree/ASRL/vtr3/src/main/install/vtr_tactic/share/vtr_tactic/cmake)
+[1.613s] -- Found vtr_lidar: 0.0.0 (/home/desiree/ASRL/vtr3/src/main/install/vtr_lidar/share/vtr_lidar/cmake)
+[1.697s] -- Caffe2: CUDA detected: 11.7
+[1.697s] -- Caffe2: CUDA nvcc is: /usr/local/cuda/bin/nvcc
+[1.697s] -- Caffe2: CUDA toolkit directory: /usr/local/cuda
+[1.804s] -- Caffe2: Header version is: 11.7
+[1.806s] [33mCMake Warning at /opt/torch/libtorch/share/cmake/Caffe2/public/cuda.cmake:166 (message):
+[1.806s]   Failed to compute shorthash for libnvrtc.so
+[1.806s] Call Stack (most recent call first):
+[1.806s]   /opt/torch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:88 (include)
+[1.806s]   /opt/torch/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)
+[1.806s]   /home/desiree/ASRL/vtr3/src/main/install/vtr_torch/share/vtr_torch/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[1.806s]   /home/desiree/ASRL/vtr3/src/main/install/vtr_torch/share/vtr_torch/cmake/vtr_torchConfig.cmake:41 (include)
+[1.806s]   /home/desiree/ASRL/vtr3/src/main/install/vtr_lidar/share/vtr_lidar/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[1.806s]   /home/desiree/ASRL/vtr3/src/main/install/vtr_lidar/share/vtr_lidar/cmake/vtr_lidarConfig.cmake:41 (include)
+[1.806s]   CMakeLists.txt:22 (find_package)
+[1.806s] 
+[1.806s] [0m
+[1.807s] -- USE_CUDNN is set to 0. Compiling without cuDNN support
+[2.742s] -- Autodetected CUDA architecture(s):  7.5
+[2.742s] -- Added CUDA NVCC flags for: -gencode;arch=compute_75,code=sm_75
+[2.867s] -- Found Python3: /usr/include/python3.10 (found version "3.10.12") found components: Development Development.Module Development.Embed 
+[2.872s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system chrono timer thread 
+[2.905s] -- Found ament_cmake_gtest: 1.3.11 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[2.905s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.973s] -- Configuring done
+[3.159s] -- Generating done
+[3.211s] -- Build files have been written to: /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/build/vtr_virtual_teach
+[3.235s] Invoked command in '/home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/build/vtr_virtual_teach' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/desiree/ASRL/vtr3/src/main/install/vtr_gui:/opt/ros/humble /usr/bin/cmake /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/src/vtr_virtual_teach -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/install/vtr_virtual_teach
+[3.237s] Invoking command in '/home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/build/vtr_virtual_teach': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/desiree/ASRL/vtr3/src/main/install/vtr_gui:/opt/ros/humble /usr/bin/cmake --build /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/build/vtr_virtual_teach -- -j12 -l12
+[3.311s] [ 14%] [32mBuilding CXX object CMakeFiles/vtr_virtual_teach.dir/src/warthog_path_extractor.cpp.o[0m
+[3.312s] [ 42%] [32mBuilding CXX object CMakeFiles/vtr_virtual_teach.dir/src/generate_global_map.cpp.o[0m
+[3.312s] [ 42%] [32mBuilding CXX object CMakeFiles/generate_global_map.dir/src/generate_global_map.cpp.o[0m
+[3.312s] [ 57%] [32mBuilding CXX object CMakeFiles/warthog_path_extractor.dir/src/warthog_path_extractor.cpp.o[0m
+[10.629s] [ 71%] [32m[1mLinking CXX executable warthog_path_extractor[0m
+[16.320s] [ 71%] Built target warthog_path_extractor
+[30.067s] [ 85%] [32m[1mLinking CXX executable generate_global_map[0m
+[30.295s] [100%] [32m[1mLinking CXX static library libvtr_virtual_teach.a[0m
+[30.362s] [100%] Built target vtr_virtual_teach
+[35.770s] [100%] Built target generate_global_map
+[35.782s] Invoked command in '/home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/build/vtr_virtual_teach' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/desiree/ASRL/vtr3/src/main/install/vtr_gui:/opt/ros/humble /usr/bin/cmake --build /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/build/vtr_virtual_teach -- -j12 -l12
+[35.794s] Invoking command in '/home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/build/vtr_virtual_teach': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/desiree/ASRL/vtr3/src/main/install/vtr_gui:/opt/ros/humble /usr/bin/cmake --install /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/build/vtr_virtual_teach
+[35.804s] -- Install configuration: ""
+[35.804s] -- Execute custom install script
+[35.804s] -- Symlinking: /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/install/vtr_virtual_teach/share/vtr_virtual_teach/environment/library_path.sh
+[35.815s] -- Symlinking: /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/install/vtr_virtual_teach/share/vtr_virtual_teach/environment/library_path.dsv
+[35.825s] -- Symlinking: /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/install/vtr_virtual_teach/lib/vtr_virtual_teach/generate_global_map
+[35.835s] -- Symlinking: /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/install/vtr_virtual_teach/lib/vtr_virtual_teach/warthog_path_extractor
+[35.846s] -- Symlinking: /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/install/vtr_virtual_teach/include/matplotlibcpp.h
+[35.856s] -- Symlinking: /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/install/vtr_virtual_teach/share/ament_index/resource_index/package_run_dependencies/vtr_virtual_teach
+[35.866s] -- Symlinking: /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/install/vtr_virtual_teach/share/ament_index/resource_index/parent_prefix_path/vtr_virtual_teach
+[35.877s] -- Symlinking: /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/install/vtr_virtual_teach/share/vtr_virtual_teach/environment/ament_prefix_path.sh
+[35.888s] -- Symlinking: /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/install/vtr_virtual_teach/share/vtr_virtual_teach/environment/ament_prefix_path.dsv
+[35.898s] -- Symlinking: /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/install/vtr_virtual_teach/share/vtr_virtual_teach/environment/path.sh
+[35.909s] -- Symlinking: /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/install/vtr_virtual_teach/share/vtr_virtual_teach/environment/path.dsv
+[35.918s] -- Symlinking: /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/install/vtr_virtual_teach/share/vtr_virtual_teach/local_setup.bash
+[35.929s] -- Symlinking: /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/install/vtr_virtual_teach/share/vtr_virtual_teach/local_setup.sh
+[35.939s] -- Symlinking: /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/install/vtr_virtual_teach/share/vtr_virtual_teach/local_setup.zsh
+[35.950s] -- Symlinking: /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/install/vtr_virtual_teach/share/vtr_virtual_teach/local_setup.dsv
+[35.960s] -- Symlinking: /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/install/vtr_virtual_teach/share/vtr_virtual_teach/package.dsv
+[35.971s] -- Symlinking: /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/install/vtr_virtual_teach/share/ament_index/resource_index/packages/vtr_virtual_teach
+[35.982s] -- Symlinking: /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/install/vtr_virtual_teach/share/vtr_virtual_teach/cmake/ament_cmake_export_targets-extras.cmake
+[35.994s] -- Symlinking: /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/install/vtr_virtual_teach/share/vtr_virtual_teach/cmake/ament_cmake_export_dependencies-extras.cmake
+[36.007s] -- Symlinking: /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/install/vtr_virtual_teach/share/vtr_virtual_teach/cmake/vtr_virtual_teachConfig.cmake
+[36.019s] -- Symlinking: /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/install/vtr_virtual_teach/share/vtr_virtual_teach/cmake/vtr_virtual_teachConfig-version.cmake
+[36.033s] -- Symlinking: /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/install/vtr_virtual_teach/share/vtr_virtual_teach/package.xml
+[36.044s] -- Installing: /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/install/vtr_virtual_teach/lib/libvtr_virtual_teach.a
+[36.046s] -- Installing: /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/install/vtr_virtual_teach/share/vtr_virtual_teach/cmake/export_vtr_virtual_teachExport.cmake
+[36.046s] -- Installing: /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/install/vtr_virtual_teach/share/vtr_virtual_teach/cmake/export_vtr_virtual_teachExport-noconfig.cmake
+[36.048s] Invoked command in '/home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/build/vtr_virtual_teach' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/desiree/ASRL/vtr3/src/main/install/vtr_gui:/opt/ros/humble /usr/bin/cmake --install /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/build/vtr_virtual_teach

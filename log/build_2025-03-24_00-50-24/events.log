@@ -1,0 +1,263 @@
+[0.000000] (-) TimerEvent: {}
+[0.000362] (vtr_virtual_teach) JobQueued: {'identifier': 'vtr_virtual_teach', 'dependencies': OrderedDict()}
+[0.000853] (vtr_virtual_teach) JobStarted: {'identifier': 'vtr_virtual_teach'}
+[0.011778] (vtr_virtual_teach) JobProgress: {'identifier': 'vtr_virtual_teach', 'progress': 'cmake'}
+[0.012331] (vtr_virtual_teach) Command: {'cmd': ['/usr/bin/cmake', '/home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/src/vtr_virtual_teach', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/install/vtr_virtual_teach'], 'cwd': '/home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/build/vtr_virtual_teach', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LIBRARY_PATH', '/usr/local/cuda/lib64/stubs'), ('NV_LIBCUBLAS_VERSION', '11.10.3.66-1'), ('NV_NVPROF_DEV_PACKAGE', 'cuda-nvprof-11-7=11.7.101-1'), ('NV_CUDA_COMPAT_PACKAGE', 'cuda-compat-11-7'), ('VTRROOT', '/home/desiree/ASRL/vtr3'), ('NV_CUDA_NSIGHT_COMPUTE_VERSION', '11.7.1-1'), ('HOSTNAME', 'Desiree-ThinkPad-P53'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/desiree/ASRL/vtr3/src/main/install/vtr_navigation/lib:/home/desiree/ASRL/vtr3/src/main/install/vtr_vision_msgs/lib:/home/desiree/ASRL/vtr3/src/main/install/vtr_virtual_teach/lib:/home/desiree/ASRL/vtr3/src/main/install/vtr_lidar/lib:/home/desiree/ASRL/vtr3/src/main/install/vtr_torch/lib:/home/desiree/ASRL/vtr3/src/main/install/vtr_mission_planning/lib:/home/desiree/ASRL/vtr3/src/main/install/vtr_route_planning/lib:/home/desiree/ASRL/vtr3/src/main/install/vtr_path_planning/lib:/home/desiree/ASRL/vtr3/src/main/install/vtr_tactic/lib:/home/desiree/ASRL/vtr3/src/main/install/vtr_tactic_msgs/lib:/home/desiree/ASRL/vtr3/src/main/install/vtr_pose_graph/lib:/home/desiree/ASRL/vtr3/src/main/install/vtr_storage/lib:/home/desiree/ASRL/vtr3/src/main/install/vtr_radar_msgs/lib:/home/desiree/ASRL/vtr3/src/main/install/vtr_pose_graph_msgs/lib:/home/desiree/ASRL/vtr3/src/main/install/vtr_path_planning_msgs/lib:/home/desiree/ASRL/vtr3/src/main/install/vtr_navigation_msgs/lib:/home/desiree/ASRL/vtr3/src/main/install/vtr_logging/lib:/home/desiree/ASRL/vtr3/src/main/install/vtr_lidar_msgs/lib:/home/desiree/ASRL/vtr3/src/main/install/vtr_common/lib:/home/desiree/ASRL/vtr3/src/main/install/vtr_common_msgs/lib:/home/desiree/ASRL/vtr3/src/main/install/steam/lib:/home/desiree/ASRL/vtr3/src/main/install/navtech_msgs/lib:/home/desiree/ASRL/vtr3/src/main/install/lgmath/lib:/home/desiree/ASRL/vtr3/src/main/install/gpusurf/lib:/home/desiree/ASRL/vtr3/src/main/install/cudpp/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/casadi:/opt/torch/libtorch/lib::/usr/local/opencv_cuda/lib:/usr/local/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('NV_LIBNCCL_PACKAGE_VERSION', '2.13.4-1'), ('HOME', '/home/desiree'), ('OLDPWD', '/home/desiree/ASRL/vtr3'), ('NV_CUDNN_PACKAGE_NAME', 'libcudnn8'), ('NV_LIBCUBLAS_DEV_VERSION', '11.10.3.66-1'), ('ROS_PYTHON_VERSION', '3'), ('TORCH_LIB', '/opt/torch/libtorch'), ('NV_LIBNCCL_DEV_PACKAGE_VERSION', '2.13.4-1'), ('NV_LIBNPP_PACKAGE', 'libnpp-11-7=11.7.4.75-1'), ('NV_CUDNN_PACKAGE', 'libcudnn8=8.5.0.96-1+cuda11.7'), ('CUDA_VERSION', '11.7.1'), ('VTRMODELS', '/home/desiree/ASRL/vtr3/models'), ('COLCON_PREFIX_PATH', '/home/desiree/ASRL/vtr3/src/main/install'), ('NV_NVPROF_VERSION', '11.7.101-1'), ('ROS_DISTRO', 'humble'), ('NV_LIBCUBLAS_PACKAGE_NAME', 'libcublas-11-7'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=11.7 brand=tesla,driver>=470,driver<471 brand=unknown,driver>=470,driver<471 brand=nvidia,driver>=470,driver<471 brand=nvidiartx,driver>=470,driver<471 brand=geforce,driver>=470,driver<471 brand=geforcertx,driver>=470,driver<471 brand=quadro,driver>=470,driver<471 brand=quadrortx,driver>=470,driver<471 brand=titan,driver>=470,driver<471 brand=titanrtx,driver>=470,driver<471'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NV_LIBCUSPARSE_VERSION', '11.7.4.91-1'), ('NVIDIA_DRIVER_CAPABILITIES', 'compute,utility,graphics'), ('NV_CUDA_LIB_VERSION', '11.7.1-1'), ('NV_LIBNCCL_PACKAGE_NAME', 'libnccl2'), ('NV_NVML_DEV_VERSION', '11.7.91-1'), ('NV_LIBNPP_DEV_PACKAGE', 'libnpp-dev-11-7=11.7.4.75-1'), ('TERM', 'xterm'), ('NV_CUDA_CUDART_VERSION', '11.7.99-1'), ('NV_CUDNN_PACKAGE_DEV', 'libcudnn8-dev=8.5.0.96-1+cuda11.7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('NV_LIBCUBLAS_DEV_PACKAGE_NAME', 'libcublas-dev-11-7'), ('NV_LIBCUBLAS_PACKAGE', 'libcublas-11-7=11.10.3.66-1'), ('WARTHOG', '/home/desiree/ASRL/vtr3/warthog'), ('NVARCH', 'x86_64'), ('NV_LIBNCCL_DEV_PACKAGE_NAME', 'libnccl-dev'), ('NV_LIBCUSPARSE_DEV_VERSION', '11.7.4.91-1'), ('DISPLAY', ':1'), ('NV_LIBNCCL_PACKAGE', 'libnccl2=2.13.4-1+cuda11.7'), ('NVIDIA_PRODUCT_NAME', 'CUDA'), ('LANG', 'en_US.UTF-8'), ('NV_CUDA_CUDART_DEV_VERSION', '11.7.99-1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/desiree/ASRL/vtr3/src/main/install/vtr_gui:/home/desiree/ASRL/vtr3/src/main/install/vtr_navigation:/home/desiree/ASRL/vtr3/src/main/install/vtr_vision:/home/desiree/ASRL/vtr3/src/main/install/vtr_vision_msgs:/home/desiree/ASRL/vtr3/src/main/install/vtr_virtual_teach:/home/desiree/ASRL/vtr3/src/main/install/vtr_radar_lidar:/home/desiree/ASRL/vtr3/src/main/install/vtr_lidar:/home/desiree/ASRL/vtr3/src/main/install/vtr_torch:/home/desiree/ASRL/vtr3/src/main/install/vtr_mission_planning:/home/desiree/ASRL/vtr3/src/main/install/vtr_route_planning:/home/desiree/ASRL/vtr3/src/main/install/vtr_radar:/home/desiree/ASRL/vtr3/src/main/install/vtr_path_planning:/home/desiree/ASRL/vtr3/src/main/install/vtr_tactic:/home/desiree/ASRL/vtr3/src/main/install/vtr_tactic_msgs:/home/desiree/ASRL/vtr3/src/main/install/vtr_pose_graph:/home/desiree/ASRL/vtr3/src/main/install/vtr_storage:/home/desiree/ASRL/vtr3/src/main/install/vtr_radar_msgs:/home/desiree/ASRL/vtr3/src/main/install/vtr_pose_graph_msgs:/home/desiree/ASRL/vtr3/src/main/install/vtr_path_planning_msgs:/home/desiree/ASRL/vtr3/src/main/install/vtr_navigation_msgs:/home/desiree/ASRL/vtr3/src/main/install/vtr_logging:/home/desiree/ASRL/vtr3/src/main/install/vtr_lidar_msgs:/home/desiree/ASRL/vtr3/src/main/install/vtr_common:/home/desiree/ASRL/vtr3/src/main/install/vtr_common_msgs:/home/desiree/ASRL/vtr3/src/main/install/steam:/home/desiree/ASRL/vtr3/src/main/install/navtech_msgs:/home/desiree/ASRL/vtr3/src/main/install/lgmath:/home/desiree/ASRL/vtr3/src/main/install/gpusurf:/home/desiree/ASRL/vtr3/src/main/install/cudpp:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('NV_LIBCUBLAS_DEV_PACKAGE', 'libcublas-dev-11-7=11.10.3.66-1'), ('VTRTEMP', '/home/desiree/ASRL/vtr3/temp'), ('VTRSRC', '/home/desiree/ASRL/vtr3/src'), ('NV_CUDA_NSIGHT_COMPUTE_DEV_PACKAGE', 'cuda-nsight-compute-11-7=11.7.1-1'), ('NV_LIBNCCL_DEV_PACKAGE', 'libnccl-dev=2.13.4-1+cuda11.7'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GRIZZLY', '/home/desiree/ASRL/vtr3/grizzly'), ('NV_NVTX_VERSION', '11.7.91-1'), ('NV_LIBNPP_VERSION', '11.7.4.75-1'), ('VTRUI', '/main/src/vtr_gui/vtr_gui/vtr-gui'), ('NV_CUDNN_VERSION', '8.5.0.96'), ('PWD', '/home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/build/vtr_virtual_teach'), ('PYTHONPATH', '/home/desiree/ASRL/vtr3/src/main/build/vtr_gui:/home/desiree/ASRL/vtr3/src/main/install/vtr_gui/lib/python3.10/site-packages:/home/desiree/ASRL/vtr3/src/main/install/vtr_navigation/local/lib/python3.10/dist-packages:/home/desiree/ASRL/vtr3/src/main/install/vtr_vision_msgs/local/lib/python3.10/dist-packages:/home/desiree/ASRL/vtr3/src/main/install/vtr_lidar/local/lib/python3.10/dist-packages:/home/desiree/ASRL/vtr3/src/main/install/vtr_tactic_msgs/local/lib/python3.10/dist-packages:/home/desiree/ASRL/vtr3/src/main/install/vtr_radar_msgs/local/lib/python3.10/dist-packages:/home/desiree/ASRL/vtr3/src/main/install/vtr_pose_graph_msgs/local/lib/python3.10/dist-packages:/home/desiree/ASRL/vtr3/src/main/install/vtr_path_planning_msgs/local/lib/python3.10/dist-packages:/home/desiree/ASRL/vtr3/src/main/install/vtr_navigation_msgs/local/lib/python3.10/dist-packages:/home/desiree/ASRL/vtr3/src/main/install/vtr_lidar_msgs/local/lib/python3.10/dist-packages:/home/desiree/ASRL/vtr3/src/main/install/vtr_common_msgs/local/lib/python3.10/dist-packages:/home/desiree/ASRL/vtr3/src/main/install/navtech_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages::/usr/local'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('NCCL_VERSION', '2.13.4-1'), ('COLCON', '1'), ('NV_LIBNPP_DEV_VERSION', '11.7.4.75-1'), ('VTRDATA', '/home/desiree/ASRL/vtr3/data'), ('CMAKE_PREFIX_PATH', '/home/desiree/ASRL/vtr3/src/main/install/vtr_navigation:/home/desiree/ASRL/vtr3/src/main/install/vtr_vision:/home/desiree/ASRL/vtr3/src/main/install/vtr_vision_msgs:/home/desiree/ASRL/vtr3/src/main/install/vtr_virtual_teach:/home/desiree/ASRL/vtr3/src/main/install/vtr_radar_lidar:/home/desiree/ASRL/vtr3/src/main/install/vtr_lidar:/home/desiree/ASRL/vtr3/src/main/install/vtr_torch:/home/desiree/ASRL/vtr3/src/main/install/vtr_mission_planning:/home/desiree/ASRL/vtr3/src/main/install/vtr_route_planning:/home/desiree/ASRL/vtr3/src/main/install/vtr_radar:/home/desiree/ASRL/vtr3/src/main/install/vtr_path_planning:/home/desiree/ASRL/vtr3/src/main/install/vtr_tactic:/home/desiree/ASRL/vtr3/src/main/install/vtr_tactic_msgs:/home/desiree/ASRL/vtr3/src/main/install/vtr_pose_graph:/home/desiree/ASRL/vtr3/src/main/install/vtr_storage:/home/desiree/ASRL/vtr3/src/main/install/vtr_radar_msgs:/home/desiree/ASRL/vtr3/src/main/install/vtr_pose_graph_msgs:/home/desiree/ASRL/vtr3/src/main/install/vtr_path_planning_msgs:/home/desiree/ASRL/vtr3/src/main/install/vtr_navigation_msgs:/home/desiree/ASRL/vtr3/src/main/install/vtr_logging:/home/desiree/ASRL/vtr3/src/main/install/vtr_lidar_msgs:/home/desiree/ASRL/vtr3/src/main/install/vtr_common:/home/desiree/ASRL/vtr3/src/main/install/vtr_common_msgs:/home/desiree/ASRL/vtr3/src/main/install/steam:/home/desiree/ASRL/vtr3/src/main/install/navtech_msgs:/home/desiree/ASRL/vtr3/src/main/install/lgmath:/home/desiree/ASRL/vtr3/src/main/install/gpusurf:/home/desiree/ASRL/vtr3/src/main/install/cudpp:/opt/torch/libtorch::/home/desiree/ASRL/vtr3/src/main/install/vtr_gui:/opt/ros/humble')]), 'shell': False}
+[0.078092] (vtr_virtual_teach) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099802] (-) TimerEvent: {}
+[0.135111] (vtr_virtual_teach) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.142403] (vtr_virtual_teach) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199924] (-) TimerEvent: {}
+[0.221653] (vtr_virtual_teach) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.228280] (vtr_virtual_teach) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.228502] (vtr_virtual_teach) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.228842] (vtr_virtual_teach) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.231690] (vtr_virtual_teach) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.300044] (-) TimerEvent: {}
+[0.332335] (vtr_virtual_teach) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.339137] (vtr_virtual_teach) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.339402] (vtr_virtual_teach) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.339792] (vtr_virtual_teach) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.340414] (vtr_virtual_teach) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:5 (include):\n'}
+[0.340512] (vtr_virtual_teach) StderrLine: {'line': b'  include could not find requested file:\n'}
+[0.340589] (vtr_virtual_teach) StderrLine: {'line': b'\n'}
+[0.340661] (vtr_virtual_teach) StderrLine: {'line': b'    /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/src/vtr_virtual_teach/../vtr_common/vtr_include.cmake\n'}
+[0.340733] (vtr_virtual_teach) StderrLine: {'line': b'\n'}
+[0.340804] (vtr_virtual_teach) StderrLine: {'line': b'\x1b[0m\n'}
+[0.346391] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.400152] (-) TimerEvent: {}
+[0.500412] (-) TimerEvent: {}
+[0.517497] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.584802] (vtr_virtual_teach) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.600493] (-) TimerEvent: {}
+[0.673237] (vtr_virtual_teach) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[0.689293] (vtr_virtual_teach) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[0.700585] (-) TimerEvent: {}
+[0.729775] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[0.729948] (vtr_virtual_teach) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[0.772708] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization \n'}
+[0.794821] (vtr_virtual_teach) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[0.800654] (-) TimerEvent: {}
+[0.811307] (vtr_virtual_teach) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[0.866357] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  \n'}
+[0.866618] (vtr_virtual_teach) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[0.895765] (vtr_virtual_teach) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.900725] (-) TimerEvent: {}
+[0.983764] (vtr_virtual_teach) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.984004] (vtr_virtual_teach) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.000827] (-) TimerEvent: {}
+[1.071643] (vtr_virtual_teach) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.072604] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.074153] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found GLEW: /usr/lib/x86_64-linux-gnu/libGLEW.so  \n'}
+[1.080117] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL GLX \n'}
+[1.100928] (-) TimerEvent: {}
+[1.201198] (-) TimerEvent: {}
+[1.260061] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found MPI_C: /usr/lib/x86_64-linux-gnu/libmpi.so (found version "3.1") \n'}
+[1.260272] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found MPI: TRUE (found version "3.1") found components: C \n'}
+[1.262659] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found JsonCpp: /usr/lib/x86_64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") \n'}
+[1.273409] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") \n'}
+[1.290327] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") \n'}
+[1.301287] (-) TimerEvent: {}
+[1.302213] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") \n'}
+[1.401404] (-) TimerEvent: {}
+[1.408900] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found X11: /usr/include   \n'}
+[1.409177] (vtr_virtual_teach) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so\n'}
+[1.493338] (vtr_virtual_teach) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found\n'}
+[1.493543] (vtr_virtual_teach) StdoutLine: {'line': b'-- Looking for gethostbyname\n'}
+[1.501519] (-) TimerEvent: {}
+[1.576996] (vtr_virtual_teach) StdoutLine: {'line': b'-- Looking for gethostbyname - found\n'}
+[1.577194] (vtr_virtual_teach) StdoutLine: {'line': b'-- Looking for connect\n'}
+[1.601617] (-) TimerEvent: {}
+[1.657671] (vtr_virtual_teach) StdoutLine: {'line': b'-- Looking for connect - found\n'}
+[1.657901] (vtr_virtual_teach) StdoutLine: {'line': b'-- Looking for remove\n'}
+[1.701722] (-) TimerEvent: {}
+[1.739133] (vtr_virtual_teach) StdoutLine: {'line': b'-- Looking for remove - found\n'}
+[1.739419] (vtr_virtual_teach) StdoutLine: {'line': b'-- Looking for shmat\n'}
+[1.801819] (-) TimerEvent: {}
+[1.822385] (vtr_virtual_teach) StdoutLine: {'line': b'-- Looking for shmat - found\n'}
+[1.822621] (vtr_virtual_teach) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE\n'}
+[1.901905] (-) TimerEvent: {}
+[1.904761] (vtr_virtual_teach) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE - found\n'}
+[1.997129] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found EXPAT: /usr/lib/x86_64-linux-gnu/libexpat.so (found version "2.4.7") \n'}
+[1.998946] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found double-conversion: /usr/lib/x86_64-linux-gnu/libdouble-conversion.so  \n'}
+[2.001162] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found LZ4: /usr/lib/x86_64-linux-gnu/liblz4.so (found version "1.9.3") \n'}
+[2.001973] (-) TimerEvent: {}
+[2.002801] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found LZMA: /usr/lib/x86_64-linux-gnu/liblzma.so (found version "5.2.5") \n'}
+[2.015616] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") \n'}
+[2.019864] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found TIFF: /usr/lib/x86_64-linux-gnu/libtiff.so (found version "4.3.0")  \n'}
+[2.023563] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.11.1") \n'}
+[2.029321] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found utf8cpp: /usr/include/utf8cpp  \n'}
+[2.102065] (-) TimerEvent: {}
+[2.115940] (vtr_virtual_teach) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[2.133910] (vtr_virtual_teach) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[2.177249] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[2.178079] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") \n'}
+[2.178160] (vtr_virtual_teach) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.202184] (-) TimerEvent: {}
+[2.247655] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found OpenNI2: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") \n'}
+[2.247838] (vtr_virtual_teach) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[2.247977] (vtr_virtual_teach) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to pcap will be disabled\x1b[0m\n'}
+[2.302304] (-) TimerEvent: {}
+[2.397826] (vtr_virtual_teach) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[2.402404] (-) TimerEvent: {}
+[2.404188] (vtr_virtual_teach) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.410251] (vtr_virtual_teach) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[2.502513] (-) TimerEvent: {}
+[2.581463] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[2.602631] (-) TimerEvent: {}
+[2.702871] (-) TimerEvent: {}
+[2.722293] (vtr_virtual_teach) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.802981] (-) TimerEvent: {}
+[2.853523] (vtr_virtual_teach) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[2.854055] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[2.854356] (vtr_virtual_teach) StdoutLine: {'line': b'-- looking for PCL_KDTREE\n'}
+[2.854762] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[2.854920] (vtr_virtual_teach) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[2.855526] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[2.855722] (vtr_virtual_teach) StdoutLine: {'line': b'-- looking for PCL_SEARCH\n'}
+[2.856154] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[2.856357] (vtr_virtual_teach) StdoutLine: {'line': b'-- looking for PCL_SAMPLE_CONSENSUS\n'}
+[2.856784] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[2.856982] (vtr_virtual_teach) StdoutLine: {'line': b'-- looking for PCL_FILTERS\n'}
+[2.857422] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[2.857608] (vtr_virtual_teach) StdoutLine: {'line': b'-- looking for PCL_2D\n'}
+[2.857785] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.12  \n'}
+[2.857998] (vtr_virtual_teach) StdoutLine: {'line': b'-- looking for PCL_GEOMETRY\n'}
+[2.858240] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  \n'}
+[2.858317] (vtr_virtual_teach) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[2.858784] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[2.858980] (vtr_virtual_teach) StdoutLine: {'line': b'-- looking for PCL_FEATURES\n'}
+[2.859681] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[2.859895] (vtr_virtual_teach) StdoutLine: {'line': b'-- looking for PCL_ML\n'}
+[2.860431] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[2.860616] (vtr_virtual_teach) StdoutLine: {'line': b'-- looking for PCL_SEGMENTATION\n'}
+[2.861066] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[2.861303] (vtr_virtual_teach) StdoutLine: {'line': b'-- looking for PCL_VISUALIZATION\n'}
+[2.861791] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  \n'}
+[2.861984] (vtr_virtual_teach) StdoutLine: {'line': b'-- looking for PCL_SURFACE\n'}
+[2.862480] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[2.862655] (vtr_virtual_teach) StdoutLine: {'line': b'-- looking for PCL_REGISTRATION\n'}
+[2.863256] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  \n'}
+[2.863449] (vtr_virtual_teach) StdoutLine: {'line': b'-- looking for PCL_KEYPOINTS\n'}
+[2.863933] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  \n'}
+[2.864094] (vtr_virtual_teach) StdoutLine: {'line': b'-- looking for PCL_TRACKING\n'}
+[2.864613] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  \n'}
+[2.864801] (vtr_virtual_teach) StdoutLine: {'line': b'-- looking for PCL_RECOGNITION\n'}
+[2.865331] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  \n'}
+[2.865552] (vtr_virtual_teach) StdoutLine: {'line': b'-- looking for PCL_STEREO\n'}
+[2.866037] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  \n'}
+[2.866232] (vtr_virtual_teach) StdoutLine: {'line': b'-- looking for PCL_APPS\n'}
+[2.866686] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  \n'}
+[2.867155] (vtr_virtual_teach) StdoutLine: {'line': b'-- looking for PCL_IN_HAND_SCANNER\n'}
+[2.867397] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  \n'}
+[2.867632] (vtr_virtual_teach) StdoutLine: {'line': b'-- looking for PCL_MODELER\n'}
+[2.867751] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.12  \n'}
+[2.867870] (vtr_virtual_teach) StdoutLine: {'line': b'-- looking for PCL_POINT_CLOUD_EDITOR\n'}
+[2.868148] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  \n'}
+[2.868354] (vtr_virtual_teach) StdoutLine: {'line': b'-- looking for PCL_OUTOFCORE\n'}
+[2.869076] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  \n'}
+[2.869379] (vtr_virtual_teach) StdoutLine: {'line': b'-- looking for PCL_PEOPLE\n'}
+[2.869927] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  \n'}
+[2.870615] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt;FLANN::FLANN;QHULL::QHULL (Required is at least version "1.2") \n'}
+[2.874016] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found lgmath: 1.1.0 (/home/desiree/ASRL/vtr3/src/main/install/lgmath/share/lgmath/cmake)\n'}
+[2.877367] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found steam: 1.1.0 (/home/desiree/ASRL/vtr3/src/main/install/steam/share/steam/cmake)\n'}
+[2.903112] (-) TimerEvent: {}
+[3.003423] (-) TimerEvent: {}
+[3.103735] (-) TimerEvent: {}
+[3.203982] (-) TimerEvent: {}
+[3.302797] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[3.304083] (-) TimerEvent: {}
+[3.378823] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[3.390554] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.404202] (-) TimerEvent: {}
+[3.405814] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[3.425235] (vtr_virtual_teach) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.451919] (vtr_virtual_teach) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.504329] (-) TimerEvent: {}
+[3.529841] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[3.536633] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.604435] (-) TimerEvent: {}
+[3.657269] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[3.674815] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[3.700766] (vtr_virtual_teach) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.704541] (-) TimerEvent: {}
+[3.789070] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found vtr_common: 0.0.0 (/home/desiree/ASRL/vtr3/src/main/install/vtr_common/share/vtr_common/cmake)\n'}
+[3.804669] (-) TimerEvent: {}
+[3.838872] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[3.839035] (vtr_virtual_teach) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[3.904792] (-) TimerEvent: {}
+[3.998905] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found vtr_tactic: 0.0.0 (/home/desiree/ASRL/vtr3/src/main/install/vtr_tactic/share/vtr_tactic/cmake)\n'}
+[4.004896] (-) TimerEvent: {}
+[4.105133] (-) TimerEvent: {}
+[4.138093] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found vtr_lidar: 0.0.0 (/home/desiree/ASRL/vtr3/src/main/install/vtr_lidar/share/vtr_lidar/cmake)\n'}
+[4.205255] (-) TimerEvent: {}
+[4.255806] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found CUDA: /usr/local/cuda (found version "11.7") \n'}
+[4.305380] (-) TimerEvent: {}
+[4.405634] (-) TimerEvent: {}
+[4.505865] (-) TimerEvent: {}
+[4.606174] (-) TimerEvent: {}
+[4.706447] (-) TimerEvent: {}
+[4.806715] (-) TimerEvent: {}
+[4.906977] (-) TimerEvent: {}
+[5.007326] (-) TimerEvent: {}
+[5.107590] (-) TimerEvent: {}
+[5.129480] (vtr_virtual_teach) StdoutLine: {'line': b'-- The CUDA compiler identification is NVIDIA 11.7.99\n'}
+[5.135586] (vtr_virtual_teach) StdoutLine: {'line': b'-- Detecting CUDA compiler ABI info\n'}
+[5.207689] (-) TimerEvent: {}
+[5.307947] (-) TimerEvent: {}
+[5.408215] (-) TimerEvent: {}
+[5.508482] (-) TimerEvent: {}
+[5.608826] (-) TimerEvent: {}
+[5.709124] (-) TimerEvent: {}
+[5.809407] (-) TimerEvent: {}
+[5.909654] (-) TimerEvent: {}
+[5.993001] (vtr_virtual_teach) StdoutLine: {'line': b'-- Detecting CUDA compiler ABI info - done\n'}
+[6.009741] (-) TimerEvent: {}
+[6.018119] (vtr_virtual_teach) StdoutLine: {'line': b'-- Check for working CUDA compiler: /usr/local/cuda/bin/nvcc - skipped\n'}
+[6.018492] (vtr_virtual_teach) StdoutLine: {'line': b'-- Detecting CUDA compile features\n'}
+[6.018875] (vtr_virtual_teach) StdoutLine: {'line': b'-- Detecting CUDA compile features - done\n'}
+[6.019493] (vtr_virtual_teach) StdoutLine: {'line': b'-- Caffe2: CUDA detected: 11.7\n'}
+[6.019573] (vtr_virtual_teach) StdoutLine: {'line': b'-- Caffe2: CUDA nvcc is: /usr/local/cuda/bin/nvcc\n'}
+[6.019629] (vtr_virtual_teach) StdoutLine: {'line': b'-- Caffe2: CUDA toolkit directory: /usr/local/cuda\n'}
+[6.109835] (-) TimerEvent: {}
+[6.131994] (vtr_virtual_teach) StdoutLine: {'line': b'-- Caffe2: Header version is: 11.7\n'}
+[6.140965] (vtr_virtual_teach) StderrLine: {'line': b'\x1b[33mCMake Warning at /opt/torch/libtorch/share/cmake/Caffe2/public/cuda.cmake:166 (message):\n'}
+[6.141090] (vtr_virtual_teach) StderrLine: {'line': b'  Failed to compute shorthash for libnvrtc.so\n'}
+[6.141147] (vtr_virtual_teach) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[6.141199] (vtr_virtual_teach) StderrLine: {'line': b'  /opt/torch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:88 (include)\n'}
+[6.141250] (vtr_virtual_teach) StderrLine: {'line': b'  /opt/torch/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)\n'}
+[6.141307] (vtr_virtual_teach) StderrLine: {'line': b'  /home/desiree/ASRL/vtr3/src/main/install/vtr_torch/share/vtr_torch/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[6.141358] (vtr_virtual_teach) StderrLine: {'line': b'  /home/desiree/ASRL/vtr3/src/main/install/vtr_torch/share/vtr_torch/cmake/vtr_torchConfig.cmake:41 (include)\n'}
+[6.141407] (vtr_virtual_teach) StderrLine: {'line': b'  /home/desiree/ASRL/vtr3/src/main/install/vtr_lidar/share/vtr_lidar/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[6.141456] (vtr_virtual_teach) StderrLine: {'line': b'  /home/desiree/ASRL/vtr3/src/main/install/vtr_lidar/share/vtr_lidar/cmake/vtr_lidarConfig.cmake:41 (include)\n'}
+[6.141505] (vtr_virtual_teach) StderrLine: {'line': b'  CMakeLists.txt:22 (find_package)\n'}
+[6.141553] (vtr_virtual_teach) StderrLine: {'line': b'\n'}
+[6.141600] (vtr_virtual_teach) StderrLine: {'line': b'\x1b[0m\n'}
+[6.143080] (vtr_virtual_teach) StdoutLine: {'line': b'-- USE_CUDNN is set to 0. Compiling without cuDNN support\n'}
+[6.209971] (-) TimerEvent: {}
+[6.310225] (-) TimerEvent: {}
+[6.410457] (-) TimerEvent: {}
+[6.510702] (-) TimerEvent: {}
+[6.610949] (-) TimerEvent: {}
+[6.711210] (-) TimerEvent: {}
+[6.811430] (-) TimerEvent: {}
+[6.911687] (-) TimerEvent: {}
+[7.011972] (-) TimerEvent: {}
+[7.083913] (vtr_virtual_teach) StdoutLine: {'line': b'-- Autodetected CUDA architecture(s):  7.5\n'}
+[7.084219] (vtr_virtual_teach) StdoutLine: {'line': b'-- Added CUDA NVCC flags for: -gencode;arch=compute_75,code=sm_75\n'}
+[7.112092] (-) TimerEvent: {}
+[7.212306] (-) TimerEvent: {}
+[7.312637] (-) TimerEvent: {}
+[7.412917] (-) TimerEvent: {}
+[7.513171] (-) TimerEvent: {}
+[7.562443] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found Python3: /usr/include/python3.10 (found version "3.10.12") found components: Development Development.Module Development.Embed \n'}
+[7.592450] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system chrono timer thread \n'}
+[7.613286] (-) TimerEvent: {}
+[7.632318] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 1.3.11 (/opt/ros/humble/share/ament_cmake_gtest/cmake)\n'}
+[7.637495] (vtr_virtual_teach) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[7.711798] (vtr_virtual_teach) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[7.711926] (vtr_virtual_teach) StdoutLine: {'line': b'See also "/home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/build/vtr_virtual_teach/CMakeFiles/CMakeOutput.log".\n'}
+[7.713384] (-) TimerEvent: {}
+[7.730536] (vtr_virtual_teach) CommandEnded: {'returncode': 1}
+[7.753344] (vtr_virtual_teach) JobEnded: {'identifier': 'vtr_virtual_teach', 'rc': 1}
+[7.763827] (-) EventReactorShutdown: {}

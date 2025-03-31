@@ -1,0 +1,2 @@
+13:32:28.369 140211873538048 INFO [configure.cpp:47] [default] Logging to: example_log.txt
+13:32:28.369 140211873538048 INFO [configure.cpp:49] [default] Enabled loggers: [test]

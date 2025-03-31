@@ -1,0 +1,8 @@
+source;share/vtr_virtual_teach/hook/cmake_prefix_path.ps1
+source;share/vtr_virtual_teach/hook/cmake_prefix_path.dsv
+source;share/vtr_virtual_teach/hook/cmake_prefix_path.sh
+source;share/vtr_virtual_teach/local_setup.bash
+source;share/vtr_virtual_teach/local_setup.dsv
+source;share/vtr_virtual_teach/local_setup.ps1
+source;share/vtr_virtual_teach/local_setup.sh
+source;share/vtr_virtual_teach/local_setup.zsh

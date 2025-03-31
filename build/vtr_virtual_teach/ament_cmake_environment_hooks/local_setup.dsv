@@ -1,0 +1,3 @@
+source;share/vtr_virtual_teach/environment/ament_prefix_path.sh
+source;share/vtr_virtual_teach/environment/library_path.sh
+source;share/vtr_virtual_teach/environment/path.sh

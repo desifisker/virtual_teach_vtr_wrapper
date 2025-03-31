@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="press_mesh">
+    <static>true</static>
+    <link name="mesh_link">
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://press_mesh/meshes/mesh.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://press_mesh/meshes/mesh.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

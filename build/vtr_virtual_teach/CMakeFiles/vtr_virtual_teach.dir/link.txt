@@ -1,0 +1,2 @@
+/usr/bin/ar qc libvtr_virtual_teach.a CMakeFiles/vtr_virtual_teach.dir/src/generate_global_map.cpp.o CMakeFiles/vtr_virtual_teach.dir/src/warthog_path_extractor.cpp.o
+/usr/bin/ranlib libvtr_virtual_teach.a

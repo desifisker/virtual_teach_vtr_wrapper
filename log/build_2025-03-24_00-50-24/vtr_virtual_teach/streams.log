@@ -1,0 +1,180 @@
+[0.013s] Invoking command in '/home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/build/vtr_virtual_teach': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/desiree/ASRL/vtr3/src/main/install/vtr_gui:/opt/ros/humble /usr/bin/cmake /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/src/vtr_virtual_teach -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/install/vtr_virtual_teach
+[0.077s] -- The C compiler identification is GNU 11.4.0
+[0.134s] -- The CXX compiler identification is GNU 11.4.0
+[0.142s] -- Detecting C compiler ABI info
+[0.221s] -- Detecting C compiler ABI info - done
+[0.227s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.228s] -- Detecting C compile features
+[0.228s] -- Detecting C compile features - done
+[0.231s] -- Detecting CXX compiler ABI info
+[0.332s] -- Detecting CXX compiler ABI info - done
+[0.338s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.339s] -- Detecting CXX compile features
+[0.339s] -- Detecting CXX compile features - done
+[0.340s] [31mCMake Error at CMakeLists.txt:5 (include):
+[0.340s]   include could not find requested file:
+[0.340s] 
+[0.340s]     /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/src/vtr_virtual_teach/../vtr_common/vtr_include.cmake
+[0.340s] 
+[0.340s] [0m
+[0.346s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.517s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.584s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.672s] -- Checking for module 'eigen3'
+[0.689s] --   Found eigen3, version 3.4.0
+[0.729s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[0.729s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.772s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization 
+[0.794s] -- Checking for module 'flann'
+[0.811s] --   Found flann, version 1.9.1
+[0.866s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[0.866s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[0.895s] -- Looking for pthread.h
+[0.983s] -- Looking for pthread.h - found
+[0.983s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.071s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.072s] -- Found Threads: TRUE  
+[1.073s] -- Found GLEW: /usr/lib/x86_64-linux-gnu/libGLEW.so  
+[1.079s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL GLX 
+[1.259s] -- Found MPI_C: /usr/lib/x86_64-linux-gnu/libmpi.so (found version "3.1") 
+[1.259s] -- Found MPI: TRUE (found version "3.1") found components: C 
+[1.262s] -- Found JsonCpp: /usr/lib/x86_64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") 
+[1.273s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+[1.290s] -- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") 
+[1.301s] -- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") 
+[1.408s] -- Found X11: /usr/include   
+[1.408s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[1.493s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[1.493s] -- Looking for gethostbyname
+[1.576s] -- Looking for gethostbyname - found
+[1.576s] -- Looking for connect
+[1.657s] -- Looking for connect - found
+[1.657s] -- Looking for remove
+[1.738s] -- Looking for remove - found
+[1.739s] -- Looking for shmat
+[1.822s] -- Looking for shmat - found
+[1.822s] -- Looking for IceConnectionNumber in ICE
+[1.904s] -- Looking for IceConnectionNumber in ICE - found
+[1.996s] -- Found EXPAT: /usr/lib/x86_64-linux-gnu/libexpat.so (found version "2.4.7") 
+[1.998s] -- Found double-conversion: /usr/lib/x86_64-linux-gnu/libdouble-conversion.so  
+[2.000s] -- Found LZ4: /usr/lib/x86_64-linux-gnu/liblz4.so (found version "1.9.3") 
+[2.002s] -- Found LZMA: /usr/lib/x86_64-linux-gnu/liblzma.so (found version "5.2.5") 
+[2.015s] -- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") 
+[2.019s] -- Found TIFF: /usr/lib/x86_64-linux-gnu/libtiff.so (found version "4.3.0")  
+[2.023s] -- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.11.1") 
+[2.029s] -- Found utf8cpp: /usr/include/utf8cpp  
+[2.115s] -- Checking for module 'libusb-1.0'
+[2.133s] --   Found libusb-1.0, version 1.0.25
+[2.176s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[2.177s] -- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") 
+[2.177s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.247s] -- Found OpenNI2: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") 
+[2.247s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.247s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[2.397s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.403s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.409s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.581s] -- Found Qhull version 8.0.2
+[2.721s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.853s] -- looking for PCL_COMMON
+[2.853s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[2.854s] -- looking for PCL_KDTREE
+[2.854s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[2.854s] -- looking for PCL_OCTREE
+[2.855s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[2.855s] -- looking for PCL_SEARCH
+[2.855s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[2.856s] -- looking for PCL_SAMPLE_CONSENSUS
+[2.856s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[2.856s] -- looking for PCL_FILTERS
+[2.857s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[2.857s] -- looking for PCL_2D
+[2.857s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[2.857s] -- looking for PCL_GEOMETRY
+[2.857s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[2.857s] -- looking for PCL_IO
+[2.858s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[2.858s] -- looking for PCL_FEATURES
+[2.859s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[2.859s] -- looking for PCL_ML
+[2.860s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[2.860s] -- looking for PCL_SEGMENTATION
+[2.860s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[2.860s] -- looking for PCL_VISUALIZATION
+[2.861s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[2.861s] -- looking for PCL_SURFACE
+[2.862s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[2.862s] -- looking for PCL_REGISTRATION
+[2.862s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[2.863s] -- looking for PCL_KEYPOINTS
+[2.863s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[2.863s] -- looking for PCL_TRACKING
+[2.864s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[2.864s] -- looking for PCL_RECOGNITION
+[2.865s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[2.865s] -- looking for PCL_STEREO
+[2.865s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[2.865s] -- looking for PCL_APPS
+[2.866s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[2.866s] -- looking for PCL_IN_HAND_SCANNER
+[2.867s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[2.867s] -- looking for PCL_MODELER
+[2.867s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[2.867s] -- looking for PCL_POINT_CLOUD_EDITOR
+[2.867s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[2.868s] -- looking for PCL_OUTOFCORE
+[2.868s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[2.869s] -- looking for PCL_PEOPLE
+[2.869s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[2.870s] -- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt;FLANN::FLANN;QHULL::QHULL (Required is at least version "1.2") 
+[2.873s] -- Found lgmath: 1.1.0 (/home/desiree/ASRL/vtr3/src/main/install/lgmath/share/lgmath/cmake)
+[2.877s] -- Found steam: 1.1.0 (/home/desiree/ASRL/vtr3/src/main/install/steam/share/steam/cmake)
+[3.302s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[3.378s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.390s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.405s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.424s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.451s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.529s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.536s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.656s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.674s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.700s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.788s] -- Found vtr_common: 0.0.0 (/home/desiree/ASRL/vtr3/src/main/install/vtr_common/share/vtr_common/cmake)
+[3.838s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[3.838s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[3.998s] -- Found vtr_tactic: 0.0.0 (/home/desiree/ASRL/vtr3/src/main/install/vtr_tactic/share/vtr_tactic/cmake)
+[4.137s] -- Found vtr_lidar: 0.0.0 (/home/desiree/ASRL/vtr3/src/main/install/vtr_lidar/share/vtr_lidar/cmake)
+[4.255s] -- Found CUDA: /usr/local/cuda (found version "11.7") 
+[5.129s] -- The CUDA compiler identification is NVIDIA 11.7.99
+[5.135s] -- Detecting CUDA compiler ABI info
+[5.992s] -- Detecting CUDA compiler ABI info - done
+[6.017s] -- Check for working CUDA compiler: /usr/local/cuda/bin/nvcc - skipped
+[6.018s] -- Detecting CUDA compile features
+[6.018s] -- Detecting CUDA compile features - done
+[6.019s] -- Caffe2: CUDA detected: 11.7
+[6.019s] -- Caffe2: CUDA nvcc is: /usr/local/cuda/bin/nvcc
+[6.019s] -- Caffe2: CUDA toolkit directory: /usr/local/cuda
+[6.131s] -- Caffe2: Header version is: 11.7
+[6.140s] [33mCMake Warning at /opt/torch/libtorch/share/cmake/Caffe2/public/cuda.cmake:166 (message):
+[6.140s]   Failed to compute shorthash for libnvrtc.so
+[6.140s] Call Stack (most recent call first):
+[6.140s]   /opt/torch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:88 (include)
+[6.140s]   /opt/torch/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)
+[6.140s]   /home/desiree/ASRL/vtr3/src/main/install/vtr_torch/share/vtr_torch/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[6.141s]   /home/desiree/ASRL/vtr3/src/main/install/vtr_torch/share/vtr_torch/cmake/vtr_torchConfig.cmake:41 (include)
+[6.141s]   /home/desiree/ASRL/vtr3/src/main/install/vtr_lidar/share/vtr_lidar/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[6.141s]   /home/desiree/ASRL/vtr3/src/main/install/vtr_lidar/share/vtr_lidar/cmake/vtr_lidarConfig.cmake:41 (include)
+[6.141s]   CMakeLists.txt:22 (find_package)
+[6.141s] 
+[6.141s] [0m
+[6.142s] -- USE_CUDNN is set to 0. Compiling without cuDNN support
+[7.083s] -- Autodetected CUDA architecture(s):  7.5
+[7.083s] -- Added CUDA NVCC flags for: -gencode;arch=compute_75,code=sm_75
+[7.562s] -- Found Python3: /usr/include/python3.10 (found version "3.10.12") found components: Development Development.Module Development.Embed 
+[7.592s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system chrono timer thread 
+[7.632s] -- Found ament_cmake_gtest: 1.3.11 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[7.637s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[7.711s] -- Configuring incomplete, errors occurred!
+[7.711s] See also "/home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/build/vtr_virtual_teach/CMakeFiles/CMakeOutput.log".
+[7.730s] Invoked command in '/home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/build/vtr_virtual_teach' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/desiree/ASRL/vtr3/src/main/install/vtr_gui:/opt/ros/humble /usr/bin/cmake /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/src/vtr_virtual_teach -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/install/vtr_virtual_teach
