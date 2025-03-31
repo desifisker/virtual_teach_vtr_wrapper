@@ -64,7 +64,7 @@ if [ "$readme_count2" -gt 0 ] && [ -d "${TARGET}/warthog_gazebo_path_publisher" 
   echo "Rebuilding catkin workspace to compile warthog_gazebo_path_publisher..."
   cd "${TARGET}"
   catkin_make
-  cd "${TARGET}/warthog_gazebo_path_publisher/scripts"
+  cd "${TARGET}/src/warthog_gazebo_path_publisher/scripts"
   chmod +x /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/catkin_ws/src/warthog_gazebo_path_publisher/scripts/save_path.py
 
 else
