@@ -25,17 +25,15 @@ if [ "$item_count1" -eq 0 ] || [ "$item_count1" -eq "$readme_count1" ]; then
   cd virtual_teach_vtr_wrapper/src/nerfstudio
   pip install -e "${NERFSTUDIO_DIR}"
   
-  # Mark the installation as complete so it won't run again
-  touch "${NERFSTUDIO_DIR}/.installed"
+  conda deactivate
+  echo "deactivated conda environment for nerfstudio"
+  conda init
   
 else
   echo "Nerfstudio repository already exists at ${NERFSTUDIO_DIR}."
 fi
   
-  conda deactivate
-  echo "deactivated conda environment for nerfstudio"
-  conda init
-  
+
 # --- Catkin Workspace Initialization ---
 source /opt/ros/noetic/setup.bash
 source /catkin_ws/devel/setup.bash
@@ -57,9 +55,7 @@ if [ "$item_count2" -eq 0 ] || [ "$item_count2" -eq "$readme_count2" ]; then
   
   echo "Initializing persistent catkin directory..."
   cp -r "${DEFAULT}/"* "${TARGET}/"
-  
-  # Mark the workspace as initialized so these steps are skipped on subsequent startups.
-  touch "${TARGET}/.initialized"
+
 else
   echo "Catkin workspace already initialized at ${TARGET}."
 fi

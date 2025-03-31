@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/build/vtr_virtual_teach/warthog_path_extractor" "TARGETS" "warthog_path_extractor" "DESTINATION" "lib/vtr_virtual_teach")

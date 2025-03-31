@@ -163,16 +163,16 @@ RUN mkdir -p /catkin_ws/src && cd /catkin_ws/src && \
     /bin/bash -c "source /opt/ros/noetic/setup.bash && catkin_make && catkin_make install -DCMAKE_INSTALL_PREFIX=/catkin_ws/install"
 
 RUN wget -O /catkin_ws/src/warthog/warthog_description/urdf/warthog.urdf.xacro \
-    "https://raw.githubusercontent.com/desifisker/virtual_teach_vtr_wrapper/refs/heads/main/configs/warthog.urdf.xacro?$(date +%s)"
+    "https://raw.githubusercontent.com/desifisker/virtual_teach_vtr_wrapper/refs/heads/main/configs/warthog.urdf.xacro"
 
 RUN wget -O /catkin_ws/src/warthog/warthog_description/meshes/RULER.dae \
-    "https://raw.githubusercontent.com/desifisker/virtual_teach_vtr_wrapper/refs/heads/main/configs/RULER.dae?$(date +%s)"
+    "https://raw.githubusercontent.com/desifisker/virtual_teach_vtr_wrapper/refs/heads/main/configs/RULER.dae"
 
 RUN wget -O /opt/ros/noetic/share/teleop_twist_joy/config/logitech.config.yaml \
-    "https://raw.githubusercontent.com/desifisker/virtual_teach_vtr_wrapper/refs/heads/main/configs/logitech.config.yaml?$(date +%s)"
+    "https://raw.githubusercontent.com/desifisker/virtual_teach_vtr_wrapper/refs/heads/main/configs/logitech.config.yaml"
     
 RUN wget -O /opt/ros/noetic/share/teleop_twist_joy/launch/teleop.launch \
-    "https://raw.githubusercontent.com/desifisker/virtual_teach_vtr_wrapper/refs/heads/main/configs/teleop.launch?$(date +%s)"
+    "https://raw.githubusercontent.com/desifisker/virtual_teach_vtr_wrapper/refs/heads/main/configs/teleop.launch"
 
 # Save a backup copy of the folder for seeding the persistent volume later
 RUN cp -r /catkin_ws /catkin_ws_default
@@ -185,9 +185,14 @@ RUN echo "source /opt/ros/noetic/setup.bash" >> $HOME/.bashrc && \
     echo ". /opt/miniconda/etc/profile.d/conda.sh" >> ~/.bashrc && \
     echo "alias ros1='source /opt/ros/noetic/setup.bash && source /catkin_ws/devel/setup.bash'" >> $HOME/.bashrc
     
+# Change ownership of backup directories so that the non-root user can access them
+RUN chown -R ${USERID}:${GROUPID} /tmp/nerfstudio_default /catkin_ws_default
+
 # Copy the entrypoint script into the image.
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
+
+USER ${USERID}:${GROUPID}
 
 # Use the entrypoint script, then bash as default command.
 ENTRYPOINT ["/entrypoint.sh"]

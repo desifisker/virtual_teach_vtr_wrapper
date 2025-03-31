@@ -1,3 +1,0 @@
-/home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/install/vtr_virtual_teach/lib/libvtr_virtual_teach.a
-/home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/install/vtr_virtual_teach/share/vtr_virtual_teach/cmake/export_vtr_virtual_teachExport.cmake
-/home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/install/vtr_virtual_teach/share/vtr_virtual_teach/cmake/export_vtr_virtual_teachExport-noconfig.cmake
