@@ -178,7 +178,7 @@ RUN wget -O /opt/ros/noetic/share/teleop_twist_joy/launch/teleop.launch \
 RUN cp -r /catkin_ws /catkin_ws_default
 
 # Add extra dependencies Scripts needs
-RUN pip3 install numpy scipy pandas matplotlib opencv-python open3d pylgmath pycollada
+RUN pip3 install numpy scipy pandas matplotlib opencv-python open3d asrl-pylgmath pycollada
 
 WORKDIR ${VTRROOT}
 
