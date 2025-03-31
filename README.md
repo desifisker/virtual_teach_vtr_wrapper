@@ -99,12 +99,11 @@ Make sure to do this inside the vtr3 docker container (where you should currentl
 NOTE: IF YOU ALREADY HAVE VTR3 INSTALLED AND WORKING, THIS IS WHERE YOU NEED TO BEGIN FOLLOWING THESE INSTRUCTIONS.
 
 ```Bash
-
 source /opt/ros/humble/setup.bash
 echo $ROS_DISTRO                             
-source ${VTRSRC}/main/install/setup.bash     
-cd ~/ASRL/virtual_teach_vtr_wrapper         
-colcon build --symlink-install
+source ${VTRSRC}/main/install/setup.bash
+cd ${VTRROOT}/virtual_teach_vtr_wrapper         
+colcon build --packages-select vtr_virtual_teach 
 ```
 
 wait until it finishes.
