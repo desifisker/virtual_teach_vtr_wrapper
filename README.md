@@ -134,11 +134,6 @@ programs was created to simplify the VirT&R pipeline set up for users with pre-e
 will be used to mount the ${VTRROOT} directory as a shared directory to create more of a solidified project and enable simpler file storage and transfer.
 
 ```Bash
-exit                           # exit the vtr3 docker container
-cd ${VTRROOT}/virtual_teach_vtr_wrapper/docker
-docker compose up --build -d 
-docker start virtr_programs
-ignore^^^^^^^^ for now^^^^^^^^66
 
 cd ${VTRROOT}/virtual_teach_vtr_wrapper/docker
 docker build -t virtr \
