@@ -43,13 +43,13 @@ cd "${VTRROOT}"
 TARGET="${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws"
 DEFAULT="/catkin_ws_default"
 
-# Count the number of items in the directory
-item_count2=$(find "${TARGET}" -mindepth 1 | wc -l)
-# Count README files (case-insensitive) in the directory
+# Check if a README file (or variant) exists
 readme_count2=$(find "${TARGET}" -maxdepth 1 -type f \( -iname "readme" -o -iname "readme.*" \) | wc -l)
-
-if [ "$item_count2" -eq 0 ] || [ "$item_count2" -eq "$readme_count2" ]; then
-  echo "TARGET is empty or only contains README(s). Removing README(s) and seeding..."
+# Check if the specific folder exists
+if [ "$readme_count2" -gt 0 ] && [ -d "${TARGET}/warthog_gazebo_path_publisher" ]; then
+  echo "Found README and warthog_gazebo_path_publisher folder in TARGET."
+  echo "Removing README(s) and seeding persistent catkin directory (preserving warthog_gazebo_path_publisher)..."
+  
   # Remove README files (case-insensitive)
   find "${TARGET}" -maxdepth 1 -type f \( -iname "readme" -o -iname "readme.*" \) -delete
   
