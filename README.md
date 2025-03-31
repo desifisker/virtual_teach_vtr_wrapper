@@ -103,7 +103,7 @@ source /opt/ros/humble/setup.bash
 echo $ROS_DISTRO                             
 source ${VTRSRC}/main/install/setup.bash
 cd ${VTRROOT}/virtual_teach_vtr_wrapper         
-colcon build --packages-select vtr_virtual_teach 
+colcon build --packages-select vtr_virtual_teach
 ```
 
 wait until it finishes.
