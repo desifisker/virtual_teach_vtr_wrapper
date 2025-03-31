@@ -16,7 +16,7 @@ mkdir -p ${VTRSRC} ${VTRTEMP} ${VTRDEPS}
 Reference: https://github.com/utiasASRL/vtr3/wiki/Installation-Guide
 
 ## Download VTR3 Source Code
-Clone VTR3 to your local filesystem. (If you already have vtr3 installed and running on your machine skip this step.)
+Clone VTR3 to your local filesystem. (If you already have VTR3 installed and running on your machine skip this step.)
 
 ```Bash
 cd ${VTRSRC}
@@ -56,7 +56,7 @@ docker build -t vtr3 \
 Reference: https://github.com/utiasASRL/vtr3/wiki/EXPERIMENTAL-Running-VTR3-from-a-Docker-Container
 
 ## Start the VTR3 Docker container
-Install nvidia docker runtime first (https://nvidia.github.io/nvidia-container-runtime/), then run the docker container for VTR. (If you already have VTR3 installed and running on your machine skip this step - just open a new terminal in the container.)
+Install nvidia docker runtime first (https://nvidia.github.io/nvidia-container-runtime/), then run the docker container for VTR3. (If you already have VTR3 installed and running on your machine skip this step - just open a new terminal in the container.)
 
 ```Bash
 docker run -dit --rm --name vtr3 \
@@ -94,7 +94,7 @@ npm --prefix ${VTRUI} run build
 wait until it finishes.
 
 ## Build and Install virtual_teach_vtr_wrapper (this package)
-Make sure to do this inside the vtr3 docker container (where you should currently still be working after having completed the above steps.) 
+Make sure to do this inside the VTR3 docker container (where you should currently still be working after having completed the above steps.) 
 
 NOTE: IF YOU ALREADY HAVE VTR3 INSTALLED AND WORKING, THIS IS WHERE YOU NEED TO BEGIN FOLLOWING THESE INSTRUCTIONS.
 
@@ -124,7 +124,7 @@ pip3 install -e .
 
 ## Build and install the rest of the programs required
 Now that VTR3 has been set up with the VirT&R extension package, the rest of the VirT&R pipeline must be installed. A separate Dockerfile for the other
-programs was created to simplify the VirT&R pipeline set up for users with pre-exsiting VTR3 installations they may not want to edit, rebuild, or abandon. It has been set up to mount the same directories as VTR# for seamless use to create more of a solidified project and enable simpler file storage and transfer. Please build and run the Dockerfile.
+programs was created to simplify the VirT&R pipeline set up for users with pre-exsiting VTR3 installations they may not want to edit, rebuild, or abandon. It has been set up to mount the same directories as VTR3 for seamless use to create more of a solidified project and enable simpler file storage and transfer. Please build and run the Dockerfile.
 
 ```Bash
 cd ${VTRROOT}/virtual_teach_vtr_wrapper/docker
