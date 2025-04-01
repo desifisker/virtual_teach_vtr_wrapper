@@ -160,14 +160,20 @@ DATASET DOWNLOAD:
 https://drive.google.com/drive/folders/1TpRJCtvYFxTDJrL1TxS9-hO1WO6BE5z0?usp=sharing
 
 ## Helper scripts used to run the programs
-Several helper scripts have been created to automate some tedious or menial aspects involved in creating a virtual teach map. They are referenced in the Using VirT&R Documentation and can be found below as a shortcut:
+Several helper scripts have been created to automate some tedious or menial aspects involved in creating a virtual teach map. They are referenced in the Using VirT&R Documentation and can be found below as examples used on the available dataset:
 
 ```Bash
-./ImageExtractor.sh "/path/to/flight.csv" "/path/to/video1.mp4,/path/to/video2.mp4" "1742421135000,1742421136000" "/path/to/output" "/path/to/unified.txt" DJI
+chmod +x ${VTRROOT}/virtual_teach_vtr_wrapper/launch*
 
-./ImageProcessor.sh "/path/to/input_images" "/path/to/output" "/path/to/scaling.txt" "/path/to/model_aligner.txt" "0.01" "/path/to/colmap/database.db" "/path/to/colmap/images" "/path/to/mapper/output" "/path/to/model_aligner/input" "/path/to/model_aligner/output" "0" "1.0"
+./ImageExtraction.sh "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/DJIFlightRecord_2025-02-22_[11-59-34].csv" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/DJI_0001-001.MP4" "1740243662000" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/images" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/all_image_poses.txt" DJI
 
-./Blender.sh "/path/to/settings.json" "/path/to/pointcloud.ply" "1.5" "/path/to/mesh.obj"
+./ImageProcessor.sh "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/images" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/output" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/all_image_poses.txt" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/filtered_and_scaled.txt" "0.01" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/colmap/database.db" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/images" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/colmap" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/colmap" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/colmap/Scaled_1_100" "0" "1.0" "press_test"
+
+./Blender.sh "${VTRROOT}/virtual_teach_vtr_wrapper/src/nerfstudio/nerfstudio/outputs/dataparser_transforms.json" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/pointclouds/point_cloud.ply" "100" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/meshes/mesh.obj"
+
+./Gazebo.sh "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/meshes/mesh.dae" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/meshes/material_0.png" "test_press_world"
+
+./TeachMap.sh "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/pointclouds/point_cloud.ply" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/paths/relative_transforms.csv" "test_press"
 
 ```
 
