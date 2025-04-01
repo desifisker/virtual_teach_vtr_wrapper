@@ -25,7 +25,7 @@ git submodule update --init --remote
 ```
 
 ## Download virtual_teach_vtr_wrapper
-This package contains the vtr_virtual_teach C++ package for VTR3 and the custom scripts required to create virtual teach maps. Download it to your local filesystem in ${VTRROOT} as well.
+This package contains the vtr_virtualteach C++ package for VTR3 and the custom scripts required to create virtual teach maps. Download it to your local filesystem in ${VTRROOT} as well.
 
 ```Bash
 cd ${VTRROOT}
@@ -103,12 +103,12 @@ source /opt/ros/humble/setup.bash
 echo $ROS_DISTRO                             
 source ${VTRSRC}/main/install/setup.bash
 cd ${VTRROOT}/virtual_teach_vtr_wrapper         
-colcon build --packages-select vtr_virtual_teach
+colcon build --packages-select vtr_virtualteach
 ```
 
 wait until it finishes.
 
-Note that whenever you change any code in the VTR3 repo, you need to re-compile, do this by re-running the `colcon build ....` command for both VTR3 and then vtr_virtual_teach. Always wait until build process on VTR3 finishes before running the build command for vtr_virtual_testing.
+Note that whenever you change any code in the VTR3 repo, you need to re-compile, do this by re-running the `colcon build ....` command for both VTR3 and then vtr_virtualteach. Always wait until build process on VTR3 finishes before running the build command for vtr_virtual_testing.
 
 
 ## Create a python venv to install the posegraph python tools
