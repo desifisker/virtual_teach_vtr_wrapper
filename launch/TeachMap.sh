@@ -36,13 +36,13 @@ pcd_path = os.path.join(vtrroot, "data", "<PROJECT_NAME>", "point_cloud.pcd")
 o3d.io.write_point_cloud(pcd_path, pcd)
 print("Converted point cloud from .ply to .pcd.")
 PYTHON_EOF
-sed -i 's|/home/desiree/ASRL/vtr3/data/grassy/point_cloud.pcd|/home/desiree/ASRL/vtr3/data/<PROJECT_NAME>/point_cloud.pcd|g' ${VTRROOT}/virtual_teach_vtr_wrapper/src/vtr_virtual_teach/src/generate_global_map.cpp; 
-sed -i 's|/home/desiree/ASRL/vtr3/data/grassy/nerf_gazebo_relative_transforms.csv|/home/desiree/ASRL/vtr3/data/<PROJECT_NAME>/nerf_gazebo_relative_transforms.csv|g' ${VTRROOT}/virtual_teach_vtr_wrapper/src/vtr_virtual_teach/src/generate_global_map.cpp; 
-sed -i 's|/home/desiree/ASRL/vtr3/data/grassy/graph|/home/desiree/ASRL/vtr3/data/<PROJECT_NAME>/graph|g' ${VTRROOT}/virtual_teach_vtr_wrapper/src/vtr_virtual_teach/src/generate_global_map.cpp; 
+sed -i 's|/home/desiree/ASRL/vtr3/data/grassy/point_cloud.pcd|/home/desiree/ASRL/vtr3/data/<PROJECT_NAME>/point_cloud.pcd|g' ${VTRROOT}/virtual_teach_vtr_wrapper/src/vtr_virtualteach/src/generate_global_map.cpp; 
+sed -i 's|/home/desiree/ASRL/vtr3/data/grassy/nerf_gazebo_relative_transforms.csv|/home/desiree/ASRL/vtr3/data/<PROJECT_NAME>/nerf_gazebo_relative_transforms.csv|g' ${VTRROOT}/virtual_teach_vtr_wrapper/src/vtr_virtualteach/src/generate_global_map.cpp; 
+sed -i 's|/home/desiree/ASRL/vtr3/data/grassy/graph|/home/desiree/ASRL/vtr3/data/<PROJECT_NAME>/graph|g' ${VTRROOT}/virtual_teach_vtr_wrapper/src/vtr_virtualteach/src/generate_global_map.cpp; 
 cd ${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws; 
 rm -rf build devel; 
-colcon build --packages-select vtr_virtual_teach; 
-ros2 run vtr_virtual_teach generate_global_map
+colcon build --packages-select vtr_virtualteach; 
+ros2 run vtr_virtualteach generate_global_map
 EOF
 )
 
@@ -55,4 +55,3 @@ DOCKER_SCRIPT="${DOCKER_SCRIPT//<PROJECT_NAME>/$PROJECT_NAME}"
 docker exec -it vtr3 bash -c "$DOCKER_SCRIPT"
 EXIT_CODE=$?
 exit $EXIT_CODE
-
