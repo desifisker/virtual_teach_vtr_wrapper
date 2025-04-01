@@ -14,14 +14,12 @@ TXT_FILE="$5"
 REG_TYPE="$6"
 
 # Start the Docker container named vtr3
-docker start vtr3
+docker start virtr
 
 # Build the command string to be executed inside the container.
 DOCKER_CMD="
-  source \${VTRSRC}/main/install/setup.bash &&
-  source /opt/ros/humble/setup.bash &&
-  cd /home/desiree/ASRL/vtr3/src/main &&
-  echo \$ROS_DISTRO &&
+  source /opt/ros/noetic/setup.bash &&
+
   if [ \"$REG_TYPE\" = \"DJI\" ]; then
       python3 \${VTRROOT}/virtual_teach_vtr_wrapper/src/vtr_virtual_teach/scripts/DJI_GPSRegistration4Colmap.py \"$CSV_INPUT\" \"$VIDEO_FILES\" \"$EPOCH_TS\" \"$OUTPUT_DIR\" \"$TXT_FILE\";
   elif [ \"$REG_TYPE\" = \"GOPRO\" ]; then
@@ -33,7 +31,6 @@ DOCKER_CMD="
 "
 
 # Run the command inside the container
-docker exec -it vtr3 bash -c "$DOCKER_CMD"
+docker exec -it virtr bash -c "$DOCKER_CMD"
 EXIT_CODE=$?
 exit $EXIT_CODE
-
