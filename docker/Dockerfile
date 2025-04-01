@@ -179,6 +179,7 @@ RUN cp -r /catkin_ws /catkin_ws_default
 
 # Add extra dependencies Scripts needs
 RUN pip3 install numpy scipy pandas matplotlib opencv-python open3d asrl-pylgmath pycollada
+RUN pip3 install --upgrade numpy pip pyOpenSSL cryptography
 
 WORKDIR ${VTRROOT}
 
