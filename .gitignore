@@ -37,4 +37,11 @@ install/
 data/*
 !data/README.md
 
+catkin_ws/
+
+src/nerfstudio/*
+
+
+
+
 
