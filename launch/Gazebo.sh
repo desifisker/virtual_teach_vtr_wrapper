@@ -2,16 +2,17 @@
 # launch_warthog.sh - Setup and launch Gazebo world with teleop and path saving
 
 # Usage: ./launch_warthog.sh <mesh_file> <world_name>
-if [ "$#" -ne 2 ]; then
-  echo "Usage: $0 <mesh_file> <world_name>"
+if [ "$#" -ne 3 ]; then
+  echo "Usage: $0 <mesh_file> <png_file> <world_name>"
   exit 1
 fi
 
 MESH_FILE="$1"
-WORLD="$2"
+PNG_FILE="$2"
+WORLD="$3"
 
 # Start the Docker container named virtr_programs.
-docker start virtr_programs
+docker start virtr
 
 # Build the multi-line command to be executed inside the container.
 # Note: This script assumes that environment variables VTRSRC and VTRROOT are set in the container.
@@ -19,13 +20,12 @@ DOCKER_SCRIPT=$(cat <<EOF
 source /opt/ros/noetic/setup.bash &&
 echo \$ROS_DISTRO &&
 # Create necessary directories
-mkdir -p "\${VTRROOT}/virtual_teach_vtr_wrapper/data/warthog_gazebo/models/${WORLD}/meshes" &&
-mkdir -p "\${VTRROOT}/virtual_teach_vtr_wrapper/data/warthog_gazebo/worlds" &&
-mkdir -p "\${VTRROOT}/virtual_teach_vtr_wrapper/data/warthog_gazebo/launch" &&
+mkdir -p "\${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws/src/warthog_simulator/warthog_gazebo/models/${WORLD}/meshes" &&
 # Copy the mesh file into the models folder (renamed as mesh.dae)
-cp "${MESH_FILE}" "\${VTRROOT}/virtual_teach_vtr_wrapper/data/warthog_gazebo/models/${WORLD}/meshes/mesh.dae" &&
+cp -r "${MESH_FILE}" "\${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws/src/warthog_simulator/warthog_gazebo/models/${WORLD}/meshes/mesh.dae" &&
+cp -r "${PNG_FILE}" "\${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws/src/warthog_simulator/warthog_gazebo/models/${WORLD}/meshes/material_0.png" &&
 # Create the .world file with the world name substituted
-cat <<WORLD_EOF > "\${VTRROOT}/virtual_teach_vtr_wrapper/data/warthog_gazebo/worlds/${WORLD}.world"
+cat <<WORLD_EOF > "\${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws/src/warthog_simulator/warthog_gazebo/worlds/${WORLD}.world"
 <sdf version='1.6'>
   <world name='${WORLD}'>
     <!-- Omni Light for Full Uniform Lighting -->
@@ -108,37 +108,74 @@ cat <<WORLD_EOF > "\${VTRROOT}/virtual_teach_vtr_wrapper/data/warthog_gazebo/wor
 WORLD_EOF
 
 # Create the .launch file with the world name substituted
-cat <<LAUNCH_EOF > "\${VTRROOT}/virtual_teach_vtr_wrapper/data/warthog_gazebo/launch/${WORLD}.launch"
+cat <<LAUNCH_EOF > "\${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws/src/warthog_simulator/warthog_gazebo/launch/${WORLD}.launch"
 <?xml version="1.0"?>
 <launch>
   <arg name="use_sim_time" default="true" />
   <arg name="gui" default="true" />
   <arg name="headless" default="false" />
-  <arg name="world_name" default="\$(find warthog_gazebo)/worlds/${WORLD}.world" />
+  <arg name="world_name" default="\\\$(find warthog_gazebo)/worlds/${WORLD}.world" />
   <!-- Launch Gazebo with the specified world -->
-  <include file="\$(find gazebo_ros)/launch/empty_world.launch">
+  <include file="\\\$(find gazebo_ros)/launch/empty_world.launch">
     <arg name="debug" value="0" />
-    <arg name="gui" value="\$(arg gui)" />
-    <arg name="use_sim_time" value="\$(arg use_sim_time)" />
-    <arg name="headless" value="\$(arg headless)" />
-    <arg name="world_name" value="\$(arg world_name)" />
+    <arg name="gui" value="\\\$(arg gui)" />
+    <arg name="use_sim_time" value="\\\$(arg use_sim_time)" />
+    <arg name="headless" value="\\\$(arg headless)" />
+    <arg name="world_name" value="\\\$(arg world_name)" />
   </include>
   <!-- Add a single Warthog robot -->
-  <include file="\$(find warthog_gazebo)/launch/spawn_warthog.launch" />
+  <include file="\\\$(find warthog_gazebo)/launch/spawn_warthog.launch" />
 </launch>
+
 LAUNCH_EOF
-# Launch the Gazebo simulation in the background
-roslaunch warthog_gazebo ${WORLD}.launch &
-# Launch the teleop node concurrently (adjust the command if necessary)
-roslaunch warthog_teleop teleop.launch &
-# Wait for a key press to save the path
-read -n 1 -s -r -p 'Press any key to save path'
-rosrun warthog_gazebo_path_publisher save_path.py
+
+# Create the .launch file with the world name substituted
+cat <<CONFIG_EOF > "\${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws/src/warthog_simulator/warthog_gazebo/models/${WORLD}/model.config"
+<?xml version="1.0" ?>
+<model>
+  <name>${WORLD}_mesh</name>
+  <version>1.0</version>
+  <sdf version="1.6">model.sdf</sdf>
+  <author>
+    <name>Your Name</name>
+    <email>your.email@example.com</email>
+  </author>
+  <description>
+    This is the NeRF mesh for Gazebo simulation.
+  </description>
+</model>
+
+CONFIG_EOF
+
+# Create the .launch file with the world name substituted
+cat <<SDF_EOF > "\${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws/src/warthog_simulator/warthog_gazebo/models/${WORLD}/model.sdf"
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="${WORLD}_mesh">
+    <static>true</static>
+    <link name="mesh_link">
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://${WORLD}_mesh/meshes/mesh.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://${WORLD}_mesh/meshes/mesh.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>
+SDF_EOF
 EOF
 )
 
 # Execute the multi-line command inside the container.
-docker exec -it virtr_programs bash -c "$DOCKER_SCRIPT"
-EXIT_CODE=\$?
-exit \$EXIT_CODE
-
+docker exec -it virtr bash -c "$DOCKER_SCRIPT"
+EXIT_CODE=$?
+exit $EXIT_CODE
