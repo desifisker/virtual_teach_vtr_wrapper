@@ -46,16 +46,15 @@ DEFAULT="/catkin_ws_default"
 # Check if a README file (or variant) exists
 readme_count2=$(find "${TARGET}" -maxdepth 1 -type f \( -iname "readme" -o -iname "readme.*" \) | wc -l)
 # Check if the specific folder exists
-if [ "$readme_count2" -gt 0 ] && [ -d "${TARGET}/warthog_gazebo_path_publisher" ]; then
-  echo "Found README and warthog_gazebo_path_publisher folder in TARGET."
-  echo "Removing README(s) and seeding persistent catkin directory (preserving warthog_gazebo_path_publisher)..."
+if [ "$readme_count2" -gt 0 ] && [ -d "${TARGET}/src" ]; then
+  echo "Found README and src folder in TARGET."
+  echo "Removing README(s) and seeding persistent catkin directory (preserving warthog_gazebo_path_publisher in src)..."
   
   # Remove README files (case-insensitive)
   find "${TARGET}" -maxdepth 1 -type f \( -iname "readme" -o -iname "readme.*" \) -delete
   
   echo "Initializing persistent catkin directory..."
   cp -r "${DEFAULT}/"* "${TARGET}/"
-  mv "${TARGET}/warthog_gazebo_path_publisher" "${TARGET}/src/"
   
   # Clean previous build and devel directories to avoid CMake cache issues
   echo "Cleaning previous build and devel directories..."
