@@ -51,7 +51,7 @@ W_DEFAULT="/catkin_ws_default/src/warthog"
 # Check if a README file (or variant) exists
 readme_count2=$(find "${TARGET}" -maxdepth 1 -type f \( -iname "readme" -o -iname "readme.*" \) | wc -l)
 # Check if the specific folder exists
-if [ "$readme_count2" -gt 0 ] && [ -d "${TARGET}/warthog_gazebo_path_publisher" ]; then
+if [ "$readme_count2" -gt 0 ] && [ -d "${TARGET}/src" ]; then
   echo "Found README and src folder in TARGET."
   echo "Removing README(s) and seeding persistent catkin directory (preserving warthog_gazebo_path_publisher in src)..."
   
