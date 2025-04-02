@@ -21,9 +21,9 @@ DOCKER_CMD="
   source /opt/ros/noetic/setup.bash &&
 
   if [ \"$REG_TYPE\" = \"DJI\" ]; then
-      python3 \${VTRROOT}/virtual_teach_vtr_wrapper/src/vtr_virtual_teach/scripts/DJI_GPSRegistration4Colmap.py \"$CSV_INPUT\" \"$VIDEO_FILES\" \"$EPOCH_TS\" \"$OUTPUT_DIR\" \"$TXT_FILE\";
+      python3 \${VTRROOT}/virtual_teach_vtr_wrapper/src/vtr_virtualteach/scripts/DJI_GPSRegistration4Colmap.py \"$CSV_INPUT\" \"$VIDEO_FILES\" \"$EPOCH_TS\" \"$OUTPUT_DIR\" \"$TXT_FILE\";
   elif [ \"$REG_TYPE\" = \"GOPRO\" ]; then
-      python3 \${VTRROOT}/virtual_teach_vtr_wrapper/src/vtr_virtual_teach/scripts/GOPRO_GPSRegistration4Colmap.py \"$CSV_INPUT\" \"$VIDEO_FILES\" \"$EPOCH_TS\" \"$OUTPUT_DIR\" \"$TXT_FILE\";
+      python3 \${VTRROOT}/virtual_teach_vtr_wrapper/src/vtr_virtualteach/scripts/GOPRO_GPSRegistration4Colmap.py \"$CSV_INPUT\" \"$VIDEO_FILES\" \"$EPOCH_TS\" \"$OUTPUT_DIR\" \"$TXT_FILE\";
   else
       echo \"Unknown registration type. Please specify DJI or GOPRO.\"; 
       exit 1;
