@@ -1,3 +1,4 @@
+
 #!/bin/bash
 # launch.sh - Launch file to start Docker container and run VTR registration scripts
 
@@ -15,6 +16,7 @@ REG_TYPE="$6"
 
 # Start the Docker container named vtr3
 docker start virtr
+
 
 # Build the command string to be executed inside the container.
 DOCKER_CMD="
