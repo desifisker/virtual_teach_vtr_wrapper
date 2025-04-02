@@ -175,8 +175,7 @@ RUN wget -O /opt/ros/noetic/share/teleop_twist_joy/launch/teleop.launch \
     "https://raw.githubusercontent.com/desifisker/virtual_teach_vtr_wrapper/refs/heads/main/configs/teleop.launch"
 
 # Save a backup copy of the folder for seeding the persistent volume later
-RUN cp -r /catkin_ws/src/warthog /catkin_ws_default/src/warthog
-RUN cp -r /catkin_ws/src/warthog_simulator /catkin_ws_default/src/warthog_simulator
+RUN cp -r /catkin_ws /catkin_ws_default
 
 # Add extra dependencies Scripts needs
 RUN pip3 install numpy scipy pandas matplotlib opencv-python open3d asrl-pylgmath pycollada
