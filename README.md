@@ -99,15 +99,16 @@ Make sure to do this inside the VTR3 docker container (where you should currentl
 NOTE: IF YOU ALREADY HAVE VTR3 INSTALLED AND WORKING, THIS IS WHERE YOU NEED TO BEGIN FOLLOWING THESE INSTRUCTIONS.
 
 ```Bash
-source /opt/ros/humble/setup.bash
-echo $ROS_DISTRO                             
 source ${VTRSRC}/main/install/setup.bash
-cd ${VTRROOT}/virtual_teach_vtr_wrapper         
+source /opt/ros/humble/setup.bash
+echo $ROS_DISTRO
+
+cd ${VTRROOT}/virtual_teach_vtr_wrapper/
 colcon build --packages-select vtr_virtualteach
+
+source ~/ASRL/vtr3/virtual_teach_vtr_wrapper/install/setup.bash
+ros2 run vtr_virtualteach generate_global_map                        # run to verify the package is found - should throw an error it can't find a point cloud
 ```
-
-wait until it finishes.
-
 Note that whenever you change any code in the VTR3 repo, you need to re-compile, do this by re-running the `colcon build ....` command for both VTR3 and then vtr_virtualteach. Always wait until build process on VTR3 finishes before running the build command for vtr_virtual_testing.
 
 
