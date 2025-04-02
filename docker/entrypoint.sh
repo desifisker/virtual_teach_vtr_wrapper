@@ -23,7 +23,8 @@ if [ "$item_count1" -eq 0 ] || [ "$item_count1" -eq "$readme_count1" ]; then
   source /opt/miniconda/etc/profile.d/conda.sh
   conda activate nerfstudio
   cd virtual_teach_vtr_wrapper/src/nerfstudio
-  pip install -e "${NERFSTUDIO_DIR}"
+  pip install --upgrade pip setuptools
+  pip install -e .
   
   conda deactivate
   echo "deactivated conda environment for nerfstudio"
@@ -59,7 +60,9 @@ if [ "$readme_count2" -gt 0 ] && [ -d "${TARGET}/src" ]; then
    
   echo "Building catkin workspace..."
   cd "${TARGET}"
+  source /opt/ros/noetic/setup.bash
   catkin_make
+  catkin_make install -DCMAKE_INSTALL_PREFIX=/catkin_ws/install"  
   cd "${TARGET}/src/warthog_gazebo_path_publisher/scripts"
   chmod +x /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/catkin_ws/src/warthog_gazebo_path_publisher/scripts/save_path.py
 
