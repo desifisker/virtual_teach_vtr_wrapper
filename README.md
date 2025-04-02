@@ -162,7 +162,7 @@ Now you should be inside the VirT&R Docker container where Blender, Gazebo, and 
 ## Example Dataset
 An example dataset can be downloaded from this Google Drive link. It contains all elements created as a result of the steps in this pipline (not just the input and output data), so you can follow along and ensure a good result from your installation of the pipeline.
 
-The structure of the data in the example dataset folder 'test_press' should be replicated for all data used with this pipeline for the helper scripts to function properly (although by running the first launch script, the correct structure is created for subsequent scripts and so on, so it should be handled for you, provided you initially set up the .csv and .mp4 crrectly.)
+The structure of the data in the example dataset folder 'test_press' should be replicated for all data used with this pipeline for the helper scripts to function properly (although by running the first launch script, the correct structure is created for subsequent scripts and so on, so it should be handled for you, provided you initially set up the .csv and .mp4 crrectly - file paths are left configurable so that you have more control over your file management.)
 
 DATASET DOWNLOAD:
 https://drive.google.com/drive/folders/1TpRJCtvYFxTDJrL1TxS9-hO1WO6BE5z0?usp=sharing
@@ -175,11 +175,24 @@ chmod +x ImageExtraction.sh ImageProcessor.sh Gazebo.sh TeachMap.sh             
 
 ./ImageExtraction.sh "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/DJIFlightRecord_2025-02-22_[11-59-34].csv" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/DJI_0001-001.MP4" "1740243662000" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/images" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/all_image_poses.txt" DJI
 
-./ImageProcessor.sh "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/images" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/output" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/all_image_poses.txt" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/filtered_and_scaled.txt" "0.01" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/colmap/database.db" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/images" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/colmap" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/colmap" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/colmap/Scaled_1_100" "0" "1.0" "press_test"
+- makes: images folder and all_image_poses.txt file
+
+
+./ImageProcessor.sh "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/images" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/output"  "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/all_image_poses.txt" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/filtered_and_scaled.txt" "0.01" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/colmap/database.db" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/colmap" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/colmap/Scaled_1_100" "0" "1.0" "press_test"
+
+- makes: output folder of filtered images corresponding to filtered_and_scaled.txt (also created from this), database.db, the colmap folder, and the scaled project folder (which will hold the 3 generated .bin files produced)
+
 
 ./Gazebo.sh "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/meshes/mesh.dae" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/meshes/material_0.png" "test_press_world"
 
+- makes: .world, .launch, .config, and .sdf files specific to the dataset
+
+
 ./TeachMap.sh "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/pointclouds/point_cloud.ply" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/paths/relative_transforms.csv" "test_press"
+
+- makes: virtual teach map (graph folder used to run with Lidar Teach and Repeat)
+
+
 
 ```
 
