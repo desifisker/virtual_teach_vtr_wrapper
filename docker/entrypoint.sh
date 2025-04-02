@@ -33,7 +33,6 @@ else
   echo "Nerfstudio repository already exists at ${NERFSTUDIO_DIR}."
 fi
   
-
 # --- Catkin Workspace Initialization ---
 source /opt/ros/noetic/setup.bash
 source /catkin_ws/devel/setup.bash
@@ -42,11 +41,8 @@ cd "${VTRROOT}"
 
 TARGET="${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws"
 
-WS_TARGET="${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws/src/warthog_simulator"
-WS_DEFAULT="/catkin_ws_default/src/warthog_simulator"
-
-W_TARGET="${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws/src/warthog"
-W_DEFAULT="/catkin_ws_default/src/warthog"
+W_TARGET="${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws/src"
+W_DEFAULT="/catkin_ws_default/src"
 
 # Check if a README file (or variant) exists
 readme_count2=$(find "${TARGET}" -maxdepth 1 -type f \( -iname "readme" -o -iname "readme.*" \) | wc -l)
@@ -59,7 +55,6 @@ if [ "$readme_count2" -gt 0 ] && [ -d "${TARGET}/src" ]; then
   find "${TARGET}" -maxdepth 1 -type f \( -iname "readme" -o -iname "readme.*" \) -delete
   
   echo "Initializing persistent catkin directory..."
-  cp -r "${WS_DEFAULT}/"* "${WS_TARGET}/"
   cp -r "${W_DEFAULT}/"* "${W_TARGET}/"
    
   echo "Building catkin workspace..."
