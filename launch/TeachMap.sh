@@ -36,14 +36,12 @@ pcd_path = os.path.join(vtrroot, "data", "<PROJECT_NAME>", "point_cloud.pcd")
 o3d.io.write_point_cloud(pcd_path, pcd)
 print("Converted point cloud from .ply to .pcd.")
 PYTHON_EOF
-sed -i 's|/home/desiree/ASRL/vtr3/data/grassy/point_cloud.pcd|/home/desiree/ASRL/vtr3/data/<PROJECT_NAME>/point_cloud.pcd|g' ${VTRROOT}/virtual_teach_vtr_wrapper/src/vtr_virtualteach/src/generate_global_map.cpp; 
-sed -i 's|/home/desiree/ASRL/vtr3/data/grassy/nerf_gazebo_relative_transforms.csv|/home/desiree/ASRL/vtr3/data/<PROJECT_NAME>/nerf_gazebo_relative_transforms.csv|g' ${VTRROOT}/virtual_teach_vtr_wrapper/src/vtr_virtualteach/src/generate_global_map.cpp; 
-sed -i 's|/home/desiree/ASRL/vtr3/data/grassy/graph|/home/desiree/ASRL/vtr3/data/<PROJECT_NAME>/graph|g' ${VTRROOT}/virtual_teach_vtr_wrapper/src/vtr_virtualteach/src/generate_global_map.cpp; 
-cd ${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws; 
-rm -rf build devel; 
-colcon build --packages-select vtr_virtualteach; 
+sed -i 's|/home/desiree/ASRL/vtr3/data/test_press/point_cloud.pcd|/home/desiree/ASRL/vtr3/data/<PROJECT_NAME>/point_cloud.pcd|g' ${VTRROOT}/virtual_teach_vtr_wrapper/src/vtr_virtualteach/src/generate_global_map.cpp; 
+sed -i 's|/home/desiree/ASRL/vtr3/data/test_press/nerf_gazebo_relative_transforms.csv|/home/desiree/ASRL/vtr3/data/<PROJECT_NAME>/nerf_gazebo_relative_transforms.csv|g' ${VTRROOT}/virtual_teach_vtr_wrapper/src/vtr_virtualteach/src/generate_global_map.cpp; 
+sed -i 's|/home/desiree/ASRL/vtr3/data/test_press/graph|/home/desiree/ASRL/vtr3/data/<PROJECT_NAME>/graph|g' ${VTRROOT}/virtual_teach_vtr_wrapper/src/vtr_virtualteach/src/generate_global_map.cpp; 
+
+source ~/ASRL/vtr3/virtual_teach_vtr_wrapper/install/setup.bash 
 ros2 run vtr_virtualteach generate_global_map
-EOF
 )
 
 # Replace placeholders with actual paths and project name.
