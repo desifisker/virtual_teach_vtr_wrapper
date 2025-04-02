@@ -164,7 +164,7 @@ https://drive.google.com/drive/folders/1TpRJCtvYFxTDJrL1TxS9-hO1WO6BE5z0?usp=sha
 Several helper scripts have been created to automate some tedious or menial aspects involved in creating a virtual teach map. They are referenced in the Using VirT&R Documentation and can be found below as examples used on the available dataset:
 
 ```Bash
-chmod +x ${VTRROOT}/virtual_teach_vtr_wrapper/launch*
+chmod +x ImageExtraction.sh ImageProcessor.sh Gazebo.sh TeachMap.sh
 
 ./ImageExtraction.sh "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/DJIFlightRecord_2025-02-22_[11-59-34].csv" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/DJI_0001-001.MP4" "1740243662000" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/images" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/all_image_poses.txt" DJI
 
