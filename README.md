@@ -170,8 +170,6 @@ chmod +x ${VTRROOT}/virtual_teach_vtr_wrapper/launch*
 
 ./ImageProcessor.sh "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/images" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/output" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/all_image_poses.txt" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/filtered_and_scaled.txt" "0.01" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/colmap/database.db" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/images" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/colmap" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/colmap" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/colmap/Scaled_1_100" "0" "1.0" "press_test"
 
-./Blender.sh "${VTRROOT}/virtual_teach_vtr_wrapper/src/nerfstudio/nerfstudio/outputs/dataparser_transforms.json" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/pointclouds/point_cloud.ply" "100" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/meshes/mesh.obj"
-
 ./Gazebo.sh "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/meshes/mesh.dae" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/meshes/material_0.png" "test_press_world"
 
 ./TeachMap.sh "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/pointclouds/point_cloud.ply" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/paths/relative_transforms.csv" "test_press"
