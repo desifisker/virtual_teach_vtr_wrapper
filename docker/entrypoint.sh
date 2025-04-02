@@ -64,7 +64,7 @@ if [ "$readme_count2" -gt 0 ] && [ -d "${TARGET}/src" ]; then
   catkin_make
   catkin_make install -DCMAKE_INSTALL_PREFIX=/catkin_ws/install"  
   cd "${TARGET}/src/warthog_gazebo_path_publisher/scripts"
-  chmod +x /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/catkin_ws/src/warthog_gazebo_path_publisher/scripts/save_path.py
+  chmod +x ${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws/src/warthog_gazebo_path_publisher/scripts/save_path.py
 
 else
   echo "Catkin workspace already initialized at ${TARGET}."
