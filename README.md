@@ -125,7 +125,7 @@ pip3 install -e .
 
 ## Build and install the rest of the programs required
 Now that VTR3 has been set up with the VirT&R extension package, the rest of the VirT&R pipeline must be installed. A separate Dockerfile for the other
-programs was created to simplify the VirT&R pipeline set up for users with pre-exsiting VTR3 installations they may not want to edit, rebuild, or abandon. It has been set up to mount the same directories as VTR3 for seamless use to create more of a solidified project and enable simpler file storage and transfer. Please build and run the Dockerfile.
+programs was created to simplify the VirT&R pipeline set up for users with pre-exsiting VTR3 installations they may not want to edit, rebuild, or abandon. It has been set up to mount the same directories as VTR3 for seamless use to create more of a solidified project and enable simpler file storage and transfer. Please build and run the Dockerfile. So, before this, exit the vtr3 docker container.
 
 ```Bash
 cd ${VTRROOT}/virtual_teach_vtr_wrapper/docker
