@@ -180,7 +180,8 @@ RUN cp -r /catkin_ws /catkin_ws_default
 # Add extra dependencies Scripts needs
 RUN pip install --upgrade pip setuptools
 RUN pip install "jupyter_client>=5.3.4,<8"
-RUN pip install numpy==1.26.0 scipy pandas matplotlib opencv-python open3d asrl-pylgmath pycollada plotly bpy cv2 csv math
+RUN pip install --upgrade numpy
+RUN pip install scipy pandas matplotlib testresources opencv-python open3d asrl-pylgmath pycollada plotly opencv-python
 RUN pip install --ignore-installed --upgrade numpy pip pyOpenSSL cryptography
 
 WORKDIR ${VTRROOT}
@@ -192,9 +193,12 @@ RUN echo "source /opt/ros/noetic/setup.bash" >> $HOME/.bashrc && \
     echo "alias ros1='source /opt/ros/noetic/setup.bash && source /catkin_ws/devel/setup.bash'" >> $HOME/.bashrc
 
 USER 0:0
+# After creating and setting up your conda environment (nerfstudio)
+RUN mkdir -p /opt/miniconda/envs/nerfstudio/etc/conda/activate.d && \
+    echo 'export PYTHONPATH="/opt/hloc:$PYTHONPATH"' > /opt/miniconda/envs/nerfstudio/etc/conda/activate.d/hloc.sh
 
 # Change ownership of backup directories so that the non-root user can access them
-RUN chown -R ${USERID}:${GROUPID} /tmp/nerfstudio_default /catkin_ws_default
+RUN chown -R ${USERID}:${GROUPID} /tmp/nerfstudio_default /catkin_ws_default /catkin_ws
 
 # Copy the entrypoint script into the image.
 COPY entrypoint.sh /entrypoint.sh
