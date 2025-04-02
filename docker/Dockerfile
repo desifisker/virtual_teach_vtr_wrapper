@@ -108,7 +108,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Initialize rosdep.
-RUN rosdep init && rosdep update
+#RUN rosdep init && rosdep update
 
 # BLENDER 4.3.2. ##################################################################################################################################################################
 RUN wget https://download.blender.org/release/Blender4.3/blender-4.3.2-linux-x64.tar.xz -O /tmp/blender.tar.xz && \
@@ -129,13 +129,12 @@ RUN git clone https://github.com/colmap/colmap.git && \
         -DCMAKE_INSTALL_PREFIX=/build/colmap && \
     ninja install -j1 
     
-#WORKDIR ${VTRROOT}
-
 # MINICONDA #####################################################################################################################################################################
 RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O /tmp/miniconda.sh && \
     bash /tmp/miniconda.sh -b -p /opt/miniconda && \
     rm /tmp/miniconda.sh
-    
+
+ USER ${USERID}:${GROUPID}
 # NERFSTUDIO #####################################################################################################################################################################
 # Create the nerfstudio conda environment and perform pip installations inside it.
 RUN bash -c "source /opt/miniconda/etc/profile.d/conda.sh && \
@@ -178,8 +177,10 @@ RUN wget -O /opt/ros/noetic/share/teleop_twist_joy/launch/teleop.launch \
 RUN cp -r /catkin_ws /catkin_ws_default
 
 # Add extra dependencies Scripts needs
-RUN pip3 install numpy scipy pandas matplotlib opencv-python open3d asrl-pylgmath pycollada
-RUN pip3 install --ignore-installed --upgrade numpy pip pyOpenSSL cryptography
+RUN pip install --upgrade pip setuptools
+RUN pip install "jupyter_client>=5.3.4,<8"
+RUN pip install numpy==1.26.0 scipy pandas matplotlib opencv-python open3d asrl-pylgmath pycollada plotly bpy cv2 csv math
+RUN pip install --ignore-installed --upgrade numpy pip pyOpenSSL cryptography
 
 WORKDIR ${VTRROOT}
 
@@ -188,7 +189,9 @@ RUN echo "source /opt/ros/noetic/setup.bash" >> $HOME/.bashrc && \
     echo "source /catkin_ws/devel/setup.bash" >> $HOME/.bashrc && \
     echo ". /opt/miniconda/etc/profile.d/conda.sh" >> ~/.bashrc && \
     echo "alias ros1='source /opt/ros/noetic/setup.bash && source /catkin_ws/devel/setup.bash'" >> $HOME/.bashrc
-    
+
+USER 0:0
+
 # Change ownership of backup directories so that the non-root user can access them
 RUN chown -R ${USERID}:${GROUPID} /tmp/nerfstudio_default /catkin_ws_default
 
