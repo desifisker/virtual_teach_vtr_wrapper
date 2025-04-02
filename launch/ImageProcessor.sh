@@ -8,18 +8,17 @@
 #  4. TXT_FILE_MODEL_ALIGNER  : Path to the txt file for COLMAP model_aligner.
 #  5. SCALE                   : Scaling factor (e.g., 0.01 or 0.166).
 #  6. COLMAP_DB_PATH          : Database path for COLMAP.
-#  7. FEATURE_IMG_PATH        : Image path for COLMAP feature_extractor.
-#  8. MAPPER_OUT_PATH         : Output path for COLMAP mapper.
-#  9. MODEL_ALIGNER_INPUT     : Input path for COLMAP model_aligner.
-# 10. MODEL_ALIGNER_OUTPUT    : Output path for COLMAP model_aligner (e.g., a folder like Scaled_1_100).
-# 11. REF_IS_GPS              : Reference flag for COLMAP model_aligner (e.g., 0).
-# 12. ALIGNMENT_MAX_ERROR     : Alignment maximum error for COLMAP model_aligner (e.g., 1.0).
-# 13. DEST_SUBFOLDER          : Subfolder name to be created under the nerfstudio destination folder.
+#  7. MAPPER_OUT_PATH         : Output path for COLMAP mapper.
+#                             This will also be used as the input path for COLMAP model_aligner.
+#  8. MODEL_ALIGNER_OUTPUT    : Output path for COLMAP model_aligner (e.g., a folder like Scaled_1_100).
+#  9. REF_IS_GPS              : Reference flag for COLMAP model_aligner (e.g., 0).
+# 10. ALIGNMENT_MAX_ERROR     : Alignment maximum error for COLMAP model_aligner (e.g., 1.0).
+# 11. DEST_SUBFOLDER          : Subfolder name to be created under the nerfstudio destination folder.
 #                             The images and scaled folders will be moved into:
 #                             /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/src/nerfstudio/nerfstudio/data/nerfstudio/<DEST_SUBFOLDER>
 
-if [ "$#" -ne 13 ]; then
-  echo "Usage: $0 <image_input_folder> <output_folder> <txt_file_scaling> <txt_file_model_aligner> <scale> <colmap_db_path> <feature_img_path> <mapper_out_path> <model_aligner_input> <model_aligner_output> <ref_is_gps> <alignment_max_error> <destination_subfolder>"
+if [ "$#" -ne 11 ]; then
+  echo "Usage: $0 <image_input_folder> <output_folder> <txt_file_scaling> <txt_file_model_aligner> <scale> <colmap_db_path> <mapper_out_path> <model_aligner_output> <ref_is_gps> <alignment_max_error> <destination_subfolder>"
   exit 1
 fi
 
@@ -29,20 +28,21 @@ TXT_SCALING="$3"
 TXT_MODEL_ALIGNER="$4"
 SCALE="$5"
 COLMAP_DB_PATH="$6"
-FEATURE_IMG_PATH="$7"
-MAPPER_OUT_PATH="$8"
-MODEL_ALIGNER_INPUT="$9"
-MODEL_ALIGNER_OUTPUT="${10}"
-REF_IS_GPS="${11}"
-ALIGNMENT_MAX_ERROR="${12}"
-DEST_SUBFOLDER="${13}"
+# Use the image input folder for COLMAP feature extraction.
+FEATURE_IMG_PATH="$1"
+MAPPER_OUT_PATH="$7"
+# Use the mapper output as the input for COLMAP model_aligner.
+MODEL_ALIGNER_INPUT="$7"
+MODEL_ALIGNER_OUTPUT="$8"
+REF_IS_GPS="$9"
+ALIGNMENT_MAX_ERROR="${10}"
+DEST_SUBFOLDER="${11}"
 
 # Start the Docker container named virtr.
 docker start virtr
 
 # Build the command string to be executed inside the container.
 DOCKER_CMD="
-  # Ensure required output directories exist.
   mkdir -p \"$OUT_FOLDER\" &&
   mkdir -p \"$(dirname "$COLMAP_DB_PATH")\" &&
   mkdir -p \"$MAPPER_OUT_PATH\" &&
@@ -59,7 +59,7 @@ DOCKER_CMD="
   mkdir -p \"/home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/src/nerfstudio/nerfstudio/data/nerfstudio/${DEST_SUBFOLDER}\" &&
   # Move the images folder and the scaled folder into the destination subfolder.
   cp -r \"$FEATURE_IMG_PATH\" \"/home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/src/nerfstudio/nerfstudio/data/nerfstudio/${DEST_SUBFOLDER}/images\" &&
-  cp -r \"$MODEL_ALIGNER_OUTPUT\" \"/home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/src/nerfstudio/nerfstudio/data/nerfstudio/${DEST_SUBFOLDER}/Scaled_1_100\"
+  cp -r \"$MODEL_ALIGNER_OUTPUT\" \"/home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/src/nerfstudio/nerfstudio/data/nerfstudio/${DEST_SUBFOLDER}/Scaled_1_100\" &&
   # Finally, change directory to the \$NERF directory and start an interactive bash shell.
   cd \"\${NERF}\" && exec bash
 "
