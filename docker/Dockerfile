@@ -44,7 +44,7 @@ ENV TCNN_CUDA_ARCHITECTURES=75,86
 ENV NERFSTUDIO_DIR=/nerfstudio
 
 # Install basic dependencies and tools.
-RUN apt-get update && apt-get install -y --no-install-recommends \
+RUN apt-get update && apt-get install -y apt-utils --no-install-recommends \
     curl \
     gnupg2 \
     python3.8 \
