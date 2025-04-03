@@ -6,6 +6,8 @@
 #include <sstream>
 #include <stdexcept>
 #include <vector>
+#include <stdexcept>
+#include <string>
 #include <matplotlibcpp.h>
 #include <pcl/common/transforms.h>
 #include <pcl/filters/crop_box.h>
@@ -153,6 +155,17 @@ Eigen::Matrix4d computeAbsolutePoseByTimestamp(
 }
 
 int main(int argc, char **argv) {  
+  // Check if the required arguments are provided
+  if (argc < 4) {
+    std::cerr << "Usage: " << argv[0] << " <point_cloud_pcd_path> <transforms_csv_path> <graph_path>" << std::endl;
+    return -1;
+  }
+
+  // Extract file paths from command-line arguments
+  std::string pcd_path = argv[1];
+  std::string csv_path = argv[2];
+  std::string graph_path = argv[3];
+
   try {
     // Redirect std::cout to a log file
     std::ofstream log_file("output_log.txt");
@@ -172,12 +185,11 @@ int main(int argc, char **argv) {
     vtr::logging::configureLogging(log_filename, enable_debug, enabled_loggers);
 
     // Load point cloud data
-    auto cloud = loadPointCloud("${VTRROOT}/data/test_press/point_cloud.pcd");
+    auto cloud = loadPointCloud(pcd_path);
     std::cout << "Point cloud loaded successfully." << std::endl;
 
     // Read transformation matrices from CSV
-    std::string odometry_csv_path = "${VTRROOT}/data/test_press/nerf_gazebo_relative_transforms.csv";
-    auto matrices_with_timestamps = readTransformMatricesWithTimestamps(odometry_csv_path);
+    auto matrices_with_timestamps = readTransformMatricesWithTimestamps(csv_path);
 
     // This transform brings the first pose (absolute) to identity.
     Eigen::Matrix4d origin_transform = matrices_with_timestamps.front().first;
@@ -189,7 +201,6 @@ int main(int argc, char **argv) {
     cloud = rebased_cloud; 
 
     // Create and populate pose graph
-    std::string graph_path = "${VTRROOT}/data/test_press/graph";
     auto graph = createPoseGraph(matrices_with_timestamps, graph_path);
 
     // Reload the saved graph
