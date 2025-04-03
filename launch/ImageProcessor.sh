@@ -1,68 +1,43 @@
 #!/bin/bash
 # launch2.sh - Launch file for image scaling/filtering and COLMAP processing
-#
-# Expected arguments:
-#  1. IMAGE_INPUT_FOLDER      : Folder containing input images.
-#  2. OUTPUT_FOLDER           : Folder where processed images (and other outputs) will be saved.
-#  3. TXT_FILE_SCALING        : Path to the txt file of all image poses for image scaling and filtering.
-#  4. TXT_FILE_MODEL_ALIGNER  : Path to the scaled and filtered txt file for COLMAP model_aligner.
-#  5. SCALE                   : Scaling factor (e.g., 0.01 or 0.166).
-#  6. COLMAP_DB_PATH          : Database path for COLMAP.
-#  7. MAPPER_OUT_PATH         : Output path for COLMAP mapper.
-#                             This will also be used as the input path for COLMAP model_aligner.
-#  8. MODEL_ALIGNER_OUTPUT    : Output path for COLMAP model_aligner (e.g., a folder like Scaled_1_100).
-#  9. REF_IS_GPS              : Reference flag for COLMAP model_aligner (e.g., 0).
-# 10. ALIGNMENT_MAX_ERROR     : Alignment maximum error for COLMAP model_aligner (e.g., 1.0).
-# 11. DEST_SUBFOLDER          : Subfolder name to be created under the nerfstudio destination folder.
-#                             The images and scaled folders will be moved into:
-#                             /home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/src/nerfstudio/nerfstudio/data/nerfstudio/<DEST_SUBFOLDER>
 
-if [ "$#" -ne 11 ]; then
-  echo "Usage: $0 <image_input_folder> <output_folder> <txt_file_scaling> <txt_file_model_aligner> <scale> <colmap_db_path> <mapper_out_path> <model_aligner_output> <ref_is_gps> <alignment_max_error> <destination_subfolder>"
+if [ "$#" -ne 8 ]; then
+  echo "Usage: $0 <image_input_folder> <output_folder> <txt_file_prescaling> <txt_file_postscaling> <scale> <colmap_db_path> <model_aligner_output> <destination_subfolder>"
   exit 1
 fi
 
-IMG_INPUT="$1"
-OUT_FOLDER="$2"
-TXT_SCALING="$3"
-TXT_MODEL_ALIGNER="$4"
-SCALE="$5"
-COLMAP_DB_PATH="$6"
-# Use the image input folder for COLMAP feature extraction.
-FEATURE_IMG_PATH="$1"
-MAPPER_OUT_PATH="$7"
-# Use the mapper output as the input for COLMAP model_aligner.
-MODEL_ALIGNER_INPUT="$7"
-MODEL_ALIGNER_OUTPUT="$8"
-REF_IS_GPS="$9"
-ALIGNMENT_MAX_ERROR="${10}"
-DEST_SUBFOLDER="${11}"
-
+IMGS="$1"
+OUTPUT="$2"
+ALL_IMG_POSES="$3"
+FILTERED="$4"
+SCALE="${5}"
+COLMAP_DB="$6"
+MODEL_ALIGNER_OUTPUT="$7"
+DEST_SUBFOLDER="${8}"
 
 # Start the Docker container named virtr.
 docker start virtr
 
 # Build the command string to be executed inside the container.
 DOCKER_CMD="
-  mkdir -p \"$OUT_FOLDER\" &&
-  mkdir -p \"$(dirname "$COLMAP_DB_PATH")\" &&
-  mkdir -p \"$MAPPER_OUT_PATH\" &&
+  mkdir -p \"$OUTPUT\" &&
+  mkdir -p \"$(dirname "$COLMAP_DB")\" &&
   mkdir -p \"$MODEL_ALIGNER_OUTPUT\" &&
   # Run the image filtering and coordinate scaling script.
-  python3 \${VTRROOT}/virtual_teach_vtr_wrapper/src/vtr_virtualteach/scripts/imageFilterandCoordScaler.py \"$IMG_INPUT\" \"$OUT_FOLDER\" \"$TXT_SCALING\" \"$SCALE\" &&
+  python3 \${VTRROOT}/virtual_teach_vtr_wrapper/src/vtr_virtualteach/scripts/imageFilterandCoordScaler.py \"$IMGS\" \"$OUTPUT\" \"$ALL_IMG_POSES\" \"$SCALE\" &&
   # COLMAP processing commands:
-  colmap database_creator --database_path \"$COLMAP_DB_PATH\" &&
-  colmap feature_extractor --image_path \"$FEATURE_IMG_PATH\" --database_path \"$COLMAP_DB_PATH\" --ImageReader.camera_model SIMPLE_RADIAL --SiftExtraction.use_gpu=1 --SiftExtraction.num_threads=4 --SiftExtraction.max_num_features=8192 --log_level 2 &&
-  colmap exhaustive_matcher --database_path \"$COLMAP_DB_PATH\" &&
-  colmap mapper --database_path \"$COLMAP_DB_PATH\" --image_path \"$FEATURE_IMG_PATH\" --output_path \"$MAPPER_OUT_PATH\" &&
-  colmap model_aligner --input_path \"$MODEL_ALIGNER_INPUT\" --output_path \"$MODEL_ALIGNER_OUTPUT\" --ref_images_path \"$TXT_MODEL_ALIGNER\" --ref_is_gps \"$REF_IS_GPS\" --alignment_max_error \"$ALIGNMENT_MAX_ERROR\" &&
+  colmap database_creator --database_path \"$COLMAP_DB\" &&
+  colmap feature_extractor --image_path \"$IMGS\" --database_path \"$COLMAP_DB\" --ImageReader.camera_model SIMPLE_RADIAL --SiftExtraction.use_gpu=1 --SiftExtraction.num_threads=4 --SiftExtraction.max_num_features=8192 --log_level 2 &&
+  colmap exhaustive_matcher --database_path \"$COLMAP_DB\" &&
+  colmap mapper --database_path \"$COLMAP_DB\" --image_path \"$IMGS\" --output_path \"$OUTPUT\" &&
+  colmap model_aligner --input_path "$OUTPUT/0" --output_path "$MODEL_ALIGNER_OUTPUT" --ref_images_path "$FILTERED" --ref_is_gps 0 --alignment_max_error 1.0 &&
   # Create the destination folder within nerfstudio using the provided subfolder name.
   mkdir -p \"/home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/src/nerfstudio/nerfstudio/data/nerfstudio/${DEST_SUBFOLDER}\" &&
   # Move the images folder and the scaled folder into the destination subfolder.
-  cp -r \"$FEATURE_IMG_PATH\" \"/home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/src/nerfstudio/nerfstudio/data/nerfstudio/${DEST_SUBFOLDER}/images\" &&
-  cp -r \"$MODEL_ALIGNER_OUTPUT\" \"/home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/src/nerfstudio/nerfstudio/data/nerfstudio/${DEST_SUBFOLDER}/Scaled_1_100\" &&
+  cp -r \"$IMGS\" \"/home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/src/nerfstudio/nerfstudio/data/nerfstudio/${DEST_SUBFOLDER}/images\" &&
+  cp -r \"$MODEL_ALIGNER_OUTPUT\" \"/home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/src/nerfstudio/nerfstudio/data/nerfstudio/${DEST_SUBFOLDER}/Scaled_${SCALE}\" &&
   # Finally, change directory to the \$NERF directory and start an interactive bash shell.
-  cd \"\${NERF}\" && exec bash
+  cd \"\${NERF}\" && exec bash && conda activate nerfstudio
 "
 
 # Run the command string inside the container.
