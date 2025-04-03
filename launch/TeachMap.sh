@@ -42,6 +42,7 @@ sed -i 's|/home/desiree/ASRL/vtr3/data/test_press/graph|/home/desiree/ASRL/vtr3/
 
 source ~/ASRL/vtr3/virtual_teach_vtr_wrapper/install/setup.bash 
 ros2 run vtr_virtualteach generate_global_map
+EOF
 )
 
 # Replace placeholders with actual paths and project name.
