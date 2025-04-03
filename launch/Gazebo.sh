@@ -17,8 +17,10 @@ docker start virtr
 # Build the multi-line command to be executed inside the container.
 # Note: This script assumes that environment variables VTRSRC and VTRROOT are set in the container.
 DOCKER_SCRIPT=$(cat <<EOF
+conda deactivate &&
 source /opt/ros/noetic/setup.bash &&
 echo \$ROS_DISTRO &&
+source ~/ASRL/vtr3/virtual_teach_vtr_wrapper/catkin_ws/devel/setup.bash &&
 # Create necessary directories
 mkdir -p "\${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws/src/warthog_simulator/warthog_gazebo/models/${WORLD}/meshes" &&
 # Copy the mesh file into the models folder (renamed as mesh.dae)
