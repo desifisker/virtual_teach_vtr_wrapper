@@ -36,8 +36,12 @@ DOCKER_CMD="
   # Move the images folder and the scaled folder into the destination subfolder.
   cp -r \"$IMGS\" \"/home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/src/nerfstudio/nerfstudio/data/nerfstudio/${DEST_SUBFOLDER}/images\" &&
   cp -r \"$MODEL_ALIGNER_OUTPUT\" \"/home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/src/nerfstudio/nerfstudio/data/nerfstudio/${DEST_SUBFOLDER}/Scaled_${SCALE}\" &&
-  # Finally, change directory to the \$NERF directory and start an interactive bash shell.
-  cd \"\${NERF}\" && exec bash && conda activate nerfstudio
+  cd "${VTRROOT}/virtual_teach_vtr_wrapper/src/nerfstudio" && 
+  source /opt/miniconda/etc/profile.d/conda.sh &&
+  conda activate nerfstudio && 
+  pip install nerfstudio -e . && 
+  export PATH=$PATH:$HOME/.local/bin &&
+  exec bash
 "
 
 # Run the command string inside the container.
