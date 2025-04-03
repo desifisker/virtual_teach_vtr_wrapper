@@ -62,7 +62,7 @@ if [ "$readme_count2" -gt 0 ] && [ -d "${TARGET}/src" ]; then
   cd "${TARGET}"
   source /opt/ros/noetic/setup.bash
   catkin_make
-  catkin_make install -DCMAKE_INSTALL_PREFIX=/catkin_ws/install"  
+  catkin_make install -DCMAKE_INSTALL_PREFIX=/catkin_ws/install
   cd "${TARGET}/src/warthog_gazebo_path_publisher/scripts"
   chmod +x ${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws/src/warthog_gazebo_path_publisher/scripts/save_path.py
 
