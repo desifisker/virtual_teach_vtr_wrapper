@@ -44,7 +44,7 @@ ENV TCNN_CUDA_ARCHITECTURES=75,86
 ENV NERFSTUDIO_DIR=/nerfstudio
 
 # Install basic dependencies and tools.
-RUN apt-get update && apt-get install -y apt-utils --no-install-recommends \
+RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     gnupg2 \
     python3.8 \
@@ -133,9 +133,6 @@ RUN git clone https://github.com/colmap/colmap.git && \
 RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O /tmp/miniconda.sh && \
     bash /tmp/miniconda.sh -b -p /opt/miniconda && \
     rm /tmp/miniconda.sh
-        
-RUN git clone --branch master --recursive https://github.com/cvg/Hierarchical-Localization.git /opt/hloc && \
-    cd /opt/hloc && git checkout v1.4 && python3.8 -m pip install --no-cache-dir .
 
 # NERFSTUDIO #####################################################################################################################################################################
 # Create the nerfstudio conda environment and perform pip installations inside it.
@@ -146,6 +143,8 @@ RUN bash -c "source /opt/miniconda/etc/profile.d/conda.sh && \
     pip install 'fsspec<2023.0.0' && \
     pip install --no-cache-dir --upgrade pip 'setuptools<70.0.0' && \
     pip install --no-cache-dir torch==2.1.2+cu118 torchvision==0.16.2+cu118 'numpy<2.0.0' --extra-index-url https://download.pytorch.org/whl/cu118 && \
+    git clone --branch master --recursive https://github.com/cvg/Hierarchical-Localization.git /opt/hloc && \
+    cd /opt/hloc && git checkout v1.4 && python3.8 -m pip install --no-cache-dir . && \
     cd ~ && \
     TCNN_CUDA_ARCHITECTURES=${TCNN_CUDA_ARCHITECTURES} pip install --no-cache-dir 'git+https://github.com/NVlabs/tiny-cuda-nn.git@b3473c81396fe927293bdfd5a6be32df8769927c#subdirectory=bindings/torch' && \
     pip install --no-cache-dir pycolmap==0.6.1 pyceres==2.1 omegaconf==2.3.0 && \
@@ -180,7 +179,7 @@ RUN cp -r /catkin_ws /catkin_ws_default
 RUN pip install --upgrade pip setuptools
 RUN pip install "jupyter_client>=5.3.4,<8"
 RUN pip install --upgrade numpy
-RUN pip install scipy pandas matplotlib testresources opencv-python open3d asrl-pylgmath pycollada plotly opencv-python
+RUN pip install --ignore-installed scipy pandas matplotlib opencv-python testresources open3d asrl-pylgmath pycollada plotly opencv-python
 RUN pip install --ignore-installed --upgrade numpy pip pyOpenSSL cryptography
 
 WORKDIR ${VTRROOT}
