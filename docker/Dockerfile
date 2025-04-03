@@ -137,7 +137,6 @@ RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86
 RUN git clone --branch master --recursive https://github.com/cvg/Hierarchical-Localization.git /opt/hloc && \
     cd /opt/hloc && git checkout v1.4 && python3.8 -m pip install --no-cache-dir .
 
- USER ${USERID}:${GROUPID}
 # NERFSTUDIO #####################################################################################################################################################################
 # Create the nerfstudio conda environment and perform pip installations inside it.
 RUN bash -c "source /opt/miniconda/etc/profile.d/conda.sh && \
@@ -191,11 +190,6 @@ RUN echo "source /opt/ros/noetic/setup.bash" >> $HOME/.bashrc && \
     echo "source /catkin_ws/devel/setup.bash" >> $HOME/.bashrc && \
     echo ". /opt/miniconda/etc/profile.d/conda.sh" >> ~/.bashrc && \
     echo "alias ros1='source /opt/ros/noetic/setup.bash && source /catkin_ws/devel/setup.bash'" >> $HOME/.bashrc
-
-USER 0:0
-# After creating and setting up your conda environment (nerfstudio)
-RUN mkdir -p /opt/miniconda/envs/nerfstudio/etc/conda/activate.d && \
-    echo 'export PYTHONPATH="/opt/hloc:$PYTHONPATH"' > /opt/miniconda/envs/nerfstudio/etc/conda/activate.d/hloc.sh
 
 # Change ownership of backup directories so that the non-root user can access them
 RUN chown -R ${USERID}:${GROUPID} /tmp/nerfstudio_default /catkin_ws_default /catkin_ws
