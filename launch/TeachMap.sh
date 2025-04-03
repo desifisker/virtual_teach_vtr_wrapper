@@ -28,7 +28,6 @@ cp "<CSV_PATH>" "${VTRROOT}/data/<PROJECT_NAME>/nerf_gazebo_relative_transforms.
 pip install open3d 
 pip install numpy==1.24.3
 cd ${VTRROOT}/virtual_teach_vtr_wrapper
-colcon build --packages-select vtr_virtualteach
 python3 - <<PYTHON_EOF
 import open3d as o3d
 import os
@@ -43,6 +42,7 @@ sed -i 's|${VTRROOT}/data/test_press/nerf_gazebo_relative_transforms.csv|${VTRRO
 sed -i 's|${VTRROOT}/data/test_press/graph|${VTRROOT}/data/<PROJECT_NAME>/graph|g' ${VTRROOT}/virtual_teach_vtr_wrapper/src/vtr_virtualteach/src/generate_global_map.cpp; 
 
 source ~/ASRL/vtr3/virtual_teach_vtr_wrapper/install/setup.bash 
+colcon build --packages-select vtr_virtualteach
 ros2 run vtr_virtualteach generate_global_map
 EOF
 )
