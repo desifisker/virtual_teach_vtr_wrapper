@@ -180,7 +180,7 @@ chmod +x ImageExtraction.sh ImageProcessor.sh Gazebo.sh TeachMap.sh
 # makes: images folder and all_image_poses.txt file
 
 
-./ImageProcessor.sh "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/images" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/output"  "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/all_image_poses.txt" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/filtered_and_scaled.txt" "0.01" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/colmap/database.db" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/colmap" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/colmap/Scaled_1_100" "0" "1.0" "press_test"
+./ImageProcessor.sh "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/images" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/output"  "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/all_image_poses.txt" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/output/filtered.txt" "0.01" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/colmap/database.db" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/colmap" "${VTRROOT}/virtual_teach_vtr_wrapper/data/test_press/colmap/Scaled_1_100" "0" "1.0" "press_test"
 
 # makes: output folder of filtered images corresponding to filtered_and_scaled.txt (also created from this), database.db, the colmap folder, and the scaled project folder (which will hold the 3 generated .bin files produced)
 
