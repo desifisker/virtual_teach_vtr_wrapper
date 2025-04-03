@@ -48,7 +48,7 @@ DOCKER_CMD="
   mkdir -p \"$MAPPER_OUT_PATH\" &&
   mkdir -p \"$MODEL_ALIGNER_OUTPUT\" &&
   # Run the image filtering and coordinate scaling script.
-  python3 \${VTRROOT}/virtual_teach_vtr_wrapper/src/vtr_virtual_teach/scripts/imageFilterandCoordScaler.py \"$IMG_INPUT\" \"$OUT_FOLDER\" \"$TXT_SCALING\" \"$SCALE\" &&
+  python3 \${VTRROOT}/virtual_teach_vtr_wrapper/src/vtr_virtualteach/scripts/imageFilterandCoordScaler.py \"$IMG_INPUT\" \"$OUT_FOLDER\" \"$TXT_SCALING\" \"$SCALE\" &&
   # COLMAP processing commands:
   colmap database_creator --database_path \"$COLMAP_DB_PATH\" &&
   colmap feature_extractor --image_path \"$FEATURE_IMG_PATH\" --database_path \"$COLMAP_DB_PATH\" --ImageReader.camera_model SIMPLE_RADIAL --SiftExtraction.use_gpu=1 --SiftExtraction.num_threads=4 --SiftExtraction.max_num_features=8192 --log_level 2 &&
