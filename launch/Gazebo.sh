@@ -17,6 +17,7 @@ docker start virtr
 # Build the multi-line command to be executed inside the container.
 # Note: This script assumes that environment variables VTRSRC and VTRROOT are set in the container.
 DOCKER_SCRIPT=$(cat <<EOF
+source /opt/miniconda/etc/profile.d/conda.sh &&
 conda deactivate &&
 source /opt/ros/noetic/setup.bash &&
 echo \$ROS_DISTRO &&
