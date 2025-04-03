@@ -25,7 +25,8 @@ cd ${VTRROOT}/src/main;
 mkdir -p "${VTRROOT}/data/<PROJECT_NAME>/"; 
 cp "<PC_PATH>" "${VTRROOT}/data/<PROJECT_NAME>/point_cloud.ply"; 
 cp "<CSV_PATH>" "${VTRROOT}/data/<PROJECT_NAME>/nerf_gazebo_relative_transforms.csv"; 
-pip install open3d
+pip install open3d 
+pip install numpy==1.24.3
 cd ${VTRROOT}/virtual_teach_vtr_wrapper
 colcon build --packages-select vtr_virtualteach
 python3 - <<PYTHON_EOF
