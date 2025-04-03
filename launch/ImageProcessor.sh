@@ -4,8 +4,8 @@
 # Expected arguments:
 #  1. IMAGE_INPUT_FOLDER      : Folder containing input images.
 #  2. OUTPUT_FOLDER           : Folder where processed images (and other outputs) will be saved.
-#  3. TXT_FILE_SCALING        : Path to the txt file for image scaling.
-#  4. TXT_FILE_MODEL_ALIGNER  : Path to the txt file for COLMAP model_aligner.
+#  3. TXT_FILE_SCALING        : Path to the txt file of all image poses for image scaling and filtering.
+#  4. TXT_FILE_MODEL_ALIGNER  : Path to the scaled and filtered txt file for COLMAP model_aligner.
 #  5. SCALE                   : Scaling factor (e.g., 0.01 or 0.166).
 #  6. COLMAP_DB_PATH          : Database path for COLMAP.
 #  7. MAPPER_OUT_PATH         : Output path for COLMAP mapper.
@@ -37,6 +37,7 @@ MODEL_ALIGNER_OUTPUT="$8"
 REF_IS_GPS="$9"
 ALIGNMENT_MAX_ERROR="${10}"
 DEST_SUBFOLDER="${11}"
+
 
 # Start the Docker container named virtr.
 docker start virtr
