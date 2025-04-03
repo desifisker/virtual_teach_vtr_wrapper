@@ -37,13 +37,10 @@ pcd_path = os.path.join("${VTRROOT}", "data", "<PROJECT_NAME>", "point_cloud.pcd
 o3d.io.write_point_cloud(pcd_path, pcd)
 print("Converted point cloud from .ply to .pcd.")
 PYTHON_EOF
-sed -i 's|${VTRROOT}/data/test_press/point_cloud.pcd|${VTRROOT}/data/<PROJECT_NAME>/point_cloud.pcd|g' ${VTRROOT}/virtual_teach_vtr_wrapper/src/vtr_virtualteach/src/generate_global_map.cpp; 
-sed -i 's|${VTRROOT}/data/test_press/nerf_gazebo_relative_transforms.csv|${VTRROOT}/data/<PROJECT_NAME>/nerf_gazebo_relative_transforms.csv|g' ${VTRROOT}/virtual_teach_vtr_wrapper/src/vtr_virtualteach/src/generate_global_map.cpp; 
-sed -i 's|${VTRROOT}/data/test_press/graph|${VTRROOT}/data/<PROJECT_NAME>/graph|g' ${VTRROOT}/virtual_teach_vtr_wrapper/src/vtr_virtualteach/src/generate_global_map.cpp; 
 
 source ~/ASRL/vtr3/virtual_teach_vtr_wrapper/install/setup.bash 
 colcon build --packages-select vtr_virtualteach
-ros2 run vtr_virtualteach generate_global_map
+ros2 run vtr_virtualteach generate_global_map "${VTRROOT}/data/<PROJECT_NAME>/point_cloud.pcd" "<CSV_PATH>" "${VTRROOT}/data/<PROJECT_NAME>/graph"
 EOF
 )
 
