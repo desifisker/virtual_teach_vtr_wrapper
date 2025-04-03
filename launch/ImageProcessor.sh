@@ -35,7 +35,7 @@ DOCKER_CMD="
   mkdir -p \"/home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/src/nerfstudio/nerfstudio/data/nerfstudio/${DEST_SUBFOLDER}\" &&
   # Move the images folder and the scaled folder into the destination subfolder.
   cp -r \"$IMGS\" \"/home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/src/nerfstudio/nerfstudio/data/nerfstudio/${DEST_SUBFOLDER}/images\" &&
-  cp -r \"$MODEL_ALIGNER_OUTPUT\" \"/home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/src/nerfstudio/nerfstudio/data/nerfstudio/${DEST_SUBFOLDER}/Scaled_${SCALE}\" &&
+  cp -r \"$MODEL_ALIGNER_OUTPUT\" \"/home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/src/nerfstudio/nerfstudio/data/nerfstudio/${DEST_SUBFOLDER}/Scaled_100\" &&
   cd "${VTRROOT}/virtual_teach_vtr_wrapper/src/nerfstudio" && 
   source /opt/miniconda/etc/profile.d/conda.sh &&
   conda activate nerfstudio && 
