@@ -135,7 +135,7 @@ LAUNCH_EOF
 cat <<CONFIG_EOF > "\${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws/src/warthog_simulator/warthog_gazebo/models/${WORLD}/model.config"
 <?xml version="1.0" ?>
 <model>
-  <name>${WORLD}_mesh</name>
+  <name>${WORLD}</name>
   <version>1.0</version>
   <sdf version="1.6">model.sdf</sdf>
   <author>
@@ -153,20 +153,20 @@ CONFIG_EOF
 cat <<SDF_EOF > "\${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws/src/warthog_simulator/warthog_gazebo/models/${WORLD}/model.sdf"
 <?xml version="1.0" ?>
 <sdf version="1.6">
-  <model name="${WORLD}_mesh">
+  <model name="${WORLD}">
     <static>true</static>
     <link name="mesh_link">
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://${WORLD}_mesh/meshes/mesh.dae</uri>
+            <uri>model://${WORLD}/meshes/mesh.dae</uri>
           </mesh>
         </geometry>
       </visual>
       <collision name="collision">
         <geometry>
           <mesh>
-            <uri>model://${WORLD}_mesh/meshes/mesh.dae</uri>
+            <uri>model://${WORLD}/meshes/mesh.dae</uri>
           </mesh>
         </geometry>
       </collision>
