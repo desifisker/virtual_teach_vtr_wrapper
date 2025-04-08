@@ -1,6 +1,9 @@
 ## Installation of VirT&R
 VirT&R is a systematic pipeline to make virtual teach maps for VTR3 (https://github.com/utiasASRL/vtr3). Thus, it makes use of several programs and requires VTR3 to use.
 
+IF YOU ALREADY HAVE VTR3 SET UP AND RUNNING CLICK HERE TO GO TO THE NEXT PART AFTER MAKING SURE TO CLONE THIS REPO TO $VTRROOT: [Jump to the End](#build-and-install-virtual_teach_vtr_wrapper-(this-package))
+
+
 ## Setup VTR3 Directories
 Create the following directories in your local filesystem. Later, they will be mapped to the Docker container. (If you already have VTR3 installed and running on your machine, skip this step.)
 
