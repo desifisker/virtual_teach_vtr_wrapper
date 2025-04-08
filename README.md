@@ -171,7 +171,7 @@ DATASET DOWNLOAD:
 https://drive.google.com/drive/folders/1TpRJCtvYFxTDJrL1TxS9-hO1WO6BE5z0?usp=sharing
 
 ## Helper scripts used to run the programs
-The following helper scripts have been created to automate some tedious or menial aspects involved in creating a virtual teach map. Below, they are specific to the test_press dataset and can be run sequentially according to the documentation. The helper scripts, and when to use them, are referenced in the 'Using VirT&R' documentation.
+The following helper scripts have been created to automate some tedious or menial aspects involved in creating a virtual teach map. Below, they are specific to the test_press dataset and can be run sequentially according to the documentation. The helper scripts, and when to use them, are referenced in the 'Using VirT&R' documentation. To use the example dataset test_press, put the folder you downloaded from the link into the /data folder in the vtr_virtual_teach_wrapper.
 
 ```Bash
 chmod +x ImageExtraction.sh ImageProcessor.sh Gazebo.sh TeachMap.sh        
