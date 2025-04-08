@@ -160,18 +160,18 @@ wait until it finishes (takes around 30 min to build and 20 min to finish the en
 
 Now you should be inside the VirT&R Docker container where Blender, Gazebo, and Nerfstudio are installed. All programs and dependencies should be built, installed, and ready for use. 
 
-Please consult the 'Using VirT&R' documentation in /docs for detailed steps on how to proceed. 
+## Please consult the 'Using VirT&R' documentation in /docs for detailed steps on how to proceed. 
 
 ## Example Dataset
-An example dataset can be downloaded from this Google Drive link. It contains all elements created as a result of the steps in this pipline (not just the input and output data), so you can follow along and ensure a good result from your installation of the pipeline.
+An example dataset can be downloaded from this Google Drive link. It contains all elements created as a result of the steps in this pipeline (not just the input and output data), so you can follow along and ensure a good result from your installation of the pipeline.
 
-The structure of the data in the example dataset folder 'test_press' should be replicated for all data used with this pipeline for the helper scripts to function properly (although by running the first launch script, the correct structure is created for subsequent scripts and so on, so it should be handled for you, provided you initially set up the .csv and .mp4 correctly - file paths are left configurable so that you have more control over your file management.)
+The structure of the data in the example dataset folder 'test_press' should be replicated for all data used with this pipeline for the helper scripts to function correctly (although by running the first launch script, the correct structure is created for subsequent scripts and so on, so it should be handled for you, provided you initially set up the .csv and .mp4 correctly - file paths are left configurable so that you have more control over your file management.)
 
 DATASET DOWNLOAD:
 https://drive.google.com/drive/folders/1TpRJCtvYFxTDJrL1TxS9-hO1WO6BE5z0?usp=sharing
 
 ## Helper scripts used to run the programs
-The following helper scripts have been created to automate some tedious or menial aspects involved in creating a virtual teach map. Below, they are specific to the test_press dataset and can be run sequentially according to the documentation. The helper scripts, and when to use them, are referenced in the 'Using VirT&R' documentation. To use the example dataset test_press, put the folder you downloaded from the link into the /data folder in the vtr_virtual_teach_wrapper.
+The following helper scripts have been created to automate some tedious or menial aspects involved in creating a virtual teach map. Below, they are specific to the test_press dataset and can be run sequentially according to the documentation. The helper scripts, and when to use them, are referenced in the 'Using VirT&R' documentation. To use the example dataset test_press, put the folder you downloaded from the link into the /data folder in the vtr_virtual_teach_wrapper. The video can't be compressed, so it's often downloaded separately. Just make sure it's called DJI_0001-001.MP4 as it is in the test_press folder too. These commands should be run outside the docker container.
 
 ```Bash
 chmod +x ImageExtraction.sh ImageProcessor.sh Gazebo.sh TeachMap.sh        
