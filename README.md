@@ -149,6 +149,7 @@ docker run -it --name virtr \
   -e DISPLAY=$DISPLAY \
   -v /tmp/.X11-unix:/tmp/.X11-unix \
   -v ${VTRROOT}:${VTRROOT}:rw \
+  -v ${HOME}/.gazebo:${HOME}/.gazebo:rw
   -v /dev:/dev \
   -v ${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws:${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws:rw \
   -v ${VTRROOT}/virtual_teach_vtr_wrapper/src/nerfstudio:${VTRROOT}/virtual_teach_vtr_wrapper/src/nerfstudio:rw \
