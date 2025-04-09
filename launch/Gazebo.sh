@@ -35,7 +35,7 @@ cat <<WORLD_EOF > "\${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws/src/warthog_s
   <world name='${WORLD}'>
     <!-- Omni Light for Full Uniform Lighting -->
     <light name="full_light" type="point">
-      <pose frame="">0 0 5 0 0 0</pose>
+      <pose frame="">0 0 -5 0 0 0</pose>
       <diffuse>1.0 1.0 1.0 1</diffuse>
       <specular>1.0 1.0 1.0 1</specular>
       <attenuation>
