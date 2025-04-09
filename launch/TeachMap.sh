@@ -21,8 +21,8 @@ DOCKER_SCRIPT=$(cat <<'EOF'
 source ${VTRSRC}/main/install/setup.bash; 
 source /opt/ros/humble/setup.bash; 
 echo "ROS_DISTRO: $ROS_DISTRO"; 
-cd ${VTRROOT}/src/main; 
-mkdir -p "${VTRROOT}/data/<PROJECT_NAME>/"; 
+cd ${VTRROOT}/data; 
+mkdir -p "$<PROJECT_NAME>/"; 
 cp "<PC_PATH>" "${VTRROOT}/data/<PROJECT_NAME>/point_cloud.ply"; 
 cp "<CSV_PATH>" "${VTRROOT}/data/<PROJECT_NAME>/nerf_gazebo_relative_transforms.csv"; 
 pip install open3d 
