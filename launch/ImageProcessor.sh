@@ -32,10 +32,10 @@ DOCKER_CMD="
   colmap mapper --database_path \"$COLMAP_DB\" --image_path \"$IMGS\" --output_path \"$OUTPUT\" &&
   colmap model_aligner --input_path "$OUTPUT/0" --output_path "$MODEL_ALIGNER_OUTPUT" --ref_images_path "$FILTERED" --ref_is_gps 0 --alignment_max_error 1.0 &&
   # Create the destination folder within nerfstudio using the provided subfolder name.
-  mkdir -p \"/home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/src/nerfstudio/nerfstudio/data/nerfstudio/${DEST_SUBFOLDER}\" &&
+  mkdir -p \"${VTRROOT}/virtual_teach_vtr_wrapper/src/nerfstudio/nerfstudio/data/nerfstudio/${DEST_SUBFOLDER}\" &&
   # Move the images folder and the scaled folder into the destination subfolder.
-  cp -r \"$IMGS\" \"/home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/src/nerfstudio/nerfstudio/data/nerfstudio/${DEST_SUBFOLDER}/images\" &&
-  cp -r \"$MODEL_ALIGNER_OUTPUT\" \"/home/desiree/ASRL/vtr3/virtual_teach_vtr_wrapper/src/nerfstudio/nerfstudio/data/nerfstudio/${DEST_SUBFOLDER}/Scaled_100\" &&
+  cp -r \"$IMGS\" \"${VTRROOT}/virtual_teach_vtr_wrapper/src/nerfstudio/nerfstudio/data/nerfstudio/${DEST_SUBFOLDER}/images\" &&
+  cp -r \"$MODEL_ALIGNER_OUTPUT\" \"${VTRROOT}/virtual_teach_vtr_wrapper/src/nerfstudio/nerfstudio/data/nerfstudio/${DEST_SUBFOLDER}/Scaled_100\" &&
   cd "${VTRROOT}/virtual_teach_vtr_wrapper/src/nerfstudio" && 
   source /opt/miniconda/etc/profile.d/conda.sh &&
   conda activate nerfstudio && 
