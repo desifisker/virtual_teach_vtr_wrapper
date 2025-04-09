@@ -28,7 +28,6 @@ mkdir -p "\${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws/src/warthog_simulator/
 cp -r "${MESH_FILE}" "\${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws/src/warthog_simulator/warthog_gazebo/models/${WORLD}/meshes/mesh.dae" &&
 cp -r "${PNG_FILE}" "\${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws/src/warthog_simulator/warthog_gazebo/models/${WORLD}/meshes/material_0.png" &&
 mkdir -p ./gazebo/models &&
-cp -r "${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws/src/warthog_simulator/warthog_gazebo/models/." ./gazebo/models &&
 # Create the .world file with the world name substituted
 cat <<WORLD_EOF > "\${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws/src/warthog_simulator/warthog_gazebo/worlds/${WORLD}.world"
 <sdf version='1.6'>
@@ -180,6 +179,7 @@ cat <<SDF_EOF > "\${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws/src/warthog_sim
 SDF_EOF
 EOF
 )
+cp -r "${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws/src/warthog_simulator/warthog_gazebo/models/." ./gazebo/models &&
 
 # Execute the multi-line command inside the container.
 docker exec -it virtr bash -c "$DOCKER_SCRIPT"
