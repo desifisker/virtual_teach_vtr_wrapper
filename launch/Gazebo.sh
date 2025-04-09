@@ -50,6 +50,7 @@ cat <<WORLD_EOF > "\${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws/src/warthog_s
     <model name='${WORLD}'>
       <static>1</static>
       <link name='press'>
+        <pose>0 0 -5 0 0 0</pose>
         <collision name='collision'>
           <geometry>
             <mesh>
