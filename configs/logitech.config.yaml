@@ -1,5 +1,5 @@
 axis_linear: 4       # Joystick axis for linear movement
 axis_angular: 0      # Joystick axis for angular movement
-scale_linear: 0.5    # Scale for linear movement
+scale_linear: 1    # Scale for linear movement
 scale_angular: 1.0   # Scale for angular movement
 enable_button: 5     # Button to enable teleoperation
