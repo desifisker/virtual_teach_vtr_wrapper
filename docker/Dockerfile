@@ -157,8 +157,8 @@ RUN git clone --branch main https://github.com/nerfstudio-project/nerfstudio.git
 RUN mkdir -p /catkin_ws/src && cd /catkin_ws/src && \
     git clone https://github.com/warthog-cpr/warthog_simulator.git && \
     git clone https://github.com/warthog-cpr/warthog.git && \
-    cd /catkin_ws && \
-    /bin/bash -c "source /opt/ros/noetic/setup.bash && catkin_make && catkin_make install -DCMAKE_INSTALL_PREFIX=/catkin_ws/install"
+    cd /catkin_ws
+   # if still need maybe move below copies /bin/bash -c "source /opt/ros/noetic/setup.bash && catkin_make && catkin_make install -DCMAKE_INSTALL_PREFIX=/catkin_ws/install"
 
 RUN wget -O /catkin_ws/src/warthog/warthog_description/urdf/warthog.urdf.xacro \
     "https://raw.githubusercontent.com/desifisker/virtual_teach_vtr_wrapper/refs/heads/main/configs/warthog.urdf.xacro"
