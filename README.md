@@ -163,7 +163,8 @@ wait until it finishes (takes around 30 min to build and 20 min to finish the en
 
 Now you should be inside the VirT&R Docker container where Blender, Gazebo, and Nerfstudio are installed. All programs and dependencies should be built, installed, and ready for use. 
 
-## Please consult the 'Using VirT&R' documentation in /docs for detailed steps on how to proceed. 
+## Please consult the 'Using VirT&R' documentation for detailed steps on how to proceed. 
+https://docs.google.com/document/d/1vdrQSJKqGCwA7cPzZpHC-xvCbrQ00U4pSuBSXlRZtOs/edit?usp=sharing
 
 ## Example Dataset
 An example dataset can be downloaded from this Google Drive link. It contains all elements created as a result of the steps in this pipeline (not just the input and output data), so you can follow along and ensure a good result from your installation of the pipeline.
