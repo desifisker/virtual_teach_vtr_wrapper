@@ -179,7 +179,7 @@ cat <<SDF_EOF > "\${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws/src/warthog_sim
 SDF_EOF
 EOF
 )
-cp -r "${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws/src/warthog_simulator/warthog_gazebo/models/." ./gazebo/models &&
+cp -r "${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws/src/warthog_simulator/warthog_gazebo/models/." "${HOME}/.gazebo/models" &&
 
 # Execute the multi-line command inside the container.
 docker exec -it virtr bash -c "$DOCKER_SCRIPT"
