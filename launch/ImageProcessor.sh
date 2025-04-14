@@ -39,6 +39,7 @@ DOCKER_CMD="
   cd "${VTRROOT}/virtual_teach_vtr_wrapper/src/nerfstudio" && 
   source /opt/miniconda/etc/profile.d/conda.sh &&
   conda activate nerfstudio && 
+  pip install --upgrade pip setuptools &&
   pip install nerfstudio -e . && 
   export PATH=$PATH:$HOME/.local/bin &&
   exec bash
