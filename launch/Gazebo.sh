@@ -22,11 +22,9 @@ conda deactivate &&
 source /opt/ros/noetic/setup.bash &&
 echo \$ROS_DISTRO &&
 source ~/ASRL/vtr3/virtual_teach_vtr_wrapper/catkin_ws/devel/setup.bash &&
-# Create necessary directories
-mkdir -p "\${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws/src/warthog_simulator/warthog_gazebo/models/${WORLD}/meshes" &&
-# Copy the mesh file into the models folder (renamed as mesh.dae)
-cp -r "${MESH_FILE}" "\${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws/src/warthog_simulator/warthog_gazebo/models/${WORLD}/meshes/mesh.dae" &&
-cp -r "${PNG_FILE}" "\${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws/src/warthog_simulator/warthog_gazebo/models/${WORLD}/meshes/material_0.png" &&
+mkdir -p "${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws/src/warthog_simulator/warthog_gazebo/models/${WORLD}/meshes" &&
+cp -r "${MESH_FILE}" "${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws/src/warthog_simulator/warthog_gazebo/models/${WORLD}/meshes/mesh.dae" &&
+cp -r "${PNG_FILE}" "${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws/src/warthog_simulator/warthog_gazebo/models/${WORLD}/meshes/material_0.png" &&
 mkdir -p ./gazebo/models &&
 # Create the .world file with the world name substituted
 cat <<WORLD_EOF > "\${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws/src/warthog_simulator/warthog_gazebo/worlds/${WORLD}.world"
@@ -149,7 +147,6 @@ cat <<CONFIG_EOF > "\${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws/src/warthog_
     This is the NeRF mesh for Gazebo simulation.
   </description>
 </model>
-
 CONFIG_EOF
 
 # Create the .launch file with the world name substituted
@@ -177,9 +174,11 @@ cat <<SDF_EOF > "\${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws/src/warthog_sim
   </model>
 </sdf>
 SDF_EOF
+
+cp -r "${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws/src/warthog_simulator/warthog_gazebo/models/${WORLD}" "${HOME}/.gazebo/models"
 EOF
 )
-cp -r "${VTRROOT}/virtual_teach_vtr_wrapper/catkin_ws/src/warthog_simulator/warthog_gazebo/models/." "${HOME}/.gazebo/models" &&
+
 
 # Execute the multi-line command inside the container.
 docker exec -it virtr bash -c "$DOCKER_SCRIPT"
