@@ -24,8 +24,8 @@ if [ "$item_count1" -eq 0 ] || [ "$item_count1" -eq "$readme_count1" ]; then
   conda activate nerfstudio
   cd virtual_teach_vtr_wrapper/src/nerfstudio
   pip install --upgrade pip setuptools
-  pip install -e "${NERFSTUDIO_DIR}"
-  export PATH="$HOME/.local/bin:$PATH"
+  pip install -e .
+  export PATH=$PATH:$HOME/.local/bin
   
   conda deactivate
   echo "deactivated conda environment for nerfstudio"
