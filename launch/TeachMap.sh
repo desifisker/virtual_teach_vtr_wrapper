@@ -39,7 +39,7 @@ print("Converted point cloud from .ply to .pcd.")
 PYTHON_EOF
 
 source ~/ASRL/vtr3/virtual_teach_vtr_wrapper/install/setup.bash 
-colcon build --packages-select vtr_virtual_teach
+colcon build --packages-select vtr_virtualteach
 ros2 run vtr_virtualteach generate_global_map "${VTRROOT}/data/${PROJECT_NAME}/point_cloud.pcd" "${VTRROOT}/data/${PROJECT_NAME}/nerf_gazebo_relative_transforms.csv" "${VTRROOT}/data/${PROJECT_NAME}/graph"
 EOF
 )
