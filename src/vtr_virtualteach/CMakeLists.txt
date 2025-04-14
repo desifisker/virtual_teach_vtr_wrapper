@@ -65,19 +65,6 @@ ament_target_dependencies(generate_global_map
 target_link_libraries(generate_global_map ${PCL_LIBRARIES} ${Python3_LIBRARIES})
 install(TARGETS generate_global_map DESTINATION lib/${PROJECT_NAME})
 
-# Add the new executable and its dependencies
-add_executable(warthog_path_extractor src/warthog_path_extractor.cpp)
-ament_target_dependencies(warthog_path_extractor
-  rclcpp
-  vtr_lidar
-  vtr_logging
-  vtr_pose_graph
-  vtr_tactic
-  vtr_lidar_msgs
-)
-install(TARGETS warthog_path_extractor DESTINATION lib/${PROJECT_NAME})
-
-
 # Install header files and the executable
 install(
   DIRECTORY include/
