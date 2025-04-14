@@ -166,6 +166,12 @@ int main(int argc, char **argv) {
   std::string csv_path = argv[2];
   std::string graph_path = argv[3];
 
+  //print file paths for debugging
+  std::cout << "Argument 0 (executable): " << argv[0] << std::endl;
+  std::cout << "Argument 1: " << argv[1] << std::endl;
+  std::cout << "Argument 2: " << argv[2] << std::endl;
+  std::cout << "Argument 3: " << argv[3] << std::endl;
+  
   try {
     // Redirect std::cout to a log file
     std::ofstream log_file("output_log.txt");
@@ -192,13 +198,13 @@ int main(int argc, char **argv) {
     auto matrices_with_timestamps = readTransformMatricesWithTimestamps(csv_path);
 
     // This transform brings the first pose (absolute) to identity.
-    Eigen::Matrix4d origin_transform = matrices_with_timestamps.front().first;
-    Eigen::Matrix4d rebase_transform = origin_transform.inverse();
+    //Eigen::Matrix4d origin_transform = matrices_with_timestamps.front().first;
+    //Eigen::Matrix4d rebase_transform = origin_transform.inverse();
 
     // Rebase the point cloud: transform it using the rebase_transform.
-    pcl::PointCloud<pcl::PointNormal>::Ptr rebased_cloud = std::make_shared<pcl::PointCloud<pcl::PointNormal>>();
-    pcl::transformPointCloudWithNormals(*cloud, *rebased_cloud, rebase_transform);
-    cloud = rebased_cloud; 
+    //pcl::PointCloud<pcl::PointNormal>::Ptr rebased_cloud = std::make_shared<pcl::PointCloud<pcl::PointNormal>>();
+    //pcl::transformPointCloudWithNormals(*cloud, *rebased_cloud, rebase_transform);
+    //cloud = rebased_cloud; 
 
     // Create and populate pose graph
     auto graph = createPoseGraph(matrices_with_timestamps, graph_path);
@@ -338,7 +344,8 @@ int main(int argc, char **argv) {
     }
 
     // loop closure code 
-
+    // After processing all vertices and updating the graph, save the changes
+    loaded_graph->save();
 
     rclcpp::shutdown();
     
