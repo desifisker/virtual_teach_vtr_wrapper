@@ -8,7 +8,7 @@ import numpy as np
 from scipy.spatial.transform import Rotation as R
 
 # Define the directory and file path
-output_dir = "${VTRROOT}/virtual_teach_vtr_wrapper/data/WarthogMeshPaths"
+output_dir = "virtual_teach_vtr_wrapper/data/test_press/paths"
 output_file = os.path.join(output_dir, "relative_transforms.csv")
 
 # Ensure the directory exists

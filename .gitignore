@@ -33,8 +33,11 @@
 
 build/
 log/
+catkin_ws/build
+catkin_ws/devel
 install/
 data/*
+src/nerfstudio
 !data/README.md
 
 

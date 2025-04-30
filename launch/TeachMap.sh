@@ -17,16 +17,16 @@ PROJECT_NAME="$3"
 docker start vtr3
 
 # Build the multi-line command to be executed inside the container.
-DOCKER_SCRIPT=$(cat <<'EOF'
+DOCKER_SCRIPT=$(cat <<EOF
 source ${VTRSRC}/main/install/setup.bash; 
 source /opt/ros/humble/setup.bash; 
 echo "ROS_DISTRO: $ROS_DISTRO"; 
 cd ${VTRROOT}/data; 
-mkdir -p "$<PROJECT_NAME>/"; 
+mkdir -p "${PROJECT_NAME}/"; 
 cp "<PC_PATH>" "${VTRROOT}/data/<PROJECT_NAME>/point_cloud.ply"; 
 cp "<CSV_PATH>" "${VTRROOT}/data/<PROJECT_NAME>/nerf_gazebo_relative_transforms.csv"; 
-pip install open3d 
-pip install numpy==1.24.3
+#pip install open3d 
+#pip install numpy==1.24.3
 cd ${VTRROOT}/virtual_teach_vtr_wrapper
 python3 - <<PYTHON_EOF
 import open3d as o3d
@@ -39,7 +39,7 @@ print("Converted point cloud from .ply to .pcd.")
 PYTHON_EOF
 
 source ~/ASRL/vtr3/virtual_teach_vtr_wrapper/install/setup.bash 
-ros2 run vtr_virtualteach generate_global_map "${VTRROOT}/data/<PROJECT_NAME>/point_cloud.pcd" "${VTRROOT}/data/<PROJECT_NAME>/nerf_gazebo_relative_transformations.csv" "${VTRROOT}/data/<PROJECT_NAME>/graph"
+ros2 run vtr_virtualteach generate_global_map "${VTRROOT}/data/${PROJECT_NAME}/point_cloud.pcd" "${VTRROOT}/data/${PROJECT_NAME}/nerf_gazebo_relative_transforms.csv" "${VTRROOT}/data/${PROJECT_NAME}/graph"
 EOF
 )
 
